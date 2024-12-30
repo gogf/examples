@@ -1,0 +1,117 @@
+---
+title: Registry - Etcd Integration
+keywords: [registry, etcd, service discovery, goframe]
+description: An example demonstrating Etcd service registry integration in GoFrame
+---
+
+# Registry - Etcd Integration
+
+## Description
+
+This example demonstrates how to integrate Etcd service registry with GoFrame applications. It shows how to:
+- Register services with Etcd
+- Discover services using Etcd
+- Implement service health checks
+- Build distributed systems
+
+## Structure
+
+```
+.
+├── grpc/                # gRPC service examples
+│   ├── client/          # gRPC client implementation
+│   ├── controller/      # gRPC service controllers
+│   ├── protobuf/        # Protocol buffer definitions
+│   └── server/          # gRPC server implementation
+│       ├── main.go      # Server startup code
+│       └── config.yaml  # Server configuration
+├── http/                # HTTP service examples
+│   ├── client/          # HTTP client implementation
+│   └── server/          # HTTP server implementation
+├── go.mod               # Go module file
+└── go.sum               # Go module checksums
+```
+
+## Features
+
+The example showcases the following features:
+1. Service Registration
+   - Automatic service registration
+   - TTL-based health check
+   - Metadata management
+   - Lease management
+
+2. Service Discovery
+   - Dynamic service discovery
+   - Load balancing
+   - Failover support
+   - Watch mechanism
+
+3. Protocol Support
+   - HTTP services
+   - gRPC services
+   - Custom protocols
+
+## Prerequisites
+
+1. Running etcd server:
+   ```bash
+   # Using docker
+   docker run -d --name etcd -p 2379:2379 -e ALLOW_NONE_AUTHENTICATION=yes bitnami/etcd:3.4.24
+   ```
+
+## Usage
+
+### HTTP Example
+
+1. Start the HTTP server:
+   ```bash
+   cd http/server
+   go run server.go
+   ```
+
+2. Run the HTTP client:
+   ```bash
+   cd http/client
+   go run client.go
+   ```
+
+### gRPC Example
+
+1. Start the gRPC server:
+   ```bash
+   cd grpc/server
+   go run server.go
+   ```
+
+2. Run the gRPC client:
+   ```bash
+   cd grpc/client
+   go run client.go
+   ```
+
+## Implementation Details
+
+The example demonstrates:
+1. etcd client configuration
+2. Service registration process
+3. Service discovery mechanism
+4. Health check implementation
+5. Load balancing strategies
+6. Watch mechanism usage
+7. Lease management
+
+## Notes
+
+- etcd server must be running
+- Default etcd address: 127.0.0.1:2379
+- Services are registered automatically
+- TTL-based health checks
+- Automatic lease renewal
+- Load balancing is handled automatically
+- Consider security in production
+- Handle failover scenarios
+- Monitor service health
+- Implement proper error handling
+- Watch for service changes
+- Manage leases properly

@@ -1,0 +1,90 @@
+---
+title: Metrics - Basic Example
+keywords: [metrics, basic, prometheus, opentelemetry, goframe]
+description: A basic example demonstrating various metric types and their usage in GoFrame
+---
+
+# Metrics - Basic Example
+
+## Description
+
+This example demonstrates the basic usage of various metric types in GoFrame using OpenTelemetry and Prometheus integration. It shows how to:
+- Create and use different types of metrics
+- Configure metric attributes
+- Export metrics in Prometheus format
+- Set up a metrics endpoint
+
+## Structure
+
+- `go.mod`: The Go module file for dependency management
+- `go.sum`: The Go module checksums file
+- `main.go`: The main application demonstrating metric usage
+
+## Features
+
+The example showcases the following metric types:
+1. Counter
+   - Cumulative measurements
+   - Only increases
+   - Used for counting events
+
+2. UpDownCounter
+   - Bidirectional counter
+   - Can increase and decrease
+   - Used for measuring varying quantities
+
+3. Histogram
+   - Distribution of measurements
+   - Configurable buckets
+   - Used for latency/size measurements
+
+4. Observable Metrics
+   - Counter
+   - UpDownCounter
+   - Gauge
+   - Updated via callbacks
+
+## Usage
+
+1. Run the example:
+   ```bash
+   go run main.go
+   ```
+
+2. Access the metrics:
+   ```bash
+   # Using curl
+   curl http://localhost:8000/metrics
+   
+   # Or open in browser
+   http://localhost:8000/metrics
+   ```
+
+3. Example metrics output:
+   ```
+   # HELP goframe_metric_demo_counter This is a simple demo for Counter usage
+   goframe_metric_demo_counter{const_attr_1="1"} 11
+   
+   # HELP goframe_metric_demo_histogram This is a simple demo for histogram usage
+   goframe_metric_demo_histogram_bucket{const_attr_3="3",le="0"} 0
+   goframe_metric_demo_histogram_bucket{const_attr_3="3",le="10"} 1
+   ...
+   ```
+
+## Implementation Details
+
+The example demonstrates:
+1. Proper metric initialization and configuration
+2. Different ways to update metrics
+3. Attribute handling
+4. Prometheus integration
+5. Observable metric callbacks
+
+## Notes
+
+- Metrics are exported in Prometheus format
+- Default port is 8000
+- Metrics endpoint is at /metrics
+- All metrics include constant attributes
+- Observable metrics are updated via callbacks
+- Proper cleanup is handled via defer

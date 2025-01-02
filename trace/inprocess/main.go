@@ -4,6 +4,15 @@
 // If a copy of the MIT was not distributed with this file,
 // You can obtain one at https://github.com/gogf/gf.
 
+// Package main demonstrates in-process distributed tracing implementation.
+// It showcases how to:
+// 1. Configure distributed tracing
+// 2. Create and manage trace spans
+// 3. Propagate trace context
+// 4. Handle error cases
+//
+// This example shows how to implement tracing in a single process
+// with multiple function calls.
 package main
 
 import (
@@ -17,53 +26,67 @@ import (
 	"github.com/gogf/gf/contrib/trace/otlphttp/v2"
 )
 
+// Service configuration constants
 const (
-	serviceName = "inprocess"
-	endpoint    = "localhost:6831"
-	path        = "adapt_******_******/api/otlp/traces"
+	serviceName = "inprocess"                              // Name of the service for tracing
+	endpoint    = "localhost:6831"                         // Tracing endpoint
+	path        = "adapt_******_******/api/otlp/traces"   // Tracing path
 )
 
+// main initializes tracing and demonstrates function call tracing
 func main() {
 	var (
 		ctx           = gctx.New()
 		shutdown, err = otlphttp.Init(serviceName, endpoint, path)
 	)
-
 	if err != nil {
 		g.Log().Fatal(ctx, err)
 	}
 	defer shutdown(ctx)
 
+	// Create root span for the entire process
 	ctx, span := gtrace.NewSpan(ctx, "main")
 	defer span.End()
 
-	// Trace 1.
+	// Demonstrate tracing with existing user
 	user1 := GetUser(ctx, 1)
 	g.Dump(user1)
 
-	// Trace 2.
+	// Demonstrate tracing with non-existent user
 	user100 := GetUser(ctx, 100)
 	g.Dump(user100)
 }
 
-// GetUser retrieves and returns hard coded user data for demonstration.
+// GetUser retrieves and returns user data by merging information from multiple sources.
+// This function:
+// 1. Creates a new trace span
+// 2. Retrieves user information from different sources
+// 3. Merges all information into a single map
+// 4. Handles the case of non-existent users
 func GetUser(ctx context.Context, id int) g.Map {
 	ctx, span := gtrace.NewSpan(ctx, "GetUser")
 	defer span.End()
+
+	// Merge user data from different sources
 	m := g.Map{}
 	gutil.MapMerge(
 		m,
-		GetInfo(ctx, id),
-		GetDetail(ctx, id),
-		GetScores(ctx, id),
+		GetInfo(ctx, id),    // Basic user information
+		GetDetail(ctx, id),  // Detailed user information
+		GetScores(ctx, id),  // User scores
 	)
 	return m
 }
 
-// GetInfo retrieves and returns hard coded user info for demonstration.
+// GetInfo retrieves basic user information.
+// This function:
+// 1. Creates a new trace span
+// 2. Returns user ID, name, and gender for ID 100
+// 3. Returns nil for non-existent users
 func GetInfo(ctx context.Context, id int) g.Map {
 	ctx, span := gtrace.NewSpan(ctx, "GetInfo")
 	defer span.End()
+
 	if id == 100 {
 		return g.Map{
 			"id":     100,
@@ -74,10 +97,15 @@ func GetInfo(ctx context.Context, id int) g.Map {
 	return nil
 }
 
-// GetDetail retrieves and returns hard coded user detail for demonstration.
+// GetDetail retrieves detailed user information.
+// This function:
+// 1. Creates a new trace span
+// 2. Returns user website and email for ID 100
+// 3. Returns nil for non-existent users
 func GetDetail(ctx context.Context, id int) g.Map {
 	ctx, span := gtrace.NewSpan(ctx, "GetDetail")
 	defer span.End()
+
 	if id == 100 {
 		return g.Map{
 			"site":  "https://goframe.org",
@@ -87,10 +115,15 @@ func GetDetail(ctx context.Context, id int) g.Map {
 	return nil
 }
 
-// GetScores retrieves and returns hard coded user scores for demonstration.
+// GetScores retrieves user academic scores.
+// This function:
+// 1. Creates a new trace span
+// 2. Returns user scores in different subjects for ID 100
+// 3. Returns nil for non-existent users
 func GetScores(ctx context.Context, id int) g.Map {
 	ctx, span := gtrace.NewSpan(ctx, "GetScores")
 	defer span.End()
+
 	if id == 100 {
 		return g.Map{
 			"math":    100,

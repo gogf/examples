@@ -4,6 +4,9 @@
 // If a copy of the MIT was not distributed with this file,
 // You can obtain one at https://github.com/gogf/gf.
 
+// Package internal provides shared functionality for OpenTelemetry trace providers.
+// It includes initialization functions and utility methods used by both
+// gRPC and HTTP trace providers.
 package internal
 
 import (
@@ -19,16 +22,32 @@ import (
 )
 
 // InitTracer initializes and registers `otlpgrpc` or `otlphttp` to global TracerProvider.
+// It configures:
+// 1. Trace provider with provided options
+// 2. Global text map propagator for context propagation
+// 3. Global tracer provider
+//
+// Returns a shutdown function that should be called when the application exits.
 func InitTracer(opts ...trace.TracerProviderOption) (func(ctx context.Context), error) {
+	// Create trace provider with provided options
 	tracerProvider := trace.NewTracerProvider(opts...)
-	// Set the global propagator to traceContext (not set by default).
-	otel.SetTextMapPropagator(propagation.NewCompositeTextMapPropagator(propagation.TraceContext{}, propagation.Baggage{}))
+
+	// Configure global propagator for distributed tracing
+	otel.SetTextMapPropagator(propagation.NewCompositeTextMapPropagator(
+		propagation.TraceContext{}, // W3C Trace Context format
+		propagation.Baggage{},      // W3C Baggage format
+	))
+
+	// Set global trace provider
 	otel.SetTracerProvider(tracerProvider)
 
+	// Return shutdown function
 	return func(ctx context.Context) {
+		// Create context with timeout for shutdown
 		ctx, cancel := context.WithTimeout(ctx, time.Second)
 		defer cancel()
-		// Shutdown waits for exported trace spans to be uploaded.
+
+		// Shutdown trace provider and wait for spans to be exported
 		if err := tracerProvider.Shutdown(ctx); err != nil {
 			g.Log().Errorf(ctx, "Shutdown tracerProvider failed err:%+v", err)
 		} else {
@@ -38,17 +57,25 @@ func InitTracer(opts ...trace.TracerProviderOption) (func(ctx context.Context), 
 }
 
 // GetLocalIP returns the IP address of the server.
+// It attempts to:
+// 1. Get intranet IP addresses first
+// 2. Fall back to all available IP addresses if no intranet IP is found
+// 3. Return "NoHostIpFound" if no IP address is available
 func GetLocalIP() (string, error) {
+	// Try to get intranet IP addresses
 	var intranetIPArray, err = gipv4.GetIntranetIpArray()
 	if err != nil {
 		return "", err
 	}
 
+	// If no intranet IP found, try to get all IP addresses
 	if len(intranetIPArray) == 0 {
 		if intranetIPArray, err = gipv4.GetIpArray(); err != nil {
 			return "", err
 		}
 	}
+
+	// Set default value if no IP found
 	var hostIP = "NoHostIpFound"
 	if len(intranetIPArray) > 0 {
 		hostIP = intranetIPArray[0]

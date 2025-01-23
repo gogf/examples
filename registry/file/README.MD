@@ -1,5 +1,5 @@
 ---
-title: File Integration
+title: File
 slug: /examples/registry/file
 keywords: [registry, file, service discovery, goframe]
 description: An example demonstrating File-based service registry integration in GoFrame

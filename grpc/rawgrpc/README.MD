@@ -1,5 +1,5 @@
 ---
-title: Raw Implementation
+title: Raw gRPC Example
 slug: /examples/grpc/rawgrpc
 keywords: [grpc, raw, implementation, goframe]
 description: An example demonstrating raw gRPC implementation in GoFrame

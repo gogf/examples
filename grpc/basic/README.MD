@@ -4,6 +4,7 @@ slug: /examples/grpc/basic
 keywords: [grpc, basic, goframe]
 description: An example demonstrating basic gRPC usage in GoFrame
 hide_title: true
+sidebar_position: 0
 ---
 
 ## gRPC - Basic Usage

@@ -1,5 +1,5 @@
 ---
-title: Apollo Integration
+title: Apollo
 slug: /examples/config/apollo
 keywords: [config, apollo, goframe]
 description: Example demonstrating Apollo configuration center integration with GoFrame

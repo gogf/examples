@@ -1,5 +1,5 @@
 ---
-title: HTTP Client Example
+title: HTTP Client
 slug: /examples/observability/metric/http_client
 keywords: [metrics, http client, prometheus, opentelemetry, goframe]
 description: An example demonstrating HTTP client metrics collection in GoFrame

@@ -1,5 +1,5 @@
 ---
-title: HTTP Server Example
+title: HTTP Server
 slug: /examples/observability/metric/http_server
 keywords: [metrics, http server, prometheus, opentelemetry, goframe]
 description: An example demonstrating HTTP server metrics collection in GoFrame

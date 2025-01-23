@@ -1,5 +1,5 @@
 ---
-title: Consul Integration
+title: Consul
 slug: /examples/registry/consul
 keywords: [registry, consul, service discovery, goframe]
 description: An example demonstrating Consul service registry integration in GoFrame

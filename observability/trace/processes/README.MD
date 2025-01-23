@@ -1,5 +1,5 @@
 ---
-title: Multi-Process Examples
+title: Multi-Process Example
 slug: /examples/observability/trace/processes
 keywords: [trace, processes, gcmd, gproc, goframe]
 description: Examples demonstrating distributed tracing across multiple processes using different GoFrame process management approaches

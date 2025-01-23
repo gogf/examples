@@ -1,0 +1,8 @@
+
+
+
+
+参考examples/balancer/http下的示例代码以及README.MD实现，
+分析并完善examples/balancer/polaris下的示例代码文档以及代码注释，
+不需要新加任何的go文件。
+

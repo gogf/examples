@@ -7,7 +7,7 @@
 package main
 
 import (
-	_ "github.com/gogf/gf/example/config/kubecm/boot_in_pod"
+	_ "main/boot_in_pod"
 
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/os/gctx"

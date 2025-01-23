@@ -4,6 +4,11 @@
 // If a copy of the MIT was not distributed with this file,
 // You can obtain one at https://github.com/gogf/gf.
 
+// Package main implements a HTTP client with load balancing capabilities.
+// It demonstrates how to:
+// 1. Set up service discovery using etcd
+// 2. Configure round-robin load balancing
+// 3. Make HTTP requests to distributed services
 package main
 
 import (
@@ -16,12 +21,25 @@ import (
 )
 
 func main() {
+	// Initialize etcd registry with the etcd server address
+	// This enables service discovery for the client
 	gsvc.SetRegistry(etcd.New(`127.0.0.1:2379`))
+
+	// Set up round-robin load balancing strategy
+	// This ensures requests are distributed evenly across available servers
 	gsel.SetBuilder(gsel.NewBuilderRoundRobin())
 
+	// Make 10 HTTP requests to demonstrate load balancing
+	// Each request will be routed to a different server instance in round-robin fashion
 	for i := 0; i < 10; i++ {
+		// Create a new context for each request
 		ctx := gctx.New()
+
+		// Make HTTP request to the service using its service name
+		// The client automatically handles service discovery and load balancing
 		res := g.Client().GetContent(ctx, `http://hello.svc/`)
+
+		// Log the response from the server
 		g.Log().Info(ctx, res)
 	}
 }

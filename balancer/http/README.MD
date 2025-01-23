@@ -1,19 +1,18 @@
 ---
-title: Load Balancer - Polaris Integration Example
-keywords: [load balancer, polaris, service discovery, goframe]
-description: An example demonstrating HTTP service load balancing using Polaris in GoFrame
+title: Load Balancer - HTTP Service Example
+keywords: [load balancer, http, service discovery, goframe]
+description: An example demonstrating HTTP service load balancing in GoFrame
 ---
 
-# Load Balancer - Polaris Integration Example
+# Load Balancer - HTTP Service Example
 
 ## Description
 
-This example demonstrates how to implement HTTP service load balancing with GoFrame using Polaris. It shows:
-- Service registration using Polaris
+This example demonstrates how to implement HTTP service load balancing with GoFrame. It shows:
+- Service registration using etcd
 - Client-side load balancing
 - Round-robin load balancing strategy
 - HTTP service communication
-- Local cache and logging configuration
 
 ## Structure
 
@@ -29,22 +28,15 @@ This example demonstrates how to implement HTTP service load balancing with GoFr
 
 ## Prerequisites
 
-1. Running Polaris server:
+1. Running etcd server:
    ```bash
    # Using docker
-   docker run -d --name polaris \
-      -p 8090:8090 -p 8091:8091 -p 8093:8093 -p 8092:8092 \
-      --platform linux/amd64 \
-      polarismesh/polaris-server-release:latest
+   docker run -d --name etcd-server \
+      --publish 2379:2379 \
+      --publish 2380:2380 \
+      --env ALLOW_NONE_AUTHENTICATION=yes \
+      bitnami/etcd:latest
    ```
-
-## Configuration
-
-The example uses the following Polaris configurations:
-- Server address: `127.0.0.1:8091`
-- Local cache directory: `<TempDir>/polaris/backup`
-- Log directory: `<TempDir>/polaris/log`
-- Service TTL: 10 seconds
 
 ## Usage
 
@@ -73,23 +65,19 @@ The example uses the following Polaris configurations:
 
 1. Server Implementation (`server/server.go`):
    - HTTP server setup using GoFrame
-   - Service registration with Polaris
+   - Service registration with etcd
    - Simple HTTP endpoint that returns "Hello world"
    - Automatic service discovery registration
-   - Configurable TTL for service registration
 
 2. Client Implementation (`client/client.go`):
-   - Service discovery using Polaris
+   - Service discovery using etcd
    - Round-robin load balancing strategy
-   - Multiple request demonstration with timing information
+   - Multiple request demonstration
    - Automatic service discovery and load balancing
-   - Local cache and logging configuration
 
 ## Notes
 
-- The example uses Polaris for service registration and discovery
+- The example uses etcd for service registration and discovery
 - Round-robin load balancing is implemented for demonstration
 - The client automatically handles service discovery and load balancing
-- Local cache is used to improve performance
-- Logging is configured for better debugging
 - Multiple server instances can be started to demonstrate load distribution

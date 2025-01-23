@@ -1,5 +1,6 @@
 ---
 title: gRPC - Context Usage
+slug: /examples/grpc/ctx
 keywords: [grpc, context, metadata, goframe]
 description: An example demonstrating gRPC context usage in GoFrame
 ---

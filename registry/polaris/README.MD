@@ -1,5 +1,6 @@
 ---
 title: Registry - Polaris Integration
+slug: /examples/registry/polaris
 keywords: [registry, polaris, service discovery, goframe]
 description: An example demonstrating Polaris service registry integration in GoFrame
 ---

@@ -1,5 +1,6 @@
 ---
 title: Metric - Global Attributes Example
+slug: /examples/observability/metric/global_attributes
 keywords: [metrics, global attributes, prometheus, opentelemetry, goframe]
 description: An example demonstrating global metric attributes in GoFrame
 ---

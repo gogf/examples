@@ -1,5 +1,6 @@
 ---
 title: Metric - Meter Attributes Example
+slug: /examples/observability/metric/meter_attributes
 keywords: [metrics, meter attributes, prometheus, opentelemetry, goframe]
 description: An example demonstrating meter-level attributes in GoFrame metrics
 ---

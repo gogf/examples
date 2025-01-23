@@ -1,5 +1,6 @@
 ---
 title: HTTP Server Response with JSON Array
+slug: /examples/httpserver/response-json-array
 keywords: [http, server, json, array, goframe]
 description: A comprehensive example demonstrating how to handle JSON array responses in a HTTP server using GoFrame framework
 ---

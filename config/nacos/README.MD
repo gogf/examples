@@ -1,5 +1,6 @@
 ---
 title: Config - Nacos Integration
+slug: /examples/config/nacos
 keywords: [config, nacos, goframe]
 description: Example demonstrating Nacos configuration center integration with GoFrame
 ---

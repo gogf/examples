@@ -1,5 +1,6 @@
 ---
 title: Metric - Callback Example
+slug: /examples/observability/metric/callback
 keywords: [metrics, callback, prometheus, opentelemetry, goframe]
 description: An example demonstrating callback-based metric collection in GoFrame
 ---

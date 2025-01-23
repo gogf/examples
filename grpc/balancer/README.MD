@@ -1,5 +1,6 @@
 ---
 title: gRPC - Load Balancing
+slug: /examples/grpc/balancer
 keywords: [grpc, load balancing, service discovery, goframe]
 description: An example demonstrating gRPC load balancing in GoFrame
 ---

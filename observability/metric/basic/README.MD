@@ -1,5 +1,6 @@
 ---
 title: Metric - Basic Example
+slug: /examples/observability/metric/basic
 keywords: [metrics, basic, prometheus, opentelemetry, goframe]
 description: A basic example demonstrating various metric types and their usage in GoFrame
 ---

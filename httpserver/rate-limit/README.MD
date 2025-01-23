@@ -1,5 +1,6 @@
 ---
 title: HTTP Server Rate Limit
+slug: /examples/httpserver/rate-limit
 keywords: [http, server, rate limit, middleware, goframe]
 description: A comprehensive example demonstrating how to implement rate limiting in a HTTP server using GoFrame framework
 ---

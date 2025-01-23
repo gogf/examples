@@ -1,5 +1,6 @@
 ---
 title: Tracing - HTTP with Database
+slug: /examples/observability/trace/http-with-db
 keywords: [trace, http, database, goframe]
 description: An example demonstrating distributed tracing in HTTP services with database operations using GoFrame
 ---

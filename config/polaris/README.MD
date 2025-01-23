@@ -1,5 +1,6 @@
 ---
 title: Config - Polaris Integration
+slug: /examples/config/polaris
 keywords: [config, polaris, goframe]
 description: Example demonstrating Polaris configuration center integration with GoFrame
 ---

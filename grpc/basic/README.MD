@@ -1,5 +1,6 @@
 ---
 title: gRPC - Basic Usage
+slug: /examples/grpc/basic
 keywords: [grpc, basic, goframe]
 description: An example demonstrating basic gRPC usage in GoFrame
 ---

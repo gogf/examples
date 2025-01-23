@@ -1,5 +1,6 @@
 ---
 title: Config - Consul Integration
+slug: /examples/config/consul
 keywords: [config, consul, goframe]
 description: Example demonstrating Consul configuration center integration with GoFrame
 ---

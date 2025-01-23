@@ -1,3 +1,9 @@
+---
+title: Trace Example
+slug: /examples/observability/trace
+keywords: [trace, opentelemetry, goframe]
+---
+
 # OpenTelemetry Protocol (stable)
 
 Since v1.35, the Jaeger backend can receive trace data from the OpenTelemetry SDKs in their native OpenTelemetry Protocol (OTLP)  . It is no longer necessary to configure the OpenTelemetry SDKs with Jaeger exporters, nor deploy the OpenTelemetry Collector between the OpenTelemetry SDKs and the Jaeger backend.

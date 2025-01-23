@@ -1,5 +1,6 @@
 ---
 title: Tracing - In-Process Service (HTTP Exporter)
+slug: /examples/observability/trace/inprocess
 keywords: [trace, inprocess, goframe, otlp-http]
 description: An example demonstrating distributed tracing in in-process services using GoFrame with HTTP-based OpenTelemetry exporter
 ---

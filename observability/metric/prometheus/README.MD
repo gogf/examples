@@ -1,5 +1,6 @@
 ---
 title: Metric - Direct Prometheus Integration Example
+slug: /examples/observability/metric/prometheus
 keywords: [metrics, prometheus, direct integration, goframe]
 description: An example demonstrating direct Prometheus integration in GoFrame without OpenTelemetry
 ---

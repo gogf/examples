@@ -2,7 +2,7 @@
 title: Global Attributes
 slug: /examples/observability/metric/global_attributes
 keywords: [metrics, global attributes, prometheus, opentelemetry, goframe]
-description: An example demonstrating global metric attributes in GoFrame
+description: global metric attributes in GoFrame
 hide_title: true
 ---
 

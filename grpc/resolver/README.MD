@@ -2,7 +2,7 @@
 title: Service Resolver
 slug: /examples/grpc/resolver
 keywords: [grpc, resolver, etcd, goframe]
-description: An example demonstrating gRPC service resolver with etcd in GoFrame
+description: gRPC service resolver with etcd in GoFrame
 hide_title: true
 ---
 

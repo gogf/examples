@@ -2,7 +2,7 @@
 title: Kubernetes ConfigMap
 slug: /examples/config/kubecm
 keywords: [config, kubernetes, configmap, goframe]
-description: Example demonstrating Kubernetes ConfigMap configuration integration with GoFrame
+description: Kubernetes ConfigMap configuration integration with GoFrame
 hide_title: true
 ---
 

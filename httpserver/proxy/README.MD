@@ -2,7 +2,7 @@
 title: Proxy
 slug: /examples/httpserver/proxy
 keywords: [http, server, proxy, reverse, goframe]
-description: A comprehensive example demonstrating how to implement a reverse proxy server using GoFrame framework
+description: A reverse proxy server using GoFrame framework
 hide_title: true
 ---
 

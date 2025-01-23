@@ -2,7 +2,7 @@
 title: Nacos
 slug: /examples/registry/nacos
 keywords: [registry, nacos, service discovery, goframe]
-description: An example demonstrating Nacos service registry integration in GoFrame
+description: Nacos service registry integration in GoFrame
 hide_title: true
 ---
 

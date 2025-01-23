@@ -2,7 +2,7 @@
 title: OpenTelemetry Example
 slug: /examples/observability/trace/otlp
 keywords: [trace, otlp, grpc, http, goframe]
-description: Examples demonstrating different OpenTelemetry trace data export methods in GoFrame
+description: OpenTelemetry trace data export methods in GoFrame
 hide_title: true
 ---
 

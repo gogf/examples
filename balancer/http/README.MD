@@ -2,7 +2,7 @@
 title: HTTP Service
 slug: /examples/balancer/http
 keywords: [load balancer, http, service discovery, goframe]
-description: An example demonstrating HTTP service load balancing in GoFrame
+description: HTTP service load balancing in GoFrame
 hide_title: true
 ---
 

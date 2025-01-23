@@ -2,7 +2,7 @@
 title: Nacos
 slug: /examples/config/nacos
 keywords: [config, nacos, goframe]
-description: Example demonstrating Nacos configuration center integration with GoFrame
+description: Nacos configuration center integration with GoFrame
 hide_title: true
 ---
 

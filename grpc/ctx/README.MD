@@ -2,7 +2,7 @@
 title: Context Usage
 slug: /examples/grpc/ctx
 keywords: [grpc, context, metadata, goframe]
-description: An example demonstrating gRPC context usage in GoFrame
+description: gRPC context usage in GoFrame
 hide_title: true
 sidebar_position: 1
 ---

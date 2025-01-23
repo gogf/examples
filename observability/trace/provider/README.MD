@@ -43,7 +43,7 @@ This directory contains examples demonstrating different OpenTelemetry trace pro
 
 ## Requirements
 
-- [Go](https://golang.org/dl/) 1.20 or higher
+- [Go](https://golang.org/dl/) 1.22 or higher
 - [Git](https://git-scm.com/downloads)
 - [GoFrame](https://goframe.org)
 - [OpenTelemetry](https://opentelemetry.io)

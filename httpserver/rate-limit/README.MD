@@ -19,7 +19,7 @@ The example implements:
 
 ## Requirements
 
-- [Go](https://golang.org/dl/) 1.20 or higher
+- [Go](https://golang.org/dl/) 1.22 or higher
 - [Git](https://git-scm.com/downloads)
 - [GoFrame](https://goframe.org)
 

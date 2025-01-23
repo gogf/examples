@@ -1,5 +1,5 @@
 ---
-title: Apollo Configuration Center Example
+title: Config - Apollo Integration
 keywords: [config, apollo, goframe]
 description: Example demonstrating Apollo configuration center integration with GoFrame
 ---
@@ -33,7 +33,7 @@ This directory contains an example demonstrating how to integrate Apollo configu
 
 ## Requirements
 
-- [Go](https://golang.org/dl/) 1.20 or higher
+- [Go](https://golang.org/dl/) 1.22 or higher
 - [Git](https://git-scm.com/downloads)
 - [GoFrame](https://goframe.org)
 - [GoFrame Apollo Config](https://github.com/gogf/gf/tree/master/contrib/config/apollo)

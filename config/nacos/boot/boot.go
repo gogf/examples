@@ -4,6 +4,14 @@
 // If a copy of the MIT was not distributed with this file,
 // You can obtain one at https://github.com/gogf/gf.
 
+// Package boot provides initialization for Nacos configuration client.
+// It handles:
+// 1. Nacos client configuration
+// 2. Client initialization
+// 3. Adapter setup
+// 4. Error handling
+//
+// This package is imported by main to ensure Nacos client is properly initialized.
 package boot
 
 import (
@@ -16,31 +24,51 @@ import (
 	"github.com/gogf/gf/contrib/config/nacos/v2"
 )
 
+// init initializes the Nacos configuration client and sets up the adapter.
+// It configures:
+// 1. Server connection settings
+// 2. Client cache and logging
+// 3. Configuration parameters
+// 4. Error handling
 func init() {
 	var (
-		ctx          = gctx.GetInitCtx()
+		ctx = gctx.GetInitCtx()
+
+		// Configure Nacos server connection
+		// This defines how to connect to the Nacos server
 		serverConfig = constant.ServerConfig{
-			IpAddr: "localhost",
-			Port:   8848,
+			IpAddr: "localhost", // Nacos server address
+			Port:   8848,       // Nacos server port
 		}
+
+		// Configure Nacos client settings
+		// This defines local cache and logging behavior
 		clientConfig = constant.ClientConfig{
-			CacheDir: "/tmp/nacos",
-			LogDir:   "/tmp/nacos",
+			CacheDir: "/tmp/nacos", // Directory for local cache
+			LogDir:   "/tmp/nacos", // Directory for log files
 		}
+
+		// Configure configuration parameters
+		// This defines which configuration to retrieve
 		configParam = vo.ConfigParam{
-			DataId: "config.toml",
-			Group:  "test",
+			DataId: "config.toml", // Configuration file identifier
+			Group:  "test",        // Configuration group name
 		}
 	)
-	// Create nacos Client that implements gcfg.Adapter.
+
+	// Create Nacos adapter with configuration
+	// The adapter implements gcfg.Adapter interface for configuration management
 	adapter, err := nacos.New(ctx, nacos.Config{
-		ServerConfigs: []constant.ServerConfig{serverConfig},
-		ClientConfig:  clientConfig,
-		ConfigParam:   configParam,
+		ServerConfigs: []constant.ServerConfig{serverConfig}, // Server connection settings
+		ClientConfig:  clientConfig,                         // Client behavior settings
+		ConfigParam:   configParam,                          // Configuration retrieval settings
 	})
 	if err != nil {
+		// Log fatal error if client initialization fails
 		g.Log().Fatalf(ctx, `%+v`, err)
 	}
-	// Change the adapter of default configuration instance.
+
+	// Set Nacos adapter as the configuration adapter
+	// This enables GoFrame to use Nacos for configuration management
 	g.Cfg().SetAdapter(adapter)
 }

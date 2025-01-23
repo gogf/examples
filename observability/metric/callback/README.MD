@@ -38,6 +38,13 @@ The example showcases the following features:
    - Help text
    - Units
 
+## Requirements
+
+- [Go](https://golang.org/dl/) 1.22 or higher
+- [Git](https://git-scm.com/downloads)
+- [GoFrame](https://goframe.org)
+- [GoFrame OpenTelemetry Metric](https://github.com/gogf/gf/tree/master/contrib/metric/otelmetric)
+
 ## Usage
 
 1. Run the example:

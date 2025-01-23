@@ -45,6 +45,13 @@ The example showcases the following features:
    - HTTP services
    - Extensible for other protocols
 
+## Requirements
+
+- [Go](https://golang.org/dl/) 1.22 or higher
+- [Git](https://git-scm.com/downloads)
+- [GoFrame](https://goframe.org)
+- [GoFrame File Registry](https://github.com/gogf/gf/tree/master/contrib/registry/file)
+
 ## Prerequisites
 
 No additional infrastructure required. The example uses the local file system for service registration and discovery.

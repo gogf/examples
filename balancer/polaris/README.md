@@ -15,6 +15,13 @@ This example demonstrates how to implement HTTP service load balancing with GoFr
 - HTTP service communication
 - Local cache and logging configuration
 
+## Requirements
+
+- [Go](https://golang.org/dl/) 1.22 or higher
+- [Git](https://git-scm.com/downloads)
+- [GoFrame](https://goframe.org)
+- [GoFrame Polaris Registry](https://github.com/gogf/gf/tree/master/contrib/registry/polaris)
+
 ## Structure
 
 ```

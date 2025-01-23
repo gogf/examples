@@ -51,6 +51,13 @@ The example showcases the following features:
    - Health checking
    - Metadata management
 
+## Requirements
+
+- [Go](https://golang.org/dl/) 1.22 or higher
+- [Git](https://git-scm.com/downloads)
+- [GoFrame](https://goframe.org)
+- [gRPC](https://grpc.io/docs/languages/go/quickstart/)
+
 ## Prerequisites
 
 1. Running etcd instance:

@@ -14,6 +14,12 @@ This example demonstrates how to implement HTTP service load balancing with GoFr
 - Round-robin load balancing strategy
 - HTTP service communication
 
+## Requirements
+
+- [Go](https://golang.org/dl/) 1.22 or higher
+- [Git](https://git-scm.com/downloads)
+- [GoFrame](https://goframe.org)
+
 ## Structure
 
 ```

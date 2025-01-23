@@ -52,6 +52,14 @@ The example showcases the following features:
    - gRPC services
    - Custom protocols
 
+## Requirements
+
+- [Go](https://golang.org/dl/) 1.22 or higher
+- [Git](https://git-scm.com/downloads)
+- [GoFrame](https://goframe.org)
+- [GoFrame Etcd Registry](https://github.com/gogf/gf/tree/master/contrib/registry/etcd)
+- [Etcd](https://etcd.io/docs/v3.5/install/)
+
 ## Prerequisites
 
 1. Running etcd server:

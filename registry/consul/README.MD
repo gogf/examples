@@ -51,6 +51,14 @@ The example showcases the following features:
    - gRPC services
    - Custom protocols
 
+## Requirements
+
+- [Go](https://golang.org/dl/) 1.22 or higher
+- [Git](https://git-scm.com/downloads)
+- [GoFrame](https://goframe.org)
+- [GoFrame Consul Registry](https://github.com/gogf/gf/tree/master/contrib/registry/consul)
+- [Consul](https://developer.hashicorp.com/consul/downloads)
+
 ## Prerequisites
 
 1. Running Consul server:

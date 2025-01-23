@@ -57,6 +57,14 @@ The example showcases the following features:
    - gRPC services
    - Custom protocols
 
+## Requirements
+
+- [Go](https://golang.org/dl/) 1.22 or higher
+- [Git](https://git-scm.com/downloads)
+- [GoFrame](https://goframe.org)
+- [GoFrame Nacos Registry](https://github.com/gogf/gf/tree/master/contrib/registry/nacos)
+- [Nacos](https://nacos.io/en-us/docs/v2/quickstart/quick-start.html)
+
 ## Prerequisites
 
 1. Running Nacos server:

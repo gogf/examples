@@ -1,8 +1,9 @@
 ---
-title: Tracing - HTTP Service
+title: HTTP Service
 slug: /examples/observability/trace/http
 keywords: [trace, http, goframe]
 description: An example demonstrating distributed tracing in HTTP services using GoFrame
+hide_title: true
 ---
 
 # Tracing - HTTP Service

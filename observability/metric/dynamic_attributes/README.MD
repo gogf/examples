@@ -1,8 +1,9 @@
 ---
-title: Metric - Dynamic Attributes Example
+title: Dynamic Attributes Example
 slug: /examples/observability/metric/dynamic_attributes
 keywords: [metrics, dynamic attributes, prometheus, opentelemetry, goframe]
 description: An example demonstrating dynamic metric attributes in GoFrame
+hide_title: true
 ---
 
 # Metric - Dynamic Attributes Example

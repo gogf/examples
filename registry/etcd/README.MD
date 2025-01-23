@@ -1,8 +1,9 @@
 ---
-title: Registry - Etcd Integration
+title: Etcd Integration
 slug: /examples/registry/etcd
 keywords: [registry, etcd, service discovery, goframe]
 description: An example demonstrating Etcd service registry integration in GoFrame
+hide_title: true
 ---
 
 # Registry - Etcd Integration

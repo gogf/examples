@@ -1,7 +1,8 @@
 ---
-title: Load Balancer - Polaris Integration Example
+title: Polaris Integration Example
 keywords: [load balancer, polaris, service discovery, goframe]
 description: An example demonstrating HTTP service load balancing using Polaris in GoFrame
+hide_title: true
 ---
 
 # Load Balancer - Polaris Integration Example

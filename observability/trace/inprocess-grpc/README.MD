@@ -1,8 +1,9 @@
 ---
-title: Tracing - In-Process Service (gRPC Exporter)
+title: In-Process Service (gRPC Exporter)
 slug: /examples/observability/trace/inprocess-grpc
 keywords: [trace, inprocess, grpc, goframe, otlp-grpc]
 description: An example demonstrating distributed tracing in in-process services using GoFrame with gRPC-based OpenTelemetry exporter
+hide_title: true
 ---
 
 # Tracing - In-Process Service (gRPC Exporter)

@@ -5,7 +5,7 @@ keywords: [config, consul, goframe]
 description: Example demonstrating Consul configuration center integration with GoFrame
 ---
 
-# Consul Configuration Center Example
+## Consul Configuration Center Example
 
 ## Description
 

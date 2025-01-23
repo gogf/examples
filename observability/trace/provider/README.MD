@@ -1,5 +1,5 @@
 ---
-title: OpenTelemetry Provider Examples
+title: Tracing - OpenTelemetry Provider Examples
 slug: /examples/observability/trace/provider
 keywords: [trace, provider, grpc, http, goframe]
 description: Examples demonstrating different OpenTelemetry trace provider configurations in GoFrame

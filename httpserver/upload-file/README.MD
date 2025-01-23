@@ -1,5 +1,5 @@
 ---
-title: HTTP Server File Upload Example
+title: HTTP Server - File Upload Example
 slug: /examples/httpserver/upload-file
 keywords: [http, server, file, upload, goframe]
 description: A comprehensive example demonstrating how to handle file uploads in a HTTP server using GoFrame framework

@@ -5,7 +5,7 @@ keywords: [config, nacos, goframe]
 description: Example demonstrating Nacos configuration center integration with GoFrame
 ---
 
-# Nacos Configuration Center Example
+## Nacos Configuration Center Example
 
 ## Description
 

@@ -1,5 +1,5 @@
 ---
-title: HTTP Server Proxy
+title: HTTP Server - Proxy
 slug: /examples/httpserver/proxy
 keywords: [http, server, proxy, reverse, goframe]
 description: A comprehensive example demonstrating how to implement a reverse proxy server using GoFrame framework

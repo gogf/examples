@@ -1,5 +1,5 @@
 ---
-title: Trace - gRPC with Database Example
+title: Tracing - gRPC with Database Example
 slug: /examples/observability/trace/grpc-with-db
 keywords: [trace, grpc, database, opentelemetry, goframe]
 description: An example demonstrating distributed tracing in gRPC services with database operations using GoFrame

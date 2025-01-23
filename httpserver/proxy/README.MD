@@ -8,7 +8,6 @@ hide_title: true
 
 # HTTP Server Proxy
 
-Code Source: https://github.com/gogf/examples/tree/master/websocket
 
 ## Description
 

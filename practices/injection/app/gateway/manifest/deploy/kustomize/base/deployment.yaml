@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-template
+  labels:
+    app: api-template
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-template
+  template:
+    metadata:
+      labels:
+        app: api-template
+    spec:
+      volumes:
+        - name: api-template-configmap
+          configMap:
+            name: api-template-configmap
+      containers:
+        - name : main
+          image: api-template
+          imagePullPolicy: Always
+          command:
+            - /app/main
+            - server
+          volumeMounts:
+            - name: api-template-configmap
+              mountPath: "/app/config"
+

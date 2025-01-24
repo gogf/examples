@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-template
+spec:
+  template:
+    spec:
+      containers:
+        - name : main
+          image: loads/api-template:develop

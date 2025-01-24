@@ -10,7 +10,7 @@ hide_title: true
 
 ## Description
 
-This example demonstrates how to implement distributed tracing in an HTTP service that interacts with a database using GoFrame. It shows how to:
+This example demonstrates how to implement distributed tracing in an HTTP service that interacts with a database using `GoFrame`. It shows how to:
 - Configure tracing in HTTP services
 - Trace database operations
 - Propagate trace context
@@ -27,7 +27,7 @@ This example demonstrates how to implement distributed tracing in an HTTP servic
 
 ## Structure
 
-```
+```text
 .
 ├── client/          # Client example
 │   └── client.go    # Client with tracing
@@ -59,7 +59,7 @@ The example showcases the following features:
 
 ## Prerequisites
 
-1. Running MySQL instance:
+1. Running `MySQL` instance:
    ```bash
    docker run -d --name mysql \
    -p 3306:3306 \
@@ -74,14 +74,14 @@ The example showcases the following features:
    docker exec -i mysql mysql -uroot -p12345678 test < sql.sql
    ```
 
-3. Running Redis instance:
+3. Running `Redis` instance:
    ```bash
    docker run -d --name redis \
    -p 6379:6379 \
    redis:6.0
    ```
 
-4. Running Jaeger instance:
+4. Running `Jaeger` instance:
    ```bash
    docker run --rm --name jaeger \
    -e COLLECTOR_ZIPKIN_HOST_PORT=:9411 \
@@ -135,28 +135,28 @@ redis:
    ```
 
 3. View traces:
-   Open http://localhost:16686 in your browser to view traces in Jaeger UI.
+   Open http://localhost:16686 in your browser to view traces in `Jaeger` UI.
 
 ## API Endpoints
 
 The server provides the following HTTP endpoints:
 
 1. Insert User
-   ```
+   ```text
    POST /insert
    Request: {"Name": "string"}
    Response: {"ID": number}
    ```
 
 2. Query User
-   ```
+   ```text
    GET /query
    Request: {"ID": number}
    Response: {"User": object}
    ```
 
 3. Delete User
-   ```
+   ```text
    DELETE /delete
    Request: {"Id": number}
    Response: {}
@@ -173,17 +173,17 @@ The example demonstrates:
 ## Troubleshooting
 
 1. Database Connection Issues:
-   - Ensure MySQL is running: `docker ps | grep mysql`
-   - Check MySQL connection: `docker exec -it mysql mysql -uroot -p12345678 -e "SELECT 1"`
+   - Ensure `MySQL` is running: `docker ps | grep mysql`
+   - Check `MySQL` connection: `docker exec -it mysql mysql -uroot -p12345678 -e "SELECT 1"`
    - Verify database schema: `docker exec -it mysql mysql -uroot -p12345678 test -e "DESC user"`
 
 2. Redis Connection Issues:
-   - Ensure Redis is running: `docker ps | grep redis`
-   - Test Redis connection: `docker exec -it redis redis-cli ping`
+   - Ensure `Redis` is running: `docker ps | grep redis`
+   - Test `Redis` connection: `docker exec -it redis redis-cli ping`
 
 3. Tracing Issues:
-   - Verify Jaeger is running: `docker ps | grep jaeger`
-   - Check Jaeger UI accessibility: http://localhost:16686
+   - Verify `Jaeger` is running: `docker ps | grep jaeger`
+   - Check `Jaeger` UI accessibility: http://localhost:16686
    - Ensure trace endpoint is correct in configuration
 
 4. HTTP Issues:

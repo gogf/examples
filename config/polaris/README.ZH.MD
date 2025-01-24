@@ -7,15 +7,15 @@ hide_title: true
 sidebar_position: 1
 ---
 
-# Polaris 配置中心示例
+# `Polaris` 配置中心示例
 
 ## 介绍
 
-本示例展示了如何在 GoFrame 应用程序中通过配置管理组件集成 Polaris 配置中心。
+本示例展示了如何在 `GoFrame` 应用程序中通过配置管理组件集成 `Polaris` 配置中心。
 
 ## 目录结构
 
-```
+```text
 .
 ├── boot/           # 启动配置
 │   └── boot.go     # Polaris 客户端初始化
@@ -34,7 +34,7 @@ sidebar_position: 1
 
 ## 使用说明
 
-1. 启动 Polaris：
+1. 启动 `Polaris`：
    ```bash
    docker run -d --name polaris \
       -p 8090:8090 -p 8091:8091 -p 8093:8093 -p 9090:9090 -p 9091:9091 \

@@ -10,7 +10,7 @@ hide_title: true
 
 ## Description
 
-This example demonstrates how to collect and monitor HTTP client metrics in GoFrame using OpenTelemetry and Prometheus integration. It shows how to:
+This example demonstrates how to collect and monitor HTTP client metrics in `GoFrame` using `OpenTelemetry` and `Prometheus` integration. It shows how to:
 - Monitor HTTP client requests
 - Track request durations
 - Collect response status codes
@@ -18,9 +18,11 @@ This example demonstrates how to collect and monitor HTTP client metrics in GoFr
 
 ## Structure
 
+```text
 - `go.mod`: The Go module file for dependency management
 - `go.sum`: The Go module checksums file
 - `main.go`: The main application demonstrating HTTP client metrics
+```
 
 ## Features
 
@@ -66,7 +68,7 @@ The example showcases the following metrics:
    ```
 
 3. Example metrics output:
-   ```
+   ```text
    # HELP goframe_http_client_request_duration_seconds Duration of HTTP requests
    goframe_http_client_request_duration_seconds_bucket{method="GET",status="200",url="https://goframe.org",le="0.1"} 1
    

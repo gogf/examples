@@ -10,7 +10,7 @@ hide_title: true
 
 ## Description
 
-This example demonstrates how to directly integrate Prometheus metrics in GoFrame without using OpenTelemetry. It shows how to:
+This example demonstrates how to directly integrate `Prometheus` metrics in `GoFrame` without using `OpenTelemetry`. It shows how to:
 - Create Prometheus metrics directly
 - Register metrics with Prometheus registry
 - Expose metrics via HTTP endpoint
@@ -18,9 +18,11 @@ This example demonstrates how to directly integrate Prometheus metrics in GoFram
 
 ## Structure
 
+```text
 - `go.mod`: The Go module file for dependency management
 - `go.sum`: The Go module checksums file
 - `prometheus.go`: The main application demonstrating direct Prometheus integration
+```
 
 ## Features
 
@@ -63,7 +65,7 @@ The example showcases the following features:
    ```
 
 3. Example metrics output:
-   ```
+   ```text
    # HELP demo_counter A demo counter.
    # TYPE demo_counter counter
    demo_counter 1

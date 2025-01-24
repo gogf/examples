@@ -6,18 +6,18 @@ description: gRPC load balancing in GoFrame
 hide_title: true
 ---
 
-# gRPC - Load Balancing
+# `gRPC` - Load Balancing
 
 ## Description
 
-This example demonstrates how to implement gRPC load balancing in GoFrame applications. It shows how to:
-- Configure gRPC load balancers
+This example demonstrates how to implement `gRPC` load balancing in `GoFrame` applications. It shows how to:
+- Configure `gRPC` load balancers
 - Implement different balancing strategies
 - Build resilient distributed systems
 
 ## Structure
 
-```
+```text
 .
 ├── client/         # Client example
 │   └── client.go   # Client implementation with load balancing
@@ -47,7 +47,7 @@ The example showcases the following features:
    - Connection management
 
 3. Protocol Support
-   - gRPC services
+   - `gRPC` services
    - Protocol buffer messages
    - Custom metadata handling
    - Stream processing
@@ -98,7 +98,7 @@ The example showcases the following features:
 # Implementation Details
 
 The example demonstrates:
-1. Load balancer configuration
+1. Load balancer configuration with `gRPC`
 2. Service registration process
 3. Connection management
 4. Load balancing strategies

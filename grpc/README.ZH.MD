@@ -5,11 +5,11 @@ hide_title: true
 sidebar_position: 0
 ---
 
-# gRPC 使用示例
+# `gRPC` 使用示例
 
 ## 介绍
 
-本分类包含了一些 GoFrame 框架中 gRPC 相关的示例代码。
+本分类包含了一些 `GoFrame` 框架中 `gRPC` 相关的示例代码。
 
 ## 注意事项
 

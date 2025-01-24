@@ -7,16 +7,16 @@ hide_title: true
 sidebar_position: 9
 ---
 
-# Kubernetes ConfigMap 配置示例
+# `Kubernetes ConfigMap` 配置示例
 
 ## 介绍
 
-本示例展示了如何在 GoFrame 应用程序中通过配置管理组件集成 Kubernetes ConfigMap。
+本示例展示了如何在 `GoFrame` 应用程序中通过配置管理组件集成 `Kubernetes ConfigMap`。
 
 
 ## 目录结构
 
-```
+```text
 .
 ├── boot_in_pod/     # Pod内部署的启动配置
 │   └── boot.go      # Pod内客户端初始化

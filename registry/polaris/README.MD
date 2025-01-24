@@ -6,19 +6,19 @@ description: Polaris service registry integration in GoFrame
 hide_title: true
 ---
 
-# Registry - Polaris Integration
+# Registry - `Polaris` Integration
 
 ## Description
 
-This example demonstrates how to integrate Polaris service registry with GoFrame applications. It shows how to:
-- Register services with Polaris
-- Discover services using Polaris
+This example demonstrates how to integrate `Polaris` service registry with `GoFrame` applications. It shows how to:
+- Register services with `Polaris`
+- Discover services using `Polaris`
 - Implement service health checks
 - Build distributed systems
 
 ## Structure
 
-```
+```text
 .
 ├── client/           # Client example
 │   └── client.go     # Client implementation with Polaris discovery
@@ -46,7 +46,7 @@ The example showcases the following features:
    - Fault tolerance
 
 3. Protocol Support
-   - HTTP services
+   - `HTTP` services
    - Custom protocols
    - Protocol extension
 
@@ -60,7 +60,7 @@ The example showcases the following features:
 
 ## Prerequisites
 
-1. Running Polaris server:
+1. Running `Polaris` server:
    ```bash
    # Using docker
    docker run -d \
@@ -89,25 +89,10 @@ The example showcases the following features:
 ## Implementation Details
 
 The example demonstrates:
-1. Polaris client configuration
+1. `Polaris` client configuration
 2. Service registration process
 3. Service discovery mechanism
 4. Health check implementation
 5. Load balancing strategies
 6. Circuit breaker configuration
 7. Rate limiting setup
-
-## Notes
-
-- Polaris server must be running
-- Default Polaris address: 127.0.0.1:8091
-- Services are registered automatically
-- Health checks are configured by default
-- Load balancing is handled automatically
-- Consider security in production
-- Handle failover scenarios
-- Monitor service health
-- Implement proper error handling
-- Configure rate limits
-- Set up circuit breakers
-- Manage service routing

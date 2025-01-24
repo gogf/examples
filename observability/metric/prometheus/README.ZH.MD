@@ -11,7 +11,7 @@ sidebar_position: 1
 
 ## 简介
 
-本示例演示了如何在GoFrame中直接集成Prometheus指标，而不使用OpenTelemetry。主要展示：
+本示例演示了如何在 `GoFrame` 中直接集成 `Prometheus` 指标，而不使用 `OpenTelemetry`。主要展示：
 - 直接创建Prometheus指标
 - 向Prometheus注册表注册指标
 - 通过HTTP端点暴露指标
@@ -19,7 +19,7 @@ sidebar_position: 1
 
 ## 目录结构
 
-```
+```text
 .
 ├── go.mod            # Go模块文件
 ├── go.sum            # Go模块校验和
@@ -46,9 +46,9 @@ sidebar_position: 1
 
 ## 环境要求
 
-- Go 1.22 或更高版本
-- GoFrame框架
-- Prometheus客户端库
+- `Go` 1.22 或更高版本
+- `GoFrame` 框架
+- `Prometheus` 客户端库
 
 ## 使用说明
 
@@ -67,7 +67,7 @@ sidebar_position: 1
    ```
 
 3. 指标输出示例：
-   ```
+   ```text
    # HELP demo_counter 这是一个演示计数器
    # TYPE demo_counter counter
    demo_counter 1

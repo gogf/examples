@@ -10,8 +10,8 @@ hide_title: true
 
 ## Description
 
-This example demonstrates how to implement HTTP service load balancing with GoFrame. It shows:
-- Service registration using etcd
+This example demonstrates how to implement HTTP service load balancing with `GoFrame`. It shows:
+- Service registration using `etcd`
 - Client-side load balancing
 - Round-robin load balancing strategy
 - HTTP service communication
@@ -24,7 +24,7 @@ This example demonstrates how to implement HTTP service load balancing with GoFr
 
 ## Structure
 
-```
+```text
 .
 ├── client/           # HTTP client implementation with load balancing
 │   └── client.go     # Client code with round-robin balancer
@@ -36,7 +36,7 @@ This example demonstrates how to implement HTTP service load balancing with GoFr
 
 ## Prerequisites
 
-1. Running etcd server:
+1. Running `etcd` server:
    ```bash
    # Using docker
    docker run -d --name etcd-server \
@@ -72,20 +72,20 @@ This example demonstrates how to implement HTTP service load balancing with GoFr
 ## Implementation Details
 
 1. Server Implementation (`server/server.go`):
-   - HTTP server setup using GoFrame
-   - Service registration with etcd
+   - HTTP server setup using `GoFrame`
+   - Service registration with `etcd`
    - Simple HTTP endpoint that returns "Hello world"
    - Automatic service discovery registration
 
 2. Client Implementation (`client/client.go`):
-   - Service discovery using etcd
+   - Service discovery using `etcd`
    - Round-robin load balancing strategy
    - Multiple request demonstration
    - Automatic service discovery and load balancing
 
 ## Notes
 
-- The example uses etcd for service registration and discovery
+- The example uses `etcd` for service registration and discovery
 - Round-robin load balancing is implemented for demonstration
 - The client automatically handles service discovery and load balancing
 - Multiple server instances can be started to demonstrate load distribution

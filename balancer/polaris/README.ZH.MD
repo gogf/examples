@@ -10,15 +10,15 @@ hide_title: true
 
 ## 介绍
 
-本示例展示了如何在 GoFrame 中使用 Polaris 实现负载均衡。主要演示：
-- Polaris 负载均衡集成
+本示例展示了如何在 `GoFrame` 中使用 `Polaris` 实现负载均衡。主要演示：
+- `Polaris` 负载均衡集成
 - 服务发现机制
 - 动态路由配置
 - 故障转移实现
 
 ## 目录结构
 
-```
+```text
 .
 ├── server/         # HTTP 服务器
 ├── client/         # HTTP 客户端
@@ -35,7 +35,7 @@ hide_title: true
 
 ## 配置说明
 
-1. Polaris 配置示例：
+1. `Polaris` 配置示例：
    ```yaml
    balancer:
      polaris:
@@ -58,7 +58,7 @@ hide_title: true
 
 ## 使用说明
 
-1. 启动 Polaris：
+1. 启动 `Polaris`：
    ```bash
    docker run -d --name polaris \
       -p 8090:8090 -p 8091:8091 -p 8093:8093 -p 9090:9090 -p 9091:9091 \
@@ -69,5 +69,3 @@ hide_title: true
    ```bash
    go run main.go
    ```
-
-

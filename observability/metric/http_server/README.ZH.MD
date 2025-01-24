@@ -11,7 +11,7 @@ sidebar_position: 1
 
 ## 简介
 
-本示例演示了如何在GoFrame中使用OpenTelemetry和Prometheus集成来收集和监控HTTP服务器指标。主要展示：
+本示例演示了如何在 `GoFrame` 中使用 `OpenTelemetry` 和 `Prometheus` 集成来收集和监控HTTP服务器指标。主要展示：
 - 监控HTTP服务器请求
 - 跟踪请求延迟
 - 收集错误率
@@ -19,7 +19,7 @@ sidebar_position: 1
 
 ## 目录结构
 
-```
+```text
 .
 ├── go.mod            # Go模块文件
 ├── go.sum            # Go模块校验和
@@ -56,9 +56,9 @@ sidebar_position: 1
 
 ## 环境要求
 
-- Go 1.22 或更高版本
-- GoFrame框架
-- GoFrame OpenTelemetry Metric扩展
+- `Go` 1.22 或更高版本
+- `GoFrame` 框架
+- `GoFrame OpenTelemetry Metric` 扩展
 
 ## 使用说明
 
@@ -89,7 +89,7 @@ sidebar_position: 1
    ```
 
 4. 指标输出示例：
-   ```
+   ```text
    # HELP goframe_http_server_requests_total HTTP请求总数
    goframe_http_server_requests_total{method="GET",path="/",status="200"} 1
    

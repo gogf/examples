@@ -11,7 +11,7 @@ sidebar_position: 1
 
 ## 简介
 
-本示例演示了如何在GoFrame中使用OpenTelemetry和Prometheus集成来配置和管理指标计量器级别的属性。主要展示：
+本示例演示了如何在 `GoFrame` 中使用 `OpenTelemetry` 和 `Prometheus` 集成来配置和管理指标计量器级别的属性。主要展示：
 - 配置计量器级别属性
 - 在所有指标中应用属性
 - 组合计量器和指标属性
@@ -19,7 +19,7 @@ sidebar_position: 1
 
 ## 目录结构
 
-```
+```text
 .
 ├── go.mod            # Go模块文件
 ├── go.sum            # Go模块校验和
@@ -47,9 +47,9 @@ sidebar_position: 1
 
 ## 环境要求
 
-- Go 1.22 或更高版本
-- GoFrame框架
-- GoFrame OpenTelemetry Metric扩展
+- `Go` 1.22 或更高版本
+- `GoFrame` 框架
+- `GoFrame OpenTelemetry Metric` 扩展
 
 ## 使用说明
 
@@ -68,7 +68,7 @@ sidebar_position: 1
    ```
 
 3. 指标输出示例：
-   ```
+   ```text
    # HELP goframe_metric_demo_counter 这是Counter用法的简单演示
    goframe_metric_demo_counter{const_attr_1="1",meter_label_1="1",meter_label_2="2"} 11
    

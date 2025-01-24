@@ -11,7 +11,7 @@ sidebar_position: 1
 
 ## 简介
 
-本示例演示了如何在GoFrame中实现HTTP服务的分布式跟踪。主要展示：
+本示例演示了如何在 `GoFrame` 中实现HTTP服务的分布式跟踪。主要展示：
 - 配置HTTP服务的跟踪
 - 跟踪HTTP请求和响应
 - 传播跟踪上下文
@@ -19,13 +19,13 @@ sidebar_position: 1
 
 ## 环境要求
 
-- Go 1.22 或更高版本
-- GoFrame框架
-- GoFrame OpenTelemetry跟踪
+- `Go` 1.22 或更高版本
+- `GoFrame` 框架
+- `GoFrame OpenTelemetry` 跟踪
 
 ## 目录结构
 
-```
+```text
 .
 ├── client/          # 客户端示例
 │   └── client.go    # 带跟踪的客户端
@@ -38,7 +38,7 @@ sidebar_position: 1
 
 ## 前置条件
 
-1. 运行Jaeger实例：
+1. 运行 `Jaeger` 实例：
    ```bash
    docker run --rm --name jaeger \
    -e COLLECTOR_ZIPKIN_HOST_PORT=:9411 \
@@ -70,14 +70,14 @@ sidebar_position: 1
    ```
 
 3. 查看跟踪：
-   在浏览器中打开 http://localhost:16686 查看Jaeger UI中的跟踪信息。
+   在浏览器中打开 http://localhost:16686 查看 `Jaeger` UI中的跟踪信息。
 
 ## API接口
 
 服务器提供以下HTTP接口：
 
 1. Hello World
-   ```
+   ```text
    GET /hello
    响应: "Hello World"
    ```
@@ -117,4 +117,3 @@ sidebar_position: 1
    // 发送HTTP请求
    response, err := g.Client().Get(ctx, "http://127.0.0.1:8199/hello")
    ```
-

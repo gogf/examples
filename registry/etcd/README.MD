@@ -6,19 +6,19 @@ description: Etcd service registry integration in GoFrame
 hide_title: true
 ---
 
-# Registry - Etcd Integration
+# Registry - `Etcd` Integration
 
 ## Description
 
-This example demonstrates how to integrate Etcd service registry with GoFrame applications. It shows how to:
-- Register services with Etcd
-- Discover services using Etcd
+This example demonstrates how to integrate `Etcd` service registry with `GoFrame` applications. It shows how to:
+- Register services with `Etcd`
+- Discover services using `Etcd`
 - Implement service health checks
 - Build distributed systems
 
 ## Structure
 
-```
+```text
 .
 ├── grpc/                # gRPC service examples
 │   ├── client/          # gRPC client implementation
@@ -50,8 +50,8 @@ The example showcases the following features:
    - Watch mechanism
 
 3. Protocol Support
-   - HTTP services
-   - gRPC services
+   - `HTTP` services
+   - `gRPC` services
    - Custom protocols
 
 ## Requirements
@@ -64,7 +64,7 @@ The example showcases the following features:
 
 ## Prerequisites
 
-1. Running etcd server:
+1. Running `etcd` server:
    ```bash
    # Using docker
    docker run -d --name etcd -p 2379:2379 -e ALLOW_NONE_AUTHENTICATION=yes bitnami/etcd:3.4.24
@@ -72,29 +72,29 @@ The example showcases the following features:
 
 ## Usage
 
-### HTTP Example
+### `HTTP` Example
 
-1. Start the HTTP server:
+1. Start the `HTTP` server:
    ```bash
    cd http/server
    go run server.go
    ```
 
-2. Run the HTTP client:
+2. Run the `HTTP` client:
    ```bash
    cd http/client
    go run client.go
    ```
 
-### gRPC Example
+### `gRPC` Example
 
-1. Start the gRPC server:
+1. Start the `gRPC` server:
    ```bash
    cd grpc/server
    go run server.go
    ```
 
-2. Run the gRPC client:
+2. Run the `gRPC` client:
    ```bash
    cd grpc/client
    go run client.go

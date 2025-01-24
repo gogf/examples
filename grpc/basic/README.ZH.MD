@@ -7,17 +7,17 @@ hide_title: true
 sidebar_position: 0
 ---
 
-# gRPC - 基础示例
+# `gRPC` - 基础示例
 
 ## 介绍
 
-本示例展示了在 GoFrame 应用程序中使用 gRPC 的基础示例。
+本示例展示了在 `GoFrame` 应用程序中使用 `gRPC` 的基础示例。
 
 
 
 ## 目录结构
 
-```
+```text
 .
 ├── client/         # 客户端示例
 │   └── client.go   # 客户端实现

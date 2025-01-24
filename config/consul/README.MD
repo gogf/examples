@@ -6,14 +6,14 @@ description: Consul configuration center integration with GoFrame
 hide_title: true
 ---
 
-## Consul Configuration Center Example
+## `Consul` Configuration Center Example
 
 ## Description
 
-This directory contains an example demonstrating how to integrate Consul configuration center with GoFrame applications. It shows:
+This directory contains an example demonstrating how to integrate `Consul` configuration center with `GoFrame` applications. It shows:
 
-1. Consul Client Configuration
-   - Consul client setup and initialization
+1. `Consul` Client Configuration
+   - `Consul` client setup and initialization
    - Configuration adapter implementation
    - Error handling and logging
 
@@ -24,7 +24,7 @@ This directory contains an example demonstrating how to integrate Consul configu
 
 ## Directory Structure
 
-```
+```text
 .
 ├── boot/           # Bootstrap configuration
 │   └── boot.go     # Consul client initialization
@@ -44,7 +44,7 @@ This directory contains an example demonstrating how to integrate Consul configu
 
 The example showcases the following features:
 
-1. Consul Integration
+1. `Consul` Integration
    - Client configuration
    - Connection management
    - Key-Value store access
@@ -63,7 +63,7 @@ The example showcases the following features:
 
 ## Configuration
 
-### Consul Server
+### `Consul` Server
 1. Server Configuration:
    - Default port: 8500
    - Default datacenter: dc1
@@ -76,7 +76,7 @@ The example showcases the following features:
 
 ### Client Configuration
 1. Basic Settings:
-   - Address: Consul server address
+   - Address: `Consul` server address
    - Scheme: HTTP/HTTPS
    - Datacenter: Configuration datacenter
    - Token: Access token
@@ -89,7 +89,7 @@ The example showcases the following features:
 
 ## Usage
 
-1. Start Consul Server:
+1. Start `Consul` Server:
    ```bash
    # Start Consul server using Docker
    docker run -d --name consul \
@@ -97,9 +97,9 @@ The example showcases the following features:
       hashicorp/consul
    ```
 
-2. Configure Consul:
-   - Access Consul UI at http://localhost:8500
-   - Create key-value pairs under your config path
+2. Configure `Consul`:
+   - Access `Consul` UI at http://localhost:8500
+   - Create Key-Value pairs
    - Set up ACL tokens if needed
 
 3. Run Example:

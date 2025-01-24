@@ -11,7 +11,7 @@ sidebar_position: 1
 
 ## 简介
 
-本示例演示了如何在GoFrame中实现gRPC服务与数据库交互的分布式跟踪。主要展示：
+本示例演示了如何在 `GoFrame` 中实现gRPC服务与数据库交互的分布式跟踪。主要展示：
 - 配置gRPC服务的跟踪
 - 跟踪数据库操作
 - 传播跟踪上下文
@@ -19,21 +19,21 @@ sidebar_position: 1
 
 ## 环境要求
 
-- Go 1.22 或更高版本
-- GoFrame框架
-- GoFrame gRPCx
-- GoFrame MySQL驱动
-- GoFrame Etcd注册中心
-- GoFrame OpenTelemetry跟踪
+- `Go` 1.22 或更高版本
+- `GoFrame` 框架
+- `GoFrame gRPCx`
+- `GoFrame MySQL` 驱动
+- `GoFrame Etcd` 注册中心
+- `GoFrame OpenTelemetry` 跟踪
 
 ## 目录结构
 
-```
+```text
 .
 ├── client/          # 客户端示例
 │   └── client.go    # 带跟踪的客户端
 ├── controller/      # 服务控制器
-├── protobuf/        # 协议缓冲定义
+├── protobuf/        # 协议定义
 │   └── user/        # 用户服务proto文件
 ├── server/          # 服务端示例
 │   ├── server.go    # 带跟踪的服务端
@@ -46,7 +46,7 @@ sidebar_position: 1
 
 ## 前置条件
 
-1. 运行MySQL实例：
+1. 运行 `MySQL` 实例：
    ```bash
    docker run -d --name mysql \
    -p 3306:3306 \
@@ -61,14 +61,14 @@ sidebar_position: 1
    docker exec -i mysql mysql -uroot -p12345678 test < sql.sql
    ```
 
-3. 运行Redis实例：
+3. 运行 `Redis` 实例：
    ```bash
    docker run -d --name redis \
    -p 6379:6379 \
    redis:6.0
    ```
 
-4. 运行Jaeger实例：
+4. 运行 `Jaeger` 实例：
    ```bash
    docker run --rm --name jaeger \
    -e COLLECTOR_ZIPKIN_HOST_PORT=:9411 \
@@ -85,7 +85,7 @@ sidebar_position: 1
    jaegertracing/all-in-one:1.55
    ```
 
-5. 安装Protocol buffer编译器：
+5. 安装 `Protocol buffer` 编译器：
    ```bash
    # macOS
    brew install protobuf
@@ -97,7 +97,7 @@ sidebar_position: 1
 
 ## 配置说明
 
-服务端配置在`server/config.yaml`中定义：
+服务端配置在 `server/config.yaml` 中定义：
 
 ```yaml
 grpc:
@@ -126,7 +126,7 @@ redis:
 
 ## 使用说明
 
-1. 生成协议缓冲代码：
+1. 生成协议代码：
    ```bash
    cd protobuf
    protoc --go_out=paths=source_relative:. --go-grpc_out=paths=source_relative:. ./user/*.proto
@@ -145,7 +145,7 @@ redis:
    ```
 
 4. 查看跟踪：
-   在浏览器中打开 http://localhost:16686 查看Jaeger UI中的跟踪信息。
+   在浏览器中打开 http://localhost:16686 查看 `Jaeger` UI中的跟踪信息。
 
 ## 实现说明
 

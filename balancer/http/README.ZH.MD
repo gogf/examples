@@ -10,14 +10,14 @@ hide_title: true
 
 ## 介绍
 
-本示例展示了如何在 GoFrame 应用程序中实现 HTTP 服务的负载均衡。主要演示：
-- 配置负载均衡器
-- 注册和发现服务
-- 请求路由和分发
+本示例展示了如何在 `GoFrame` 应用程序中实现 HTTP 服务的负载均衡。主要演示：
+- 使用 `etcd` 配置负载均衡器
+- 服务注册和服务发现
+- 请求路由和负载分发
 
 ## 目录结构
 
-```
+```text
 .
 ├── server/         # HTTP 服务器
 ├── client/         # HTTP 客户端
@@ -42,4 +42,3 @@ hide_title: true
    ```bash
    go run client/main.go
    ```
-

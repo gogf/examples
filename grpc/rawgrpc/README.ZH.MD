@@ -7,17 +7,17 @@ hide_title: true
 sidebar_position: 9
 ---
 
-# gRPC - 原生示例
+# `gRPC` - 原生示例
 
 ## 介绍
 
-本示例展示了如何在 GoFrame 中实现原生 gRPC 服务，不使用额外的抽象层。
+本示例展示了如何在 `GoFrame` 中实现原生 `gRPC` 服务，不使用额外的抽象层。
 
 
 
 ## 目录结构
 
-```
+```text
 .
 ├── client/           # 客户端示例
 │   └── client.go     # 原生 gRPC 客户端实现
@@ -28,6 +28,8 @@ sidebar_position: 9
 ├── go.mod            # Go 模块文件
 └── go.sum            # Go 模块校验和
 ```
+
+
 
 ## 环境要求
 
@@ -49,3 +51,4 @@ sidebar_position: 9
    cd client
    go run client.go
    ```
+

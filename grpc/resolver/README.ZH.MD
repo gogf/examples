@@ -7,16 +7,16 @@ hide_title: true
 sidebar_position: 1
 ---
 
-# gRPC - 服务发现
+# `gRPC` - 服务发现
 
 ## 介绍
 
-本示例展示了如何在 GoFrame 的 gRPC 服务中使用 etcd 进行服务发现。
+本示例展示了如何在 `GoFrame` 的 `gRPC` 服务中使用 `etcd` 进行服务发现。
 
 
 ## 目录结构
 
-```
+```text
 .
 ├── client/              # 客户端示例
 │   └── client.go        # 带服务发现的客户端
@@ -30,6 +30,8 @@ sidebar_position: 1
 └── go.sum               # Go 模块校验和
 ```
 
+
+
 ## 环境要求
 
 - [Go](https://golang.org/dl/) 1.22 或更高版本
@@ -40,7 +42,7 @@ sidebar_position: 1
 
 ## 使用说明
 
-1. 启动 etcd：
+1. 启动 `etcd`：
    ```bash
    docker run -d --name etcd -p 2379:2379 -e ALLOW_NONE_AUTHENTICATION=yes bitnami/etcd:3.4.24
    ```
@@ -56,5 +58,4 @@ sidebar_position: 1
    cd client
    go run client.go
    ```
-
 

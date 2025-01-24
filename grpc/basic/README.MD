@@ -7,19 +7,19 @@ hide_title: true
 sidebar_position: 0
 ---
 
-# gRPC - Basic Usage
+# `gRPC` - Basic Usage
 
 ## Description
 
-This example demonstrates the basic usage of gRPC in GoFrame applications. It shows how to:
-- Create gRPC servers and clients
+This example demonstrates the basic usage of `gRPC` in `GoFrame` applications. It shows how to:
+- Create `gRPC` servers and clients
 - Define and use protocol buffers
 - Implement service handlers
-- Make RPC calls
+- Make `RPC` calls
 
 ## Structure
 
-```
+```text
 .
 ├── client/         # Client example
 │   └── client.go   # Client implementation
@@ -44,12 +44,12 @@ The example showcases the following features:
 
 2. Client Usage
    - Connection management
-   - RPC calls
+   - `RPC` calls
    - Error handling
    - Context usage
 
 3. Protocol Support
-   - gRPC services
+   - `gRPC` services
    - Protocol buffer messages
    - Custom metadata
    - Stream processing
@@ -96,5 +96,5 @@ The example showcases the following features:
 ## Implementation Details
 
 The example demonstrates:
-1. Service definition
-2. Client/server implementation
+1. Service definition using `gRPC` and protocol buffers
+2. Client/server implementation with `GoFrame` integration

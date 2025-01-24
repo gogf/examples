@@ -7,19 +7,19 @@ hide_title: true
 sidebar_position: 1
 ---
 
-# 注册中心 - Consul集成
+# 注册中心 - `Consul` 集成
 
 ## 简介
 
-本示例演示了如何在GoFrame应用程序中集成Consul服务注册中心。主要展示：
-- 使用Consul注册服务
-- 使用Consul发现服务
+本示例演示了如何在 `GoFrame` 应用程序中集成 `Consul` 服务注册中心。主要展示：
+- 使用 `Consul` 注册服务
+- 使用 `Consul` 发现服务
 - 实现服务健康检查
 - 构建分布式系统
 
 ## 目录结构
 
-```
+```text
 .
 ├── docker-compose/      # 运行Consul的Docker配置文件
 ├── grpc/                # gRPC服务示例
@@ -39,19 +39,19 @@ sidebar_position: 1
 
 ## 环境要求
 
-- Go 1.22 或更高版本
-- Docker (用于运行Consul)
-- Consul
+- `Go` 1.22 或更高版本
+- `Docker` (用于运行 `Consul`)
+- `Consul`
 
 ## 使用说明
 
-1. 启动Consul服务：
+1. 启动 `Consul` 服务：
    ```bash
    cd docker-compose
    docker-compose up -d
    ```
 
-2. HTTP服务示例：
+2. `HTTP` 服务示例：
    ```bash
    # 启动HTTP服务器
    cd http/server
@@ -62,7 +62,7 @@ sidebar_position: 1
    go run client.go
    ```
 
-3. gRPC服务示例：
+3. `gRPC` 服务示例：
    ```bash
    # 启动gRPC服务器
    cd grpc/server
@@ -75,18 +75,18 @@ sidebar_position: 1
 
 ## 实现说明
 
-1. HTTP服务实现
-   - 服务器使用`g.Server`创建HTTP服务
-   - 通过`gsvc.SetRegistry`设置Consul注册中心
-   - 客户端使用`g.Client()`自动发现并访问服务
+1. `HTTP` 服务实现
+   - 服务器使用 `g.Server` 创建 `HTTP` 服务
+   - 通过 `gsvc.SetRegistry` 设置 `Consul` 注册中心
+   - 客户端使用 `g.Client()` 自动发现并访问服务
 
-2. gRPC服务实现
-   - 服务器使用`grpcx.Server`创建gRPC服务
-   - 通过`grpcx.Resolver.Register`设置Consul注册中心
-   - 客户端使用`grpcx.Client`自动发现并访问gRPC服务
+2. `gRPC` 服务实现
+   - 服务器使用 `grpc.Server` 创建 `gRPC` 服务
+   - 通过 `gsvc.SetRegistry` 设置 `Consul` 注册中心
+   - 客户端使用 `grpc.Client` 自动发现并访问服务
 
 ## 注意事项
 
-1. 确保Consul服务正常运行在`127.0.0.1:8500`
+1. 确保 `Consul` 服务正常运行在 `127.0.0.1:8500`
 2. 服务注册时会自动添加健康检查
 3. 客户端会自动使用服务发现进行负载均衡

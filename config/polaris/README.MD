@@ -6,14 +6,14 @@ description: Polaris configuration center integration with GoFrame
 hide_title: true
 ---
 
-# Polaris Configuration Center Example
+# `Polaris` Configuration Center Example
 
 ## Description
 
-This directory contains an example demonstrating how to integrate Polaris configuration center with GoFrame applications. It shows:
+This directory contains an example demonstrating how to integrate `Polaris` configuration center with `GoFrame` applications. It shows:
 
-1. Polaris Client Configuration
-   - Polaris client setup and initialization
+1. `Polaris` Client Configuration
+   - `Polaris` client setup and initialization
    - Configuration adapter implementation
    - Error handling and logging
 
@@ -24,7 +24,7 @@ This directory contains an example demonstrating how to integrate Polaris config
 
 ## Directory Structure
 
-```
+```text
 .
 ├── boot/           # Bootstrap configuration
 │   └── boot.go     # Polaris client initialization
@@ -46,7 +46,7 @@ This directory contains an example demonstrating how to integrate Polaris config
 
 The example showcases the following features:
 
-1. Polaris Integration
+1. `Polaris` Integration
    - Client configuration
    - Server connection management
    - Configuration namespace
@@ -65,11 +65,11 @@ The example showcases the following features:
 
 ## Configuration
 
-### Polaris Server
+### `Polaris` Server
 1. Server Configuration:
    - Default port: 8090
    - Default address: localhost
-   - Default protocol: gRPC
+   - Default protocol: `gRPC`
 
 2. Authentication:
    - Namespace isolation
@@ -92,7 +92,7 @@ The example showcases the following features:
 
 ## Usage
 
-1. Start Polaris Server:
+1. Start `Polaris` Server:
    ```bash
    # Start Polaris server using Docker
    docker run -d --name polaris \
@@ -100,11 +100,10 @@ The example showcases the following features:
       polarismesh/polaris-server
    ```
 
-2. Configure Polaris:
-   - Access Polaris console at http://localhost:8090
-   - Create configuration with specified namespace and group
-   - Add configuration content in YAML format
-   - Publish configuration
+2. Configure `Polaris`:
+   - Access `Polaris` console at http://localhost:8090
+   - Create configuration items
+   - Set up access control
 
 3. Run Example:
    ```bash

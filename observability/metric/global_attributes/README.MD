@@ -10,7 +10,7 @@ hide_title: true
 
 ## Description
 
-This example demonstrates how to work with global metric attributes in GoFrame using OpenTelemetry and Prometheus integration. It shows how to:
+This example demonstrates how to work with global metric attributes in `GoFrame` using `OpenTelemetry` and `Prometheus` integration. It shows how to:
 - Set and manage global attributes
 - Apply global attributes across multiple metrics
 - Configure attribute scope and patterns
@@ -18,9 +18,11 @@ This example demonstrates how to work with global metric attributes in GoFrame u
 
 ## Structure
 
+```text
 - `go.mod`: The Go module file for dependency management
 - `go.sum`: The Go module checksums file
 - `main.go`: The main application demonstrating global metric attributes
+```
 
 ## Features
 
@@ -64,7 +66,7 @@ The example showcases the following features:
    ```
 
 3. Example metrics output:
-   ```
+   ```text
    # HELP goframe_metric_demo_counter This is a simple demo for Counter usage
    goframe_metric_demo_counter{const_attr_1="1",global_attr_1="1"} 11
    

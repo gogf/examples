@@ -10,7 +10,7 @@ hide_title: true
 
 ## Description
 
-This example demonstrates how to work with dynamic metric attributes in GoFrame using OpenTelemetry and Prometheus integration. It shows how to:
+This example demonstrates how to work with dynamic metric attributes in `GoFrame` using `OpenTelemetry` and `Prometheus` integration. It shows how to:
 - Add dynamic attributes to metrics at runtime
 - Combine constant and dynamic attributes
 - Use attributes in both regular and observable metrics
@@ -18,9 +18,11 @@ This example demonstrates how to work with dynamic metric attributes in GoFrame 
 
 ## Structure
 
+```text
 - `go.mod`: The Go module file for dependency management
 - `go.sum`: The Go module checksums file
 - `main.go`: The main application demonstrating dynamic metric attributes
+```
 
 ## Features
 
@@ -64,7 +66,7 @@ The example showcases the following features:
    ```
 
 3. Example metrics output:
-   ```
+   ```text
    # HELP goframe_metric_demo_counter This is a simple demo for Counter usage
    goframe_metric_demo_counter{const_attr_1="1",dynamic_attr_2="2"} 11
    

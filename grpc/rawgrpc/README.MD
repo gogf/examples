@@ -7,19 +7,19 @@ hide_title: true
 sidebar_position: 9
 ---
 
-# gRPC - Raw Implementation
+# `gRPC` - Raw Implementation
 
 ## Description
 
-This example demonstrates how to implement raw gRPC services in GoFrame without additional abstractions. It shows how to:
-- Create raw gRPC servers and clients
+This example demonstrates how to implement raw `gRPC` services in `GoFrame` without additional abstractions. It shows how to:
+- Create raw `gRPC` servers and clients
 - Use protocol buffers directly
 - Implement service handlers
-- Make direct RPC calls
+- Make direct `RPC` calls
 
 ## Structure
 
-```
+```text
 .
 ├── client/           # Client example
 │   └── client.go     # Raw gRPC client implementation
@@ -34,15 +34,15 @@ This example demonstrates how to implement raw gRPC services in GoFrame without 
 ## Features
 
 The example showcases the following features:
-1. Raw gRPC Implementation
+1. Raw `gRPC` Implementation
    - Direct protocol buffer usage
    - Manual service implementation
-   - Basic RPC communication
+   - Basic `RPC` communication
    - Error handling
 
 2. Client Usage
    - Direct connection management
-   - Raw RPC calls
+   - Raw `RPC` calls
    - Basic error handling
    - Connection configuration
 
@@ -94,5 +94,5 @@ The example showcases the following features:
 # Implementation Details
 
 The example demonstrates:
-1. Raw service implementation
+1. Raw `gRPC` service implementation
 2. Direct client/server usage

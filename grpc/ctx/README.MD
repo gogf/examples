@@ -7,19 +7,19 @@ hide_title: true
 sidebar_position: 1
 ---
 
-# gRPC - Context Usage
+# `gRPC` - Context Usage
 
 ## Description
 
-This example demonstrates how to use context and metadata in gRPC with GoFrame. It shows how to:
-- Pass metadata through gRPC context
+This example demonstrates how to use context and metadata in `gRPC` with `GoFrame`. It shows how to:
+- Pass metadata through `gRPC` context
 - Handle context values and deadlines
 - Manage request context
 - Process context metadata
 
 ## Structure
 
-```
+```text
 .
 ├── client/           # Client example
 │   └── client.go     # Client implementation with context
@@ -96,5 +96,5 @@ The example showcases the following features:
 # Implementation Details
 
 The example demonstrates:
-1. Context propagation
-2. Metadata handling
+1. Context propagation in `gRPC`
+2. Metadata handling with `GoFrame`

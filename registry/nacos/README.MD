@@ -6,19 +6,19 @@ description: Nacos service registry integration in GoFrame
 hide_title: true
 ---
 
-# Registry - Nacos Integration
+# Registry - `Nacos` Integration
 
 ## Description
 
-This example demonstrates how to integrate Nacos service registry with GoFrame applications. It shows how to:
-- Register services with Nacos
-- Discover services using Nacos
+This example demonstrates how to integrate `Nacos` service registry with `GoFrame` applications. It shows how to:
+- Register services with `Nacos`
+- Discover services using `Nacos`
 - Implement service health checks
 - Build distributed systems
 
 ## Structure
 
-```
+```text
 .
 ├── docker-compose/     # Docker compose files for running Nacos
 │   ├── standalone/     # Standalone mode configuration
@@ -55,8 +55,8 @@ The example showcases the following features:
    - Namespace isolation
 
 3. Protocol Support
-   - HTTP services
-   - gRPC services
+   - `HTTP` services
+   - `gRPC` services
    - Custom protocols
 
 ## Requirements
@@ -69,7 +69,7 @@ The example showcases the following features:
 
 ## Prerequisites
 
-1. Running Nacos server:
+1. Running `Nacos` server:
    ```bash
    # Using docker-compose
    cd docker-compose
@@ -78,29 +78,29 @@ The example showcases the following features:
 
 ## Usage
 
-### HTTP Example
+### `HTTP` Example
 
-1. Start the HTTP server:
+1. Start the `HTTP` server:
    ```bash
    cd http/server
    go run server.go
    ```
 
-2. Run the HTTP client:
+2. Run the `HTTP` client:
    ```bash
    cd http/client
    go run client.go
    ```
 
-### gRPC Example
+### `gRPC` Example
 
-1. Start the gRPC server:
+1. Start the `gRPC` server:
    ```bash
    cd grpc/server
    go run server.go
    ```
 
-2. Run the gRPC client:
+2. Run the `gRPC` client:
    ```bash
    cd grpc/client
    go run client.go
@@ -109,25 +109,10 @@ The example showcases the following features:
 ## Implementation Details
 
 The example demonstrates:
-1. Nacos client configuration
+1. `Nacos` client configuration
 2. Service registration process
 3. Service discovery mechanism
 4. Health check implementation
 5. Load balancing strategies
 6. Namespace management
-7. Service grouping
-
-## Notes
-
-- Nacos server must be running
-- Default Nacos address: 127.0.0.1:8848
-- Services are registered automatically
-- Health checks are configured by default
-- Load balancing is handled automatically
-- Consider security in production
-- Handle failover scenarios
-- Monitor service health
-- Implement proper error handling
-- Use appropriate namespaces
-- Configure service groups
-- Manage metadata properly
+7. Group configuration

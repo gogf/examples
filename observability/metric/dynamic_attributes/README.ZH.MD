@@ -11,7 +11,7 @@ sidebar_position: 1
 
 ## 简介
 
-本示例演示了如何在GoFrame中使用OpenTelemetry和Prometheus集成来实现动态指标属性。主要展示：
+本示例演示了如何在 `GoFrame` 中使用 `OpenTelemetry` 和 `Prometheus` 集成来实现动态指标属性。主要展示：
 - 在运行时为指标添加动态属性
 - 组合使用常量属性和动态属性
 - 在常规指标和可观察指标中使用属性
@@ -19,7 +19,7 @@ sidebar_position: 1
 
 ## 目录结构
 
-```
+```text
 .
 ├── go.mod            # Go模块文件
 ├── go.sum            # Go模块校验和
@@ -50,9 +50,9 @@ sidebar_position: 1
 
 ## 环境要求
 
-- Go 1.22 或更高版本
-- GoFrame框架
-- GoFrame OpenTelemetry Metric扩展
+- `Go` 1.22 或更高版本
+- `GoFrame` 框架
+- `GoFrame OpenTelemetry Metric` 扩展
 
 ## 使用说明
 
@@ -71,7 +71,7 @@ sidebar_position: 1
    ```
 
 3. 指标输出示例：
-   ```
+   ```text
    # HELP goframe_metric_demo_counter 这是Counter使用的简单演示
    goframe_metric_demo_counter{const_attr_1="1",dynamic_attr_2="2"} 11
    

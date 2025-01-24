@@ -6,16 +6,16 @@ description: Kubernetes ConfigMap configuration integration with GoFrame
 hide_title: true
 ---
 
-# Kubernetes ConfigMap Configuration Example
+# `Kubernetes ConfigMap` Configuration Example
 
 ## Description
 
-This directory contains an example demonstrating how to integrate Kubernetes ConfigMap with GoFrame applications for configuration management. It shows:
+This directory contains an example demonstrating how to integrate `Kubernetes ConfigMap` with `GoFrame` applications for configuration management. It shows:
 
-1. Kubernetes Client Configuration
+1. `Kubernetes` Client Configuration
    - In-Pod configuration setup
    - Out-of-Pod configuration setup
-   - ConfigMap access and management
+   - `ConfigMap` access and management
    - Error handling and logging
 
 2. Configuration Management
@@ -25,7 +25,7 @@ This directory contains an example demonstrating how to integrate Kubernetes Con
 
 ## Directory Structure
 
-```
+```text
 .
 ├── boot_in_pod/     # Bootstrap configuration for in-pod deployment
 │   └── boot.go      # In-pod client initialization
@@ -47,10 +47,10 @@ This directory contains an example demonstrating how to integrate Kubernetes Con
 
 The example showcases the following features:
 
-1. Kubernetes Integration
+1. `Kubernetes` Integration
    - In-Pod configuration
    - Out-of-Pod configuration
-   - ConfigMap management
+   - `ConfigMap` management
    - Error handling
 
 2. Configuration Management
@@ -66,32 +66,32 @@ The example showcases the following features:
 
 ## Configuration
 
-### Kubernetes Setup
+### `Kubernetes` Setup
 1. Cluster Configuration:
-   - Kubernetes cluster access
+   - `Kubernetes` cluster access
    - Namespace management
    - RBAC permissions
 
-2. ConfigMap Setup:
-   - ConfigMap creation
+2. `ConfigMap` Setup:
+   - `ConfigMap` creation
    - Data item management
    - Access control
 
 ### Client Configuration
 1. In-Pod Settings:
    - Automatic service account
-   - ConfigMap name
+   - `ConfigMap` name
    - Data item name
 
 2. Out-of-Pod Settings:
-   - KubeConfig path
+   - `KubeConfig` path
    - Namespace selection
    - Client configuration
    - Access permissions
 
 ## Usage
 
-1. Create ConfigMap:
+1. Create `ConfigMap`:
    ```bash
    # Create a ConfigMap with configuration data
    kubectl create configmap test-configmap --from-file=config.yaml=./config.yaml

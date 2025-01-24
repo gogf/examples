@@ -7,16 +7,16 @@ hide_title: true
 sidebar_position: 3
 ---
 
-# gRPC - 上下文示例
+# `gRPC` - 上下文示例
 
 ## 介绍
 
-本示例展示了如何在 GoFrame 的 gRPC 中使用上下文和元数据。
+本示例展示了如何在 `GoFrame` 的 `gRPC` 中使用上下文和元数据。
 
 
 ## 目录结构
 
-```
+```text
 .
 ├── client/           # 客户端示例
 │   └── client.go     # 带上下文处理的客户端实现

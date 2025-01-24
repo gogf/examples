@@ -1,1 +1,6 @@
-分析examples/observability/trace/provider的代码实现，并完善其目录下的README.ZH.MD。术语不要直接使用"跟踪"，而是使用"链路跟踪"。
+改进examples/observability/trace目录下所有README*.MD文件内容：
+1. 内容中的"## Structure"和"## 目录结构"栏目下，代码高亮语言使用text。
+2. 内容中的英文关键词如GoFrame, OpenteleMetry等关键词需要代码高亮。
+3. 不要高亮顶部front matter中的关键词，也不要高亮markdown链接中的关键词。
+4. 保持现有文档内容结构不变，不要删除任何内容，也不要新增内容。
+

@@ -7,19 +7,19 @@ hide_title: true
 sidebar_position: 1
 ---
 
-# 注册中心 - Polaris集成
+# 注册中心 - `Polaris` 集成
 
 ## 简介
 
-本示例演示了如何在GoFrame应用程序中集成Polaris服务注册中心。主要展示：
-- 使用Polaris注册服务
-- 使用Polaris发现服务
+本示例演示了如何在 `GoFrame` 应用程序中集成 `Polaris` 服务注册中心。主要展示：
+- 使用 `Polaris` 注册服务
+- 使用 `Polaris` 发现服务
 - 实现服务健康检查
 - 构建分布式系统
 
 ## 目录结构
 
-```
+```text
 .
 ├── client/           # 客户端示例
 │   └── client.go     # 基于Polaris的服务发现客户端实现
@@ -48,19 +48,19 @@ sidebar_position: 1
    - 容错处理
 
 3. 协议支持
-   - HTTP服务
+   - `HTTP` 服务
    - 自定义协议
    - 协议扩展
 
 ## 环境要求
 
-- Go 1.22 或更高版本
-- Polaris服务器
+- `Go` 1.22 或更高版本
+- `Polaris` 服务器
 - 本地缓存目录读写权限
 
 ## 使用说明
 
-1. 配置Polaris服务器地址：
+1. 配置 `Polaris` 服务器地址：
    ```go
    conf := config.NewDefaultConfiguration([]string{"183.47.111.80:8091"})
    ```
@@ -86,7 +86,7 @@ sidebar_position: 1
 ## 实现说明
 
 1. 服务器实现
-   - 使用默认配置创建Polaris客户端
+   - 使用默认配置创建 `Polaris` 客户端
    - 配置本地缓存提升性能
    - 支持服务路由和限流配置
    - 提供健康检查和故障恢复

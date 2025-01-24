@@ -10,7 +10,7 @@ hide_title: true
 
 ## Description
 
-This example demonstrates how to implement distributed tracing in HTTP services using GoFrame. It shows how to:
+This example demonstrates how to implement distributed tracing in HTTP services using `GoFrame`. It shows how to:
 - Configure tracing in HTTP services
 - Trace HTTP requests and responses
 - Propagate trace context
@@ -25,7 +25,7 @@ This example demonstrates how to implement distributed tracing in HTTP services 
 
 ## Structure
 
-```
+```text
 .
 ├── client/          # Client example
 │   └── client.go    # Client with tracing
@@ -50,7 +50,7 @@ The example showcases the following features:
 
 ## Prerequisites
 
-1. Running Jaeger instance:
+1. Running `Jaeger` instance:
    ```bash
    docker run --rm --name jaeger \
    -e COLLECTOR_ZIPKIN_HOST_PORT=:9411 \
@@ -82,14 +82,14 @@ The example showcases the following features:
    ```
 
 3. View traces:
-   Open http://localhost:16686 in your browser to view traces in Jaeger UI.
+   Open http://localhost:16686 in your browser to view traces in `Jaeger` UI.
 
 ## API Endpoints
 
 The server provides the following HTTP endpoint:
 
 1. Hello World
-   ```
+   ```text
    GET /hello
    Response: "Hello World"
    ```
@@ -108,6 +108,6 @@ The example demonstrates:
    - Check server logs for detailed error messages
 
 2. Tracing Issues:
-   - Verify Jaeger is running: `docker ps | grep jaeger`
-   - Check Jaeger UI accessibility: http://localhost:16686
+   - Verify `Jaeger` is running: `docker ps | grep jaeger`
+   - Check `Jaeger` UI accessibility: http://localhost:16686
    - Ensure trace endpoint is correct in configuration

@@ -11,15 +11,15 @@ sidebar_position: 1
 
 ## 简介
 
-本示例演示了如何在 GoFrame 中使用 OpenTelemetry 和 Prometheus 集成来实现基于回调的指标收集。主要展示：
+本示例演示了如何在 `GoFrame` 中使用 `OpenTelemetry` 和 `Prometheus` 集成来实现基于回调的指标收集。主要展示：
 - 创建带有回调函数的指标
 - 通过回调自动更新指标值
 - 配置指标属性
-- 导出 Prometheus 格式的指标
+- 导出 `Prometheus` 格式的指标
 
 ## 目录结构
 
-```
+```text
 .
 ├── go.mod            # Go 模块文件
 ├── go.sum            # Go 模块校验和
@@ -50,9 +50,9 @@ sidebar_position: 1
 
 ## 环境要求
 
-- Go 1.22 或更高版本
-- GoFrame 框架
-- GoFrame OpenTelemetry Metric 扩展
+- `Go` 1.22 或更高版本
+- `GoFrame` 框架
+- `GoFrame OpenTelemetry Metric` 扩展
 
 ## 使用说明
 
@@ -71,7 +71,7 @@ sidebar_position: 1
    ```
 
 3. 指标输出示例：
-   ```
+   ```text
    # HELP goframe_metric_demo_counter 这是 Counter 使用的简单演示
    goframe_metric_demo_counter{const_attr_1="1"} 11
    

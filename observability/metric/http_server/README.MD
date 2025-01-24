@@ -10,7 +10,7 @@ hide_title: true
 
 ## Description
 
-This example demonstrates how to collect and monitor HTTP server metrics in GoFrame using OpenTelemetry and Prometheus integration. It shows how to:
+This example demonstrates how to collect and monitor HTTP server metrics in `GoFrame` using `OpenTelemetry` and `Prometheus` integration. It shows how to:
 - Monitor HTTP server requests
 - Track request latencies
 - Collect error rates
@@ -18,9 +18,11 @@ This example demonstrates how to collect and monitor HTTP server metrics in GoFr
 
 ## Structure
 
+```text
 - `go.mod`: The Go module file for dependency management
 - `go.sum`: The Go module checksums file
 - `main.go`: The main application demonstrating HTTP server metrics
+```
 
 ## Features
 
@@ -85,7 +87,7 @@ The example showcases the following endpoints and metrics:
    ```
 
 4. Example metrics output:
-   ```
+   ```text
    # HELP goframe_http_server_requests_total Total number of HTTP requests made
    goframe_http_server_requests_total{method="GET",path="/",status="200"} 1
    

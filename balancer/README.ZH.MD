@@ -11,7 +11,7 @@ sidebar_position: 5
 
 ## 介绍
 
-本分类包含了一些在 GoFrame 框架中实现负载均衡相关的示例代码。
+本分类包含了一些在 `GoFrame` 框架中实现负载均衡相关的示例代码。
 
 
 ## 注意事项
@@ -24,4 +24,3 @@ sidebar_position: 5
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
-

@@ -6,14 +6,14 @@ description: Nacos configuration center integration with GoFrame
 hide_title: true
 ---
 
-## Nacos Configuration Center Example
+## `Nacos` Configuration Center Example
 
 ## Description
 
-This directory contains an example demonstrating how to integrate Nacos configuration center with GoFrame applications. It shows:
+This directory contains an example demonstrating how to integrate `Nacos` configuration center with `GoFrame` applications. It shows:
 
-1. Nacos Client Configuration
-   - Nacos client setup and initialization
+1. `Nacos` Client Configuration
+   - `Nacos` client setup and initialization
    - Configuration adapter implementation
    - Error handling and logging
 
@@ -24,7 +24,7 @@ This directory contains an example demonstrating how to integrate Nacos configur
 
 ## Directory Structure
 
-```
+```text
 .
 ├── boot/           # Bootstrap configuration
 │   └── boot.go     # Nacos client initialization
@@ -45,7 +45,7 @@ This directory contains an example demonstrating how to integrate Nacos configur
 
 The example showcases the following features:
 
-1. Nacos Integration
+1. `Nacos` Integration
    - Client configuration
    - Server connection management
    - Configuration namespace
@@ -64,7 +64,7 @@ The example showcases the following features:
 
 ## Configuration
 
-### Nacos Server
+### `Nacos` Server
 1. Server Configuration:
    - Default port: 8848
    - Default address: localhost
@@ -90,7 +90,7 @@ The example showcases the following features:
 
 ## Usage
 
-1. Start Nacos Server:
+1. Start `Nacos` Server:
    ```bash
    # Start Nacos server using Docker
    docker run -d --name nacos \
@@ -99,36 +99,12 @@ The example showcases the following features:
       nacos/nacos-server:latest
    ```
 
-2. Configure Nacos:
-   - Access Nacos console at http://localhost:8848/nacos
-   - Create configuration with Data ID: config.toml
-   - Add configuration content in TOML format
-   - Publish configuration
+2. Configure `Nacos`:
+   - Access `Nacos` console at http://localhost:8848/nacos
+   - Default credentials: nacos/nacos
+   - Create configuration items
 
 3. Run Example:
    ```bash
    go run main.go
    ```
-
-## Implementation Details
-
-1. Client Setup (`boot/boot.go`):
-   - Server connection configuration
-   - Client settings
-   - Cache and log directory setup
-   - Configuration parameter setup
-
-2. Configuration Access (`main.go`):
-   - Configuration availability check
-   - Bulk configuration retrieval
-   - Single value access
-   - Error handling
-
-## Notes
-
-- The example uses Nacos's configuration center features
-- Configuration changes in Nacos are automatically reflected
-- Local cache is used for better performance
-- Proper logging is configured for debugging
-- Configuration can be organized by Data ID and Group
-- Supports dynamic configuration updates

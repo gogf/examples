@@ -1,16 +1,16 @@
 ---
 title: Polaris Integration
 keywords: [load balancer, polaris, service discovery, goframe]
-description: An example demonstrating HTTP service load balancing using Polaris in GoFrame
+description: An example demonstrating HTTP service load balancing using `Polaris` in `GoFrame`
 hide_title: true
 ---
 
-# Load Balancer - Polaris Integration Example
+# Load Balancer - `Polaris` Integration Example
 
 ## Description
 
-This example demonstrates how to implement HTTP service load balancing with GoFrame using Polaris. It shows:
-- Service registration using Polaris
+This example demonstrates how to implement HTTP service load balancing with `GoFrame` using `Polaris`. It shows:
+- Service registration using `Polaris`
 - Client-side load balancing
 - Round-robin load balancing strategy
 - HTTP service communication
@@ -20,12 +20,12 @@ This example demonstrates how to implement HTTP service load balancing with GoFr
 
 - [Go](https://golang.org/dl/) 1.22 or higher
 - [Git](https://git-scm.com/downloads)
-- [GoFrame](https://goframe.org)
-- [GoFrame Polaris Registry](https://github.com/gogf/gf/tree/master/contrib/registry/polaris)
+- [`GoFrame`](https://goframe.org)
+- [`GoFrame Polaris Registry`](https://github.com/gogf/gf/tree/master/contrib/registry/polaris)
 
 ## Structure
 
-```
+```text
 .
 ├── client/           # HTTP client implementation with load balancing
 │   └── client.go     # Client code with round-robin balancer
@@ -37,7 +37,7 @@ This example demonstrates how to implement HTTP service load balancing with GoFr
 
 ## Prerequisites
 
-1. Running Polaris server:
+1. Running `Polaris` server:
    ```bash
    # Using docker
    docker run -d --name polaris \
@@ -47,7 +47,7 @@ This example demonstrates how to implement HTTP service load balancing with GoFr
 
 ## Configuration
 
-The example uses the following Polaris configurations:
+The example uses the following `Polaris` configurations:
 - Server address: `127.0.0.1:8091`
 - Local cache directory: `<TempDir>/polaris/backup`
 - Log directory: `<TempDir>/polaris/log`
@@ -79,14 +79,14 @@ The example uses the following Polaris configurations:
 ## Implementation Details
 
 1. Server Implementation (`server/server.go`):
-   - HTTP server setup using GoFrame
-   - Service registration with Polaris
+   - HTTP server setup using `GoFrame`
+   - Service registration with `Polaris`
    - Simple HTTP endpoint that returns "Hello world"
    - Automatic service discovery registration
    - Configurable TTL for service registration
 
 2. Client Implementation (`client/client.go`):
-   - Service discovery using Polaris
+   - Service discovery using `Polaris`
    - Round-robin load balancing strategy
    - Multiple request demonstration with timing information
    - Automatic service discovery and load balancing
@@ -94,9 +94,8 @@ The example uses the following Polaris configurations:
 
 ## Notes
 
-- The example uses Polaris for service registration and discovery
+- The example uses `Polaris` for service registration and discovery
 - Round-robin load balancing is implemented for demonstration
 - The client automatically handles service discovery and load balancing
 - Local cache is used to improve performance
 - Logging is configured for better debugging
-- Multiple server instances can be started to demonstrate load distribution

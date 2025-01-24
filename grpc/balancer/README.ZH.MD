@@ -7,16 +7,16 @@ hide_title: true
 sidebar_position: 2
 ---
 
-# gRPC - 负载均衡
+# `gRPC` - 负载均衡
 
 ## 介绍
 
-本示例展示了如何在 GoFrame 应用程序中实现 gRPC 负载均衡。
+本示例展示了如何在 `GoFrame` 应用程序中实现 `gRPC` 负载均衡。
 
 
 ## 目录结构
 
-```
+```text
 .
 ├── client/         # 客户端示例
 │   └── client.go   # 带负载均衡的客户端实现
@@ -29,6 +29,8 @@ sidebar_position: 2
 ├── go.mod          # Go 模块文件
 └── go.sum          # Go 模块校验和
 ```
+
+
 
 ## 环境要求
 

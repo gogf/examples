@@ -4,6 +4,8 @@ import (
 	"context"
 	"time"
 
+	"main/app/user-service/internal/model/entity"
+
 	"github.com/gogf/gf/v2/util/gconv"
 	"github.com/pkg/errors"
 	"go.mongodb.org/mongo-driver/bson"
@@ -17,11 +19,11 @@ type Dao interface {
 	Create(ctx context.Context, in CreateInput) (string, error)
 	Update(ctx context.Context, id primitive.ObjectID, in UpdateInput) error
 	Delete(ctx context.Context, id []primitive.ObjectID) error
-	GetOne(ctx context.Context, id primitive.ObjectID) (*DataItem, error)
-	GetList(ctx context.Context, in GetListInput) ([]*DataItem, error)
+	GetOne(ctx context.Context, id primitive.ObjectID) (*entity.User, error)
+	GetList(ctx context.Context, in GetListInput) ([]*entity.User, error)
 }
 
-type implUser struct {
+type implDao struct {
 	database   *mongo.Database
 	collection *mongo.Collection
 	fields     collectionFieldNames
@@ -35,7 +37,7 @@ type collectionFieldNames struct {
 }
 
 func New(db *mongo.Database) Dao {
-	return &implUser{
+	return &implDao{
 		database:   db,
 		collection: db.Collection("user"),
 		fields: collectionFieldNames{
@@ -47,27 +49,20 @@ func New(db *mongo.Database) Dao {
 	}
 }
 
-type DataItem struct {
-	Id        primitive.ObjectID `bson:"_id,omitempty"`
-	Name      string             `bson:"name,omitempty"`
-	CreatedAt int64              `bson:"created_at,omitempty"`
-	UpdatedAt int64              `bson:"updated_at,omitempty"`
-}
-
 type CreateInput struct {
 	Name string `bson:"name,omitempty"`
 }
 
 // Create 新增用户。
-func (r *implUser) Create(ctx context.Context, in CreateInput) (string, error) {
-	var dataItem = DataItem{
+func (d *implDao) Create(ctx context.Context, in CreateInput) (string, error) {
+	var dataItem = entity.User{
 		CreatedAt: time.Now().UnixMilli(),
 		UpdatedAt: time.Now().UnixMilli(),
 	}
 	if err := gconv.Scan(in, &dataItem); err != nil {
 		return "", err
 	}
-	result, err := r.collection.InsertOne(ctx, dataItem)
+	result, err := d.collection.InsertOne(ctx, dataItem)
 	if err != nil {
 		return "", errors.Wrap(err, "insert user data failed")
 	}
@@ -79,20 +74,20 @@ type UpdateInput struct {
 }
 
 // Update 修改用户。
-func (r *implUser) Update(ctx context.Context, id primitive.ObjectID, in UpdateInput) error {
-	var dataItem = DataItem{
+func (d *implDao) Update(ctx context.Context, id primitive.ObjectID, in UpdateInput) error {
+	var dataItem = entity.User{
 		UpdatedAt: time.Now().UnixMilli(),
 	}
 	if err := gconv.Scan(in, &dataItem); err != nil {
 		return err
 	}
 	filter := bson.D{
-		{r.fields.Id, id},
+		{d.fields.Id, id},
 	}
 	update := bson.M{
 		"$set": dataItem,
 	}
-	_, err := r.collection.UpdateOne(ctx, filter, update)
+	_, err := d.collection.UpdateOne(ctx, filter, update)
 	if err != nil {
 		return errors.Wrap(err, "update user data failed")
 	}
@@ -100,14 +95,14 @@ func (r *implUser) Update(ctx context.Context, id primitive.ObjectID, in UpdateI
 }
 
 // Delete 删除用户（硬删除）。
-func (r *implUser) Delete(ctx context.Context, ids []primitive.ObjectID) error {
+func (d *implDao) Delete(ctx context.Context, ids []primitive.ObjectID) error {
 	if len(ids) == 0 {
 		return nil
 	}
 	filter := bson.D{
-		{r.fields.Id, bson.M{"$in": ids}},
+		{d.fields.Id, bson.M{"$in": ids}},
 	}
-	_, err := r.collection.DeleteMany(ctx, filter)
+	_, err := d.collection.DeleteMany(ctx, filter)
 	if err != nil {
 		return errors.Wrap(err, "delete user data failed")
 	}
@@ -115,14 +110,14 @@ func (r *implUser) Delete(ctx context.Context, ids []primitive.ObjectID) error {
 }
 
 // GetOne 查询用户详情。
-func (r *implUser) GetOne(ctx context.Context, id primitive.ObjectID) (*DataItem, error) {
+func (d *implDao) GetOne(ctx context.Context, id primitive.ObjectID) (*entity.User, error) {
 	var (
-		dataItem *DataItem
+		dataItem *entity.User
 		filter   = bson.D{
-			{r.fields.Id, id},
+			{d.fields.Id, id},
 		}
 	)
-	err := r.collection.FindOne(ctx, filter).Decode(&dataItem)
+	err := d.collection.FindOne(ctx, filter).Decode(&dataItem)
 	if err != nil {
 		if errors.Is(err, mongo.ErrNoDocuments) {
 			return nil, nil
@@ -137,21 +132,21 @@ type GetListInput struct {
 }
 
 // GetList 查询用户列表。
-func (r *implUser) GetList(ctx context.Context, in GetListInput) ([]*DataItem, error) {
+func (d *implDao) GetList(ctx context.Context, in GetListInput) ([]*entity.User, error) {
 	var (
 		filter = bson.D{}
-		opts   = options.Find().SetSort(bson.M{r.fields.Id: 1})
+		opts   = options.Find().SetSort(bson.M{d.fields.Id: 1})
 	)
 	if len(in.Ids) > 0 {
-		filter = append(filter, bson.E{Key: r.fields.Id, Value: bson.M{"$in": in.Ids}})
+		filter = append(filter, bson.E{Key: d.fields.Id, Value: bson.M{"$in": in.Ids}})
 	}
-	cur, err := r.collection.Find(ctx, filter, opts)
+	cur, err := d.collection.Find(ctx, filter, opts)
 	if err != nil {
 		return nil, errors.Wrap(err, `search GetList failed`)
 	}
 	defer cur.Close(ctx)
 	// 查询数据到实体对象中
-	var dataItems = make([]*DataItem, 0)
+	var dataItems = make([]*entity.User, 0)
 	if err = cur.All(ctx, &dataItems); err != nil {
 		return nil, errors.Wrap(err, `mongodb scan result failed`)
 	}

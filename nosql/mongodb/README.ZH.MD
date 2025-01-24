@@ -2,7 +2,7 @@
 title: MongoDB
 slug: /examples/nosql/mongodb
 keywords: [nosql, mongodb, database, goframe]
-description: 在 `GoFrame` 中使用 `MongoDB` 的示例
+description: 在 GoFrame 中使用 MongoDB 的示例
 hide_title: true
 sidebar_position: 2
 ---

@@ -1,6 +1,8 @@
 ---
-slug: '/examples/nosql/redis'
-title: 'Redis'
+title: Redis 
+slug: /examples/nosql/redis
+keywords: [nosql, redis, cache, database, goframe]
+description: 在 `GoFrame` 中使用 `Redis` 的示例
 hide_title: true
 sidebar_position: 1
 ---
@@ -21,6 +23,11 @@ sidebar_position: 1
 - `Go 1.15` 或更高版本
 - `Redis` 服务器
 - `GoFrame v2`
+
+## 代码结构
+
+- `main.go`: 包含主要逻辑和 `Redis` 客户端初始化
+- `config.yaml`: `Redis` 配置文件
 
 ## 配置说明
 
@@ -74,24 +81,9 @@ docker run --name redis-test -p 6379:6379 -d redis:latest redis-server --require
 go run main.go
 ```
 
-## 代码结构
 
-- `main.go`: 包含主要逻辑和 Redis 客户端初始化
-- `config.yaml`: Redis 配置文件
 
-## 功能特点
-
-1. Redis 客户端初始化及错误处理
-2. 使用 GoFrame 的配置系统进行配置管理
-3. 基本 Redis 操作演示
-4. 完善的错误处理和日志记录
 
 ## 更多参考
 
 更多 `Redis` 的使用方法请参考第三方组件 [`github.com/redis/go-redis`](https://github.com/redis/go-redis)。
-
-## 注意事项
-
-- 示例使用 go-redis/v9 客户端
-- 所有操作都使用 context 以实现正确的取消和超时处理
-- 代码包含适当的错误处理和日志记录

@@ -1,6 +1,8 @@
 ---
-slug: '/examples/nosql/mongodb'
-title: 'MongoDB'
+title: MongoDB
+slug: /examples/nosql/mongodb
+keywords: [nosql, mongodb, database, goframe]
+description: An example demonstrating MongoDB integration in `GoFrame`
 hide_title: true
 sidebar_position: 2
 ---

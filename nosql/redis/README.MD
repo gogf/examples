@@ -1,6 +1,8 @@
 ---
-slug: '/examples/nosql/redis'
-title: 'Redis'
+title: Redis
+slug: /examples/nosql/redis
+keywords: [nosql, redis, cache, database, goframe]
+description: An example demonstrating Redis integration in `GoFrame`
 hide_title: true
 sidebar_position: 1
 ---

@@ -4,6 +4,7 @@ slug: /examples/config/polaris
 keywords: [配置中心, polaris, goframe]
 description: GoFrame 框架中 Polaris 配置中心的集成示例
 hide_title: true
+sidebar_position: 1
 ---
 
 # Polaris 配置中心示例

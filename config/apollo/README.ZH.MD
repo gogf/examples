@@ -4,6 +4,7 @@ slug: /examples/config/apollo
 keywords: [配置中心, apollo, goframe]
 description: GoFrame 框架中 Apollo 配置中心的集成示例
 hide_title: true
+sidebar_position: 1
 ---
 
 # Apollo 配置中心示例

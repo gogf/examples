@@ -4,6 +4,7 @@ slug: /examples/config/consul
 keywords: [配置中心, consul, goframe]
 description: GoFrame 框架中 Consul 配置中心的集成示例
 hide_title: true
+sidebar_position: 1
 ---
 
 # Consul 配置中心示例

@@ -4,6 +4,7 @@ slug: /examples/config/nacos
 keywords: [配置中心, nacos, goframe]
 description: GoFrame 框架中 Nacos 配置中心的集成示例
 hide_title: true
+sidebar_position: 1
 ---
 
 # Nacos 配置中心示例

@@ -1,6 +1,8 @@
-改进examples/observability/trace目录下所有README*.MD文件内容：
-1. 内容中的"## Structure"和"## 目录结构"栏目下，代码高亮语言使用text。
-2. 内容中的英文关键词如GoFrame, OpenteleMetry等关键词需要代码高亮。
-3. 不要高亮顶部front matter中的关键词，也不要高亮markdown链接中的关键词。
-4. 保持现有文档内容结构不变，不要删除任何内容，也不要新增内容。
+分析examples/nosql/mongodb代码，并参考examples/nosql/redis的文档后并完成以下工作：
+1. 增加README.MD和README.ZH.MD文件。
+2. 在README文档中需要增加使用docker运行mongo的代码示例。
+3. 文档中的关键词需要代码高亮。
+4. 需要在文档中注明，更多的mongo使用请参考第三方组件 https://github.com/mongodb/mongo-go-driver 。
+5. 完善代码注释，代码注释使用英文。
+
 

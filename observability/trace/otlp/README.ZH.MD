@@ -4,7 +4,7 @@ slug: /examples/observability/trace/otlp
 keywords: [链路跟踪, otlp, grpc, http, goframe]
 description: GoFrame中OpenTelemetry链路跟踪数据导出方法
 hide_title: true
-sidebar_position: 1
+sidebar_position: 8
 ---
 
 # OpenTelemetry链路跟踪示例

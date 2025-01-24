@@ -4,7 +4,7 @@ slug: /examples/observability
 keywords: [可观测性, 监控, 指标, 追踪, goframe]
 description: GoFrame 框架中的可观测性示例
 hide_title: true
-sidebar_position: 3
+sidebar_position: 6
 ---
 
 # 可观测性示例

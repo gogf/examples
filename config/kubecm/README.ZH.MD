@@ -4,6 +4,7 @@ slug: /examples/config/kubecm
 keywords: [配置中心, kubernetes, configmap, goframe]
 description: GoFrame 框架中 Kubernetes ConfigMap 的集成示例
 hide_title: true
+sidebar_position: 9
 ---
 
 # Kubernetes ConfigMap 配置示例

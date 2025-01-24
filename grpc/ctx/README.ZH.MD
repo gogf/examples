@@ -4,7 +4,7 @@ slug: /examples/grpc/ctx
 keywords: [grpc, 上下文, 元数据, goframe]
 description: GoFrame 中的 gRPC 上下文用法
 hide_title: true
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 ## gRPC - 上下文示例

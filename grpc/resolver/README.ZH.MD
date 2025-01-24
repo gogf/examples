@@ -4,6 +4,7 @@ slug: /examples/grpc/resolver
 keywords: [grpc, 服务发现, etcd, goframe]
 description: GoFrame 中使用 etcd 的 gRPC 服务发现
 hide_title: true
+sidebar_position: 1
 ---
 
 ## gRPC - 服务发现

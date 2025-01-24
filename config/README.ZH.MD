@@ -4,6 +4,7 @@ slug: /examples/config
 keywords: [配置管理, goframe]
 description: GoFrame 框架中的配置管理功能示例
 hide_title: true
+sidebar_position: 3
 ---
 
 # 配置管理示例

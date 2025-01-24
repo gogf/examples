@@ -4,6 +4,7 @@ slug: /examples/balancer
 keywords: [负载均衡, goframe]
 description: GoFrame 框架中的负载均衡功能示例
 hide_title: true
+sidebar_position: 5
 ---
 
 # 负载均衡示例

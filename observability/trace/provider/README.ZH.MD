@@ -4,7 +4,7 @@ slug: /examples/observability/trace/provider
 keywords: [链路跟踪, provider, grpc, http, goframe]
 description: 在GoFrame中使用不同OpenTelemetry链路跟踪Provider配置的示例
 hide_title: true
-sidebar_position: 1
+sidebar_position: 9
 ---
 
 # OpenTelemetry Provider链路跟踪示例

@@ -4,6 +4,7 @@ slug: /examples/registry
 keywords: [注册中心, 服务发现, goframe]
 description: GoFrame 框架中的注册中心功能示例
 hide_title: true
+sidebar_position: 4
 ---
 
 # 注册发现示例

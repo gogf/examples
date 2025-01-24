@@ -4,6 +4,7 @@ slug: /examples/grpc/balancer
 keywords: [grpc, 负载均衡, 服务发现, goframe]
 description: GoFrame 中的 gRPC 负载均衡
 hide_title: true
+sidebar_position: 2
 ---
 
 ## gRPC - 负载均衡

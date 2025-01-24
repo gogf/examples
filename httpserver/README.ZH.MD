@@ -4,6 +4,7 @@ slug: /examples/httpserver
 keywords: [http, 服务器, goframe]
 description: GoFrame 框架中的 HTTP 服务器示例
 hide_title: true
+sidebar_position: 2
 ---
 
 # HTTP Server示例

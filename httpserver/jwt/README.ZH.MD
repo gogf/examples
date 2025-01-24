@@ -21,7 +21,7 @@ sidebar_position: 0
 
 ## 项目结构
 
-```
+```text
 jwt/
 ├── api/
 │   └── v1/

@@ -41,9 +41,8 @@ This example demonstrates how to implement HTTP service load balancing with GoFr
    ```bash
    # Using docker
    docker run -d --name polaris \
-      -p 8090:8090 -p 8091:8091 -p 8093:8093 -p 8092:8092 \
-      --platform linux/amd64 \
-      polarismesh/polaris-server-release:latest
+      -p 8090:8090 -p 8091:8091 -p 8093:8093 -p 9090:9090 -p 9091:9091 \
+      polarismesh/polaris-standalone:v1.17.2
    ```
 
 ## Configuration

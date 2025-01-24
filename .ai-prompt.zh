@@ -1,12 +1,1 @@
-
-
-为examples下所有README.MD文件顶部增加slug的front matter标签，
-用于指定访问的URL PATH。该slug需要以/examples开头，
-如 slug: '/examples/observability/metric/basic' 。
-只增加slug，不要修改其他front matter标签内容。
-
-
-slug: '/release/v1.1.0'
-参考examples/observability/metric/basic下的README.MD中的Requirements栏目，
-完善examples/registry下所有README.MD文件中缺失的Requirements栏目。
-
+分析examples/observability/trace/provider的代码实现，并完善其目录下的README.ZH.MD。术语不要直接使用"跟踪"，而是使用"链路跟踪"。

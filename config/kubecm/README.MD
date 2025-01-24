@@ -42,7 +42,6 @@ This directory contains an example demonstrating how to integrate Kubernetes Con
 - [Git](https://git-scm.com/downloads)
 - [GoFrame](https://goframe.org)
 - [GoFrame Kubernetes ConfigMap Config](https://github.com/gogf/gf/tree/master/contrib/config/kubecm)
-- [Kubernetes Cluster](https://kubernetes.io/) or [Minikube](https://minikube.sigs.k8s.io/)
 
 ## Features
 

@@ -6,9 +6,9 @@ description: gRPC service resolver with etcd in GoFrame
 hide_title: true
 ---
 
-## gRPC - Service Resolver
+# gRPC - Service Resolver
 
-### Description
+## Description
 
 This example demonstrates how to use service resolver with etcd in gRPC services using GoFrame. It shows how to:
 - Configure service resolver with etcd
@@ -16,7 +16,7 @@ This example demonstrates how to use service resolver with etcd in gRPC services
 - Discover services using resolver
 - Handle service updates
 
-### Structure
+## Structure
 
 ```
 .
@@ -32,7 +32,7 @@ This example demonstrates how to use service resolver with etcd in gRPC services
 └── go.sum               # Go module checksums
 ```
 
-### Features
+## Features
 
 The example showcases the following features:
 1. Service Resolution
@@ -53,14 +53,14 @@ The example showcases the following features:
    - Health checking
    - Metadata management
 
-### Requirements
+## Requirements
 
 - [Go](https://golang.org/dl/) 1.22 or higher
 - [Git](https://git-scm.com/downloads)
 - [GoFrame](https://goframe.org)
 - [gRPC](https://grpc.io/docs/languages/go/quickstart/)
 
-### Prerequisites
+## Prerequisites
 
 1. Running etcd instance:
    ```bash
@@ -78,7 +78,7 @@ The example showcases the following features:
    go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
    ```
 
-### Usage
+## Usage
 
 1. Generate protocol buffer code:
    ```bash
@@ -98,7 +98,7 @@ The example showcases the following features:
    go run client.go
    ```
 
-### Implementation Details
+## Implementation Details
 
 The example demonstrates:
 1. Service registration with etcd

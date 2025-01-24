@@ -7,14 +7,14 @@ hide_title: true
 sidebar_position: 2
 ---
 
-## gRPC - 负载均衡
+# gRPC - 负载均衡
 
-### 介绍
+## 介绍
 
 本示例展示了如何在 GoFrame 应用程序中实现 gRPC 负载均衡。
 
 
-### 目录结构
+## 目录结构
 
 ```
 .
@@ -30,14 +30,14 @@ sidebar_position: 2
 └── go.sum          # Go 模块校验和
 ```
 
-### 环境要求
+## 环境要求
 
 - [Go](https://golang.org/dl/) 1.22 或更高版本
 - [Git](https://git-scm.com/downloads)
 - [GoFrame](https://goframe.org)
 - [Protocol Buffers](https://developers.google.com/protocol-buffers)
 
-### 使用说明
+## 使用说明
 
 1. 启动多个服务器实例（使用随机端口）：
    ```bash

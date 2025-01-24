@@ -7,14 +7,14 @@ hide_title: true
 sidebar_position: 3
 ---
 
-## gRPC - 上下文示例
+# gRPC - 上下文示例
 
-### 介绍
+## 介绍
 
 本示例展示了如何在 GoFrame 的 gRPC 中使用上下文和元数据。
 
 
-### 目录结构
+## 目录结构
 
 ```
 .
@@ -30,14 +30,14 @@ sidebar_position: 3
 └── go.sum           # Go 模块校验和
 ```
 
-### 环境要求
+## 环境要求
 
 - [Go](https://golang.org/dl/) 1.22 或更高版本
 - [Git](https://git-scm.com/downloads)
 - [GoFrame](https://goframe.org)
 - [Protocol Buffers](https://developers.google.com/protocol-buffers)
 
-### 使用说明
+## 使用说明
 
 1. 启动服务器：
    ```bash

@@ -7,9 +7,9 @@ hide_title: true
 sidebar_position: 1
 ---
 
-## gRPC - Context Usage
+# gRPC - Context Usage
 
-### Description
+## Description
 
 This example demonstrates how to use context and metadata in gRPC with GoFrame. It shows how to:
 - Pass metadata through gRPC context
@@ -17,7 +17,7 @@ This example demonstrates how to use context and metadata in gRPC with GoFrame. 
 - Manage request context
 - Process context metadata
 
-### Structure
+## Structure
 
 ```
 .
@@ -33,7 +33,7 @@ This example demonstrates how to use context and metadata in gRPC with GoFrame. 
 └── go.sum            # Go module checksums
 ```
 
-### Features
+## Features
 
 The example showcases the following features:
 1. Context Management
@@ -54,14 +54,14 @@ The example showcases the following features:
    - Value retrieval
    - Timeout handling
 
-### Requirements
+## Requirements
 
 - [Go](https://golang.org/dl/) 1.22 or higher
 - [Git](https://git-scm.com/downloads)
 - [GoFrame](https://goframe.org)
 - [gRPC](https://grpc.io/docs/languages/go/quickstart/)
 
-### Prerequisites
+## Prerequisites
 
 1. Protocol buffer compiler installed:
    ```bash
@@ -73,7 +73,7 @@ The example showcases the following features:
    go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
    ```
 
-## Usage
+# Usage
 
 1. Generate protocol buffer code:
    ```bash
@@ -93,7 +93,7 @@ The example showcases the following features:
    go run client.go
    ```
 
-## Implementation Details
+# Implementation Details
 
 The example demonstrates:
 1. Context propagation

@@ -2,8 +2,9 @@
 title: NoSQL
 slug: /examples/nosql
 keywords: [nosql, mongodb, redis, database, goframe]
-description: 在 `GoFrame` 中使用 NoSQL 数据库的示例
+description: 在 GoFrame 中使用 NoSQL 数据库的示例
 hide_title: true
+sidebar_position: 0
 ---
 
 # `NoSQL` 示例

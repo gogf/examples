@@ -46,7 +46,7 @@ sidebar_position: 9
 
 ## 环境要求
 
-- Go 1.22 或更高版本
+- Go `1.22` 或更高版本
 - GoFrame框架
 - OpenTelemetry支持
 

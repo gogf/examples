@@ -37,7 +37,7 @@ sidebar_position: 8
 
 ## 环境要求
 
-- Go 1.22 或更高版本
+- Go `1.22` 或更高版本
 - GoFrame框架
 - GoFrame OpenTelemetry gRPC链路跟踪
 - GoFrame OpenTelemetry HTTP链路跟踪

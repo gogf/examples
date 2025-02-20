@@ -19,7 +19,7 @@ sidebar_position: 1
 
 ## 环境要求
 
-- `Go` 1.22 或更高版本
+- `Go` `1.22` 或更高版本
 - `GoFrame` 框架
 - `GoFrame gRPCx`
 - `GoFrame MySQL` 驱动

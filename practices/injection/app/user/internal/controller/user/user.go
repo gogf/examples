@@ -17,9 +17,13 @@ type ControllerV1 struct {
 }
 
 func RegisterV1(s *grpcx.GrpcServer) {
-	v1.RegisterUserServer(s.Server, &ControllerV1{
+	v1.RegisterUserServer(s.Server, newUserController())
+}
+
+func newUserController() *ControllerV1 {
+	return &ControllerV1{
 		userSvc: user.New(),
-	})
+	}
 }
 
 func (c *ControllerV1) Create(ctx context.Context, req *v1.CreateReq) (res *v1.CreateRes, err error) {

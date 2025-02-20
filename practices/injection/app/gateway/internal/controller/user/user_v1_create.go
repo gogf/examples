@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"main/app/gateway/api/user/v1"
-	userSvcV1 "main/app/user-service/api/user/v1"
+	userSvcV1 "main/app/user/api/user/v1"
 )
 
 func (c *ControllerV1) Create(ctx context.Context, req *v1.CreateReq) (res *v1.CreateRes, err error) {

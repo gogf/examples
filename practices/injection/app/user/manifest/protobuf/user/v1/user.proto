@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "main/app/user/api/user/v1";
+
+import "entity/user.proto";
+
+// 用户服务
+service User{
+    rpc Create(CreateReq) returns (CreateRes) {}
+    rpc GetOne(GetOneReq) returns (GetOneRes) {}
+    rpc GetList(GetListReq) returns (GetListRes) {}
+    rpc Delete(DeleteReq) returns (DeleteRes) {}
+}
+
+// 创建用户
+message CreateReq {
+    string name = 1; // v: required
+}
+message CreateRes {
+    string id = 1;
+}
+
+// 查询用户详情
+message GetOneReq {
+    string id = 1; // v: required
+}
+message GetOneRes {
+    entity.User data = 1;
+}
+
+// 查询用户列表
+message GetListReq {
+    repeated string ids = 1; // v:required
+}
+message GetListRes {
+    repeated entity.User list = 1;
+}
+
+// 删除指定用户
+message DeleteReq {
+    // v: min:1#
+    // v: Please select the user to be deleted.
+    string id = 1;
+}
+message DeleteRes {}

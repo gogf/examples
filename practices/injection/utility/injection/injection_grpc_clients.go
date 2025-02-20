@@ -3,7 +3,7 @@ package injection
 import (
 	"context"
 
-	userv1 "main/app/user-service/api/user/v1"
+	userv1 "main/app/user/api/user/v1"
 
 	"github.com/gogf/gf/contrib/rpc/grpcx/v2"
 	"github.com/gogf/gf/v2/errors/gerror"

@@ -6,7 +6,7 @@ package user
 
 import (
 	"main/app/gateway/api/user"
-	v1 "main/app/user-service/api/user/v1"
+	v1 "main/app/user/api/user/v1"
 	"main/utility/injection"
 )
 

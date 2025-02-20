@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: api-template-configmap
+  name: gateway-configmap
 data:
   config.yaml: |
     # https://goframe.org/docs/web/server-config-file-template

@@ -1,7 +1,7 @@
 ROOT_DIR    = $(shell pwd)
 NAMESPACE   = "default"
-DEPLOY_NAME = "gateway"
-DOCKER_NAME = "gateway"
+DEPLOY_NAME = "user"
+DOCKER_NAME = "user"
 DOCKER_TAG  = "develop"
 
 include ../../hack/hack-cli.mk

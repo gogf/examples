@@ -3,7 +3,7 @@ package user
 import (
 	"context"
 
-	userSvcV1 "main/app/user-service/api/user/v1"
+	userSvcV1 "main/app/user/api/user/v1"
 
 	"main/app/gateway/api/user/v1"
 )

@@ -49,7 +49,7 @@ The example showcases the following features:
 
 ## Requirements
 
-- [Go](https://golang.org/dl/) 1.22 or higher
+- [Go](https://golang.org/dl/) `1.22` or higher
 - [Git](https://git-scm.com/downloads)
 - [GoFrame](https://goframe.org)
 - [GoFrame File Registry](https://github.com/gogf/gf/tree/master/contrib/registry/file)

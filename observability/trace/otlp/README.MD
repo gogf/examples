@@ -36,7 +36,7 @@ This directory contains examples demonstrating different methods of exporting Op
 
 ## Requirements
 
-- [Go](https://golang.org/dl/) 1.22 or higher
+- [Go](https://golang.org/dl/) `1.22` or higher
 - [Git](https://git-scm.com/downloads)
 - [GoFrame](https://goframe.org)
 - [GoFrame OpenTelemetry gRPC Tracing](https://github.com/gogf/gf/tree/master/contrib/trace/otlpgrpc)

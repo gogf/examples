@@ -18,7 +18,7 @@ This example demonstrates how to implement distributed tracing in a gRPC service
 
 ## Requirements
 
-- [Go](https://golang.org/dl/) 1.22 or higher
+- [Go](https://golang.org/dl/) `1.22` or higher
 - [Git](https://git-scm.com/downloads)
 - [GoFrame](https://goframe.org)
 - [GoFrame gRPCx](https://github.com/gogf/gf/tree/master/contrib/rpc/grpcx)

@@ -22,7 +22,7 @@ The example provides both a REST API endpoint and a web interface for file uploa
 
 ## Requirements
 
-- [Go](https://golang.org/dl/) 1.22 or higher
+- [Go](https://golang.org/dl/) `1.22` or higher
 - [Git](https://git-scm.com/downloads)
 - [GoFrame](https://goframe.org)
 

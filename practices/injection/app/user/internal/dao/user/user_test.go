@@ -18,7 +18,7 @@ import (
 
 func newUserDao() (Dao, context.Context) {
 	ctx := context.TODO()
-	inject := injection.SetupInjectorProvides(ctx)
+	inject := injection.SetupDefaultInjector(ctx)
 	result := New(do.MustInvoke[*mongo.Database](inject))
 	return result, ctx
 }

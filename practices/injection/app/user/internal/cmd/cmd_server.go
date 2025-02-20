@@ -28,7 +28,7 @@ func (m *Main) Server(ctx context.Context, in ServerInput) (out *ServerOutput, e
 		)}...,
 	)
 	s := grpcx.Server.New(c)
-	user.Register(s)
+	user.RegisterV1(s)
 	s.Run()
 	return
 }

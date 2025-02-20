@@ -11,18 +11,18 @@ import (
 	v1 "main/app/user/api/user/v1"
 )
 
-type Controller struct {
+type ControllerV1 struct {
 	v1.UnimplementedUserServer
 	userSvc *user.Service
 }
 
-func Register(s *grpcx.GrpcServer) {
-	v1.RegisterUserServer(s.Server, &Controller{
+func RegisterV1(s *grpcx.GrpcServer) {
+	v1.RegisterUserServer(s.Server, &ControllerV1{
 		userSvc: user.New(),
 	})
 }
 
-func (c *Controller) Create(ctx context.Context, req *v1.CreateReq) (res *v1.CreateRes, err error) {
+func (c *ControllerV1) Create(ctx context.Context, req *v1.CreateReq) (res *v1.CreateRes, err error) {
 	result, err := c.userSvc.Create(ctx, req.Name)
 	if err != nil {
 		return nil, gerror.Wrap(err, "create user failed")
@@ -33,7 +33,7 @@ func (c *Controller) Create(ctx context.Context, req *v1.CreateReq) (res *v1.Cre
 	return
 }
 
-func (c *Controller) GetOne(ctx context.Context, req *v1.GetOneReq) (res *v1.GetOneRes, err error) {
+func (c *ControllerV1) GetOne(ctx context.Context, req *v1.GetOneReq) (res *v1.GetOneRes, err error) {
 	result, err := c.userSvc.GetById(ctx, req.Id)
 	if err != nil {
 		return nil, gerror.Wrap(err, "get user failed")
@@ -44,7 +44,7 @@ func (c *Controller) GetOne(ctx context.Context, req *v1.GetOneReq) (res *v1.Get
 	return
 }
 
-func (c *Controller) GetList(ctx context.Context, req *v1.GetListReq) (res *v1.GetListRes, err error) {
+func (c *ControllerV1) GetList(ctx context.Context, req *v1.GetListReq) (res *v1.GetListRes, err error) {
 	result, err := c.userSvc.GetList(ctx, req.Ids)
 	if err != nil {
 		return nil, gerror.Wrap(err, "get user list failed")
@@ -55,7 +55,7 @@ func (c *Controller) GetList(ctx context.Context, req *v1.GetListReq) (res *v1.G
 	return
 }
 
-func (c *Controller) Delete(ctx context.Context, req *v1.DeleteReq) (res *v1.DeleteRes, err error) {
+func (c *ControllerV1) Delete(ctx context.Context, req *v1.DeleteReq) (res *v1.DeleteRes, err error) {
 	err = c.userSvc.DeleteById(ctx, req.Id)
 	return
 }

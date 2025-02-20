@@ -13,7 +13,7 @@ import (
 
 func newUserService() (*Service, context.Context) {
 	ctx := context.TODO()
-	injection.SetupInjectorProvides(ctx)
+	injection.SetupDefaultInjector(ctx)
 	svc := New()
 	return svc, ctx
 }

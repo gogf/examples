@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <title>goframe websocket echo server</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="list-group" id="divShow"></div>
+            <div>
+                <div><input class="form-control" id="txtContent" autofocus placeholder="Content to send.."></div>
+                <div><button class="btn btn-primary" id="btnSend" style="margin-top:15px">Send</button></div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script type="application/javascript">
+    function showInfo(content) {
+        $("<div class=\"list-group-item list-group-item-info\">" + content + "</div>").appendTo("#divShow")
+    }
+    function showWaring(content) {
+        $("<div class=\"list-group-item list-group-item-warning\">" + content + "</div>").appendTo("#divShow")
+    }
+    function showSuccess(content) {
+        $("<div class=\"list-group-item list-group-item-success\">" + content + "</div>").appendTo("#divShow")
+    }
+    function showError(content) {
+        $("<div class=\"list-group-item list-group-item-danger\">" + content + "</div>").appendTo("#divShow")
+    }
+
+    $(function () {
+        const url = "wss://127.0.0.1:8000/ws";
+        let ws  = new WebSocket(url);
+        try {
+            // ws connection succeeded
+            ws.onopen = function () {
+                showInfo("WebSocket Server [" + url +"] Connection Succeeded!");
+            };
+            // ws connection closed
+            ws.onclose = function () {
+                if (ws) {
+                    ws.close();
+                    ws = null;
+                }
+                showError("WebSocket Server [" + url +"] Connection Closed!");
+            };
+            // ws connection error
+            ws.onerror = function () {
+                if (ws) {
+                    ws.close();
+                    ws = null;
+                }
+                showError("WebSocket Server [" + url +"] Connection Error!");
+            };
+            // ws response message.
+            ws.onmessage = function (result) {
+                showWaring(" > " + result.data);
+            };
+        } catch (e) {
+            alert(e.message);
+        }
+
+        // click to send message
+        $("#btnSend").on("click", function () {
+            if (ws == null) {
+                showError("WebSocket Server [" + url +"] Connection Failed, Please Refresh Page!");
+                return;
+            }
+            const content = $.trim($("#txtContent").val()).replace("/[\n]/g", "");
+            if (content.length <= 0) {
+                alert("Please input any content to send!");
+                return;
+            }
+            $("#txtContent").val("")
+            showSuccess(content);
+            ws.send(content);
+        });
+
+        // enter to send message
+        $("#txtContent").on("keydown", function (event) {
+            if (event.keyCode === 13) {
+                $("#btnSend").trigger("click");
+            }
+        });
+    })
+</script>

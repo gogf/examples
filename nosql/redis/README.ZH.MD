@@ -86,4 +86,4 @@ go run main.go
 
 ## 更多参考
 
-更多 `Redis` 的使用方法请参考第三方组件 [`github.com/redis/go-redis`](https://github.com/redis/go-redis)。
+更多 `Redis` 的使用方法请参考第三方组件 [github.com/redis/go-redis](https://github.com/redis/go-redis)。

@@ -88,4 +88,4 @@ go run main.go
 
 ## 更多参考
 
-更多 `MongoDB` 的使用方法请参考官方 `MongoDB` Go 驱动 [`github.com/mongodb/mongo-go-driver`](https://github.com/mongodb/mongo-go-driver)。
+更多 `MongoDB` 的使用方法请参考官方 `MongoDB` Go 驱动 [github.com/mongodb/mongo-go-driver](https://github.com/mongodb/mongo-go-driver)。

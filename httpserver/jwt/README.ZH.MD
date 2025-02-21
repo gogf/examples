@@ -45,7 +45,7 @@ jwt/
    ```
 
 2. 受保护资源: `GET /api/protected`
-   - 需要在Authorization头部携带Bearer令牌
+   - 需要在`Authorization`头部携带`Bearer`令牌
    - 示例: `Authorization: Bearer your-token-here`
 
 ## 运行示例
@@ -55,7 +55,7 @@ jwt/
    go run main.go
    ```
 
-2. 服务器将在8199端口启动
+2. 服务器将在`8199`端口启动
 
 ## 测试API
 

@@ -10,62 +10,64 @@ hide_title: true
 
 ## 简介
 
-本示例展示了如何在 `GoFrame` 应用程序中实现依赖注入。主要演示：
+本示例展示了如何在使用`GoFrame`的应用程序中实现依赖注入。
 
-1. 基础依赖注入设置
-2. 使用DI的服务层实现
-3. 集成gRPC的控制器层
-4. 使用模拟依赖的单元测试
+主要演示：
+1. 使用大仓模式管理代码仓库
+2. 基础依赖注入设置
+3. 使用`DI`的服务层实现
+4. 集成`gRPC`的控制器层
+5. 使用模拟依赖的单元测试
 
 实现重点在于使核心业务逻辑易于测试：
 - 使用依赖注入分离关注点
 - 为服务依赖提供清晰的接口
-- 使依赖易于在测试中模拟
+- 每一层都可以独立执行单元测试，保障代码质量
 
 ## 环境要求
 
 - [Go](https://golang.org/dl/) `1.22` 或更高版本
 - [Git](https://git-scm.com/downloads)
-- [`GoFrame`](https://goframe.org)
-- [`do`](https://github.com/samber/do)
+- [GoFrame](https://goframe.org)
 - [MongoDB](https://www.mongodb.com)
 - [Redis](https://redis.io)
+- [github.com/samber/do](https://github.com/samber/do)
 
 ## 目录结构
 
 ```text
 injection/
 ├── app/
-│   ├── gateway/          # API网关服务
+│   ├── gateway/         # API网关服务,调用user grpc服务实现外部接口
 │   │   ├── api/         # API定义
 │   │   ├── internal/    # 内部实现
-│   │   │   ├── cmd/    # 命令行工具
+│   │   │   ├── cmd/         # 命令行工具
 │   │   │   ├── controller/  # 控制器
-│   │   │   ├── model/  # 数据模型
-│   │   │   └── service/  # 业务逻辑
+│   │   │   ├── model/       # 数据模型
+│   │   │   └── service/     # 业务逻辑
 │   │   └── manifest/   # 配置文件
 │   └── user/           # 用户服务
 │       ├── api/        # API定义
 │       │   ├── entity/ # 实体定义
 │       │   └── user/   # 用户API proto
 │       ├── internal/   # 内部实现
-│       │   ├── cmd/    # 命令行工具
+│       │   ├── cmd/         # 命令行工具
 │       │   ├── controller/  # 使用DI的控制器
-│       │   ├── dao/    # 数据访问对象
-│       │   ├── model/  # 数据模型
-│       │   └── service/  # 使用DI的业务逻辑
+│       │   ├── dao/         # 数据访问对象
+│       │   ├── model/       # 数据模型
+│       │   └── service/     # 使用DI的业务逻辑
 │       └── manifest/   # 配置文件
 ├── hack/               # 开发工具
-└── utility/           # 通用工具
-    ├── injection/     # DI工具
-    └── mongohelper/   # MongoDB辅助工具
+└── utility/            # 通用工具
+    ├── injection/      # DI工具
+    └── mongohelper/    # MongoDB辅助工具
 ```
 
 ## 功能特性
 
 - 依赖注入使用
-- MongoDB和Redis集成
-- gRPC服务实现
+- `MongoDB`和`Redis`集成
+- `gRPC`服务实现
 - 完整的单元测试
 - 清理资源的关闭处理
 - 命名依赖支持
@@ -83,7 +85,7 @@ injection/
     go mod tidy
     ```
 
-3. 使用Docker启动所需服务：
+3. 使用`Docker`启动所需服务：
     ```bash
     # 启动MongoDB
     docker run -d --name mongo -p 27017:27017 mongo:latest
@@ -94,12 +96,25 @@ injection/
 
 ## 使用方法
 
-1. 运行应用：
+1. 运行`gRPC Server`服务：
    ```bash
-   go run main.go
+   cd examples/practices/injection/app/user
+   go run main.go server
    ```
 
-2. 运行测试：
+2. 运行`HTTP Server`服务：
+   ```bash
+   cd examples/practices/injection/app/gateway
+   go run main.go server
+   ```
+
+3. （可选）运行异步守护进程，仅演示多命令功能，无实际逻辑：
+   ```bash
+   cd examples/practices/injection/app/gateway
+   go run main.go worker
+   ```
+   
+4. （可选）运行测试：
    ```bash
    go test ./...
    ```
@@ -107,29 +122,28 @@ injection/
 ## 实现细节
 
 ### 依赖注入设置
-- 使用 `do` 包进行依赖管理
-- 支持命名和未命名依赖
+- 使用`github.com/samber/do`包进行依赖管理
+- 支持命名和未命名依赖管理
 - 提供常用操作的辅助函数
 
 ### 服务层
+
 - 清晰的关注点分离
 - 基于接口的设计
 - 易于使用模拟实现进行测试
 
 ### 控制器层
-- 支持DI的gRPC集成
+- 支持`DI`的`gRPC`集成
 - 清晰的错误处理
 - 合理的资源管理
 
-### 测试
-- 完整的单元测试
-- 依赖模拟
-- 清晰的测试设置和清理
+### 可测试性
+- 数据层(`dao`)、业务层(`service`)、接口层(`controller`)完整的单元测试
+- 依赖模拟，单元测试使用的数据库配置通过`manifest/config`管理
+- 通过配置文件管理微服务链接的服务地址或者域名，以便于控制依赖的服务模拟
 
 ## 注意事项
 
-- 始终使用接口定义依赖，使其可模拟
-- 在 `Shutdown` 方法中正确清理资源
-- 当需要同类型的多个实例时使用命名依赖
-- 在测试中考虑使用外部服务的模拟实现
+- 依赖注入的注册时，需要在`Shutdown`方法中正确清理资源
+- 使用依赖注入时，如果需要同类型的多个实例时使用命名依赖
 

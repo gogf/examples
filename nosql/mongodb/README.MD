@@ -92,7 +92,7 @@ go run main.go
 
 ## Further Reading
 
-For more advanced `MongoDB` usage, please refer to the official `MongoDB` Go driver [`github.com/mongodb/mongo-go-driver`](https://github.com/mongodb/mongo-go-driver).
+For more advanced `MongoDB` usage, please refer to the official `MongoDB` Go driver [github.com/mongodb/mongo-go-driver](https://github.com/mongodb/mongo-go-driver).
 
 ## Notes
 

@@ -27,8 +27,8 @@ The implementation demonstrates:
 
 - [Go](https://golang.org/dl/) `1.22` or higher
 - [Git](https://git-scm.com/downloads)
-- [`GoFrame`](https://goframe.org)
-- [`Gorilla WebSocket`](https://github.com/gorilla/websocket)
+- [GoFrame](https://goframe.org)
+- [Gorilla WebSocket](https://github.com/gorilla/websocket)
 
 ## Structure
 
@@ -69,7 +69,7 @@ websocket/
     go mod tidy
     ```
 
-3. For HTTPS/WSS support, generate self-signed certificates (optional):
+3. For `HTTPS/WSS` support, generate self-signed certificates (optional):
     ```bash
     mkdir -p https/certs
     openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout https/certs/server.key -out https/certs/server.crt
@@ -92,7 +92,9 @@ websocket/
    ```
 
 3. Access the demo page in browser:
-   Open `http://127.0.0.1:8000` in your browser to see the `WebSocket` demo in action. The page provides a simple chat interface where you can send and receive messages in real-time.
+
+   Open `http://127.0.0.1:8000` in your browser to see the `WebSocket` demo in action. 
+   The page provides a simple chat interface where you can send and receive messages in real-time.
 
 ### HTTPS WebSocket
 
@@ -109,7 +111,8 @@ websocket/
    ```
 
 3. Access the demo page in browser:
-   Open `https://127.0.0.1:8000` in your browser to see the `WebSocket` demo in action. Note: Since we're using a self-signed certificate, your browser may show a security warning, which is normal.
+   Open `https://127.0.0.1:8000` in your browser to see the `WebSocket` demo in action. 
+   Note: Since we're using a self-signed certificate, your browser may show a security warning, which is normal.
 
 ## Implementation Details
 
@@ -135,7 +138,7 @@ websocket/
 
 ## More Information
 
-For more details about WebSocket implementation, please refer to:
+For more details about `WebSocket` implementation, please refer to:
 - [GoFrame WebSocket Guide](https://goframe.org/docs/web/senior-websocket)
 - [Gorilla WebSocket Documentation](https://github.com/gorilla/websocket)
 

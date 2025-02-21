@@ -14,28 +14,41 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-// Dao 用户数据管理对象。
+// Dao defines the interface for user data access operations.
 type Dao interface {
+	// Create creates a new user and returns its ID.
 	Create(ctx context.Context, in CreateInput) (string, error)
+
+	// Update modifies an existing user by ID.
 	Update(ctx context.Context, id primitive.ObjectID, in UpdateInput) error
+
+	// Delete removes users by their IDs (hard delete).
 	Delete(ctx context.Context, id []primitive.ObjectID) error
+
+	// GetOne retrieves a single user by ID.
 	GetOne(ctx context.Context, id primitive.ObjectID) (*entity.User, error)
+
+	// GetList retrieves a list of users based on input criteria.
 	GetList(ctx context.Context, in GetListInput) ([]*entity.User, error)
 }
 
+// implDao implements the Dao interface using MongoDB.
 type implDao struct {
-	database   *mongo.Database
-	collection *mongo.Collection
-	fields     collectionFieldNames
+	database   *mongo.Database      // MongoDB database instance
+	collection *mongo.Collection    // Collection for user data
+	fields     collectionFieldNames // Field names mapping
 }
 
+// collectionFieldNames defines the mapping of struct fields to MongoDB field names.
 type collectionFieldNames struct {
-	Id        string
-	Name      string
-	CreatedAt string
-	UpdatedAt string
+	Id        string // MongoDB document ID field
+	Name      string // User name field
+	CreatedAt string // Creation timestamp field
+	UpdatedAt string // Update timestamp field
 }
 
+// New creates a new instance of the Dao interface.
+// It initializes the MongoDB collection and field mappings.
 func New(db *mongo.Database) Dao {
 	return &implDao{
 		database:   db,
@@ -49,11 +62,12 @@ func New(db *mongo.Database) Dao {
 	}
 }
 
+// CreateInput defines the input data for creating a new user.
 type CreateInput struct {
 	Name string `bson:"name,omitempty"`
 }
 
-// Create 新增用户。
+// Create creates a new user in the database.
 func (d *implDao) Create(ctx context.Context, in CreateInput) (string, error) {
 	var dataItem = entity.User{
 		CreatedAt: time.Now().UnixMilli(),
@@ -69,11 +83,12 @@ func (d *implDao) Create(ctx context.Context, in CreateInput) (string, error) {
 	return result.InsertedID.(primitive.ObjectID).Hex(), nil
 }
 
+// UpdateInput defines the input data for updating a user.
 type UpdateInput struct {
 	Name string `bson:"name,omitempty"`
 }
 
-// Update 修改用户。
+// Update modifies an existing user in the database.
 func (d *implDao) Update(ctx context.Context, id primitive.ObjectID, in UpdateInput) error {
 	var dataItem = entity.User{
 		UpdatedAt: time.Now().UnixMilli(),
@@ -94,7 +109,7 @@ func (d *implDao) Update(ctx context.Context, id primitive.ObjectID, in UpdateIn
 	return nil
 }
 
-// Delete 删除用户（硬删除）。
+// Delete removes users from the database (hard delete).
 func (d *implDao) Delete(ctx context.Context, ids []primitive.ObjectID) error {
 	if len(ids) == 0 {
 		return nil
@@ -109,7 +124,7 @@ func (d *implDao) Delete(ctx context.Context, ids []primitive.ObjectID) error {
 	return nil
 }
 
-// GetOne 查询用户详情。
+// GetOne retrieves a single user from the database by ID.
 func (d *implDao) GetOne(ctx context.Context, id primitive.ObjectID) (*entity.User, error) {
 	var (
 		dataItem *entity.User
@@ -127,11 +142,12 @@ func (d *implDao) GetOne(ctx context.Context, id primitive.ObjectID) (*entity.Us
 	return dataItem, nil
 }
 
+// GetListInput defines the input criteria for listing users.
 type GetListInput struct {
-	Ids []primitive.ObjectID // 通过id查询
+	Ids []primitive.ObjectID // List of user IDs to query
 }
 
-// GetList 查询用户列表。
+// GetList retrieves a list of users from the database based on the input criteria.
 func (d *implDao) GetList(ctx context.Context, in GetListInput) ([]*entity.User, error) {
 	var (
 		filter = bson.D{}
@@ -145,7 +161,7 @@ func (d *implDao) GetList(ctx context.Context, in GetListInput) ([]*entity.User,
 		return nil, errors.Wrap(err, `search GetList failed`)
 	}
 	defer cur.Close(ctx)
-	// 查询数据到实体对象中
+	// Scan results into entity objects
 	var dataItems = make([]*entity.User, 0)
 	if err = cur.All(ctx, &dataItems); err != nil {
 		return nil, errors.Wrap(err, `mongodb scan result failed`)

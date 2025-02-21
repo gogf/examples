@@ -8,69 +8,71 @@ hide_title: true
 
 # Dependency Injection Example
 
-## Description
+## Introduction
 
-This example demonstrates how to implement dependency injection in a `GoFrame` application. The example showcases:
+This example demonstrates how to implement dependency injection in a `GoFrame` application.
 
-1. Basic dependency injection setup
-2. Service layer implementation with DI
-3. Controller layer with gRPC integration
-4. Unit testing with mocked dependencies
+Key demonstrations:
+1. Using monorepo pattern for code repository management
+2. Basic dependency injection setup
+3. Service layer implementation with `DI`
+4. Controller layer integration with `gRPC`
+5. Unit testing with mock dependencies
 
-The implementation focuses on making the core business logic easily testable by:
-- Separating concerns using dependency injection
-- Providing a clean interface for service dependencies
-- Making dependencies easily mockable for testing
+The implementation focuses on making core business logic easily testable:
+- Separation of concerns using dependency injection
+- Clear interfaces for service dependencies
+- Independent unit testing for each layer to ensure code quality
 
 ## Requirements
 
 - [Go](https://golang.org/dl/) `1.22` or higher
 - [Git](https://git-scm.com/downloads)
-- [`GoFrame`](https://goframe.org)
-- [`do`](https://github.com/samber/do)
+- [GoFrame](https://goframe.org)
 - [MongoDB](https://www.mongodb.com)
 - [Redis](https://redis.io)
+- [github.com/samber/do](https://github.com/samber/do)
 
-## Structure
+## Directory Structure
 
 ```text
 injection/
 ├── app/
-│   ├── gateway/          # API Gateway Service
+│   ├── gateway/         # API Gateway service, calls user gRPC service for external interfaces
 │   │   ├── api/         # API definitions
-│   │   ├── internal/    # Internal implementation
-│   │   │   ├── cmd/    # Command line tools
+│   │   ├── internal/    # Internal implementations
+│   │   │   ├── cmd/         # Command line tools
 │   │   │   ├── controller/  # Controllers
-│   │   │   ├── model/  # Data models
-│   │   │   └── service/  # Business logic
+│   │   │   ├── model/       # Data models
+│   │   │   └── service/     # Business logic
 │   │   └── manifest/   # Configuration files
-│   └── user/           # User Service
+│   └── user/           # User service
 │       ├── api/        # API definitions
 │       │   ├── entity/ # Entity definitions
 │       │   └── user/   # User API proto
-│       ├── internal/   # Internal implementation
-│       │   ├── cmd/    # Command line tools
+│       ├── internal/   # Internal implementations
+│       │   ├── cmd/         # Command line tools
 │       │   ├── controller/  # Controllers with DI
-│       │   ├── dao/    # Data Access Objects
-│       │   ├── model/  # Data models
-│       │   └── service/  # Business logic with DI
+│       │   ├── dao/         # Data Access Objects
+│       │   ├── model/       # Data models
+│       │   └── service/     # Business logic with DI
 │       └── manifest/   # Configuration files
 ├── hack/               # Development tools
-└── utility/           # Common utilities
-    ├── injection/     # DI utilities
-    └── mongohelper/   # MongoDB helpers
+└── utility/            # Common utilities
+    ├── injection/      # DI utilities
+    └── mongohelper/    # MongoDB helper tools
 ```
 
 ## Features
 
-- Dependency injection using `do` package
-- MongoDB and Redis integration
-- gRPC service implementation
-- Comprehensive unit testing
-- Clean shutdown handling
+- Dependency injection usage
+- `MongoDB` and `Redis` integration
+- `gRPC` service implementation
+- Complete unit testing
+- Resource cleanup handling
 - Named dependency support
 
-## Setup
+## Installation
 
 1. Clone the repository:
     ```bash
@@ -78,12 +80,12 @@ injection/
     cd examples/practices/injection
     ```
 
-2. Install the dependencies:
+2. Install dependencies:
     ```bash
     go mod tidy
     ```
 
-3. Start required services using Docker:
+3. Start required services using `Docker`:
     ```bash
     # Start MongoDB
     docker run -d --name mongo -p 27017:27017 mongo:latest
@@ -94,12 +96,25 @@ injection/
 
 ## Usage
 
-1. Run the application:
+1. Run the `gRPC Server` service:
    ```bash
-   go run main.go
+   cd examples/practices/injection/app/user
+   go run main.go server
    ```
 
-2. Run the tests:
+2. Run the `HTTP Server` service:
+   ```bash
+   cd examples/practices/injection/app/gateway
+   go run main.go server
+   ```
+
+3. (Optional) Run async worker, only demonstrates multi-command functionality, no actual logic:
+   ```bash
+   cd examples/practices/injection/app/gateway
+   go run main.go worker
+   ```
+   
+4. (Optional) Run tests:
    ```bash
    go test ./...
    ```
@@ -107,30 +122,27 @@ injection/
 ## Implementation Details
 
 ### Dependency Injection Setup
-- Uses `do` package for dependency management
-- Supports both named and unnamed dependencies
-- Provides helper functions for common operations
+- Using `github.com/samber/do` package for dependency management
+- Support for named and unnamed dependency management
+- Helper functions for common operations
 
 ### Service Layer
-- Clean separation of concerns
+- Clear separation of concerns
 - Interface-based design
 - Easy to test with mock implementations
 
 ### Controller Layer
-- gRPC integration with DI support
-- Clean error handling
+- `gRPC` integration with `DI` support
+- Clear error handling
 - Proper resource management
 
-### Testing
-- Comprehensive unit tests
-- Mock dependencies
-- Clean test setup and teardown
+### Testability
+- Complete unit tests for data layer (`dao`), service layer (`service`), and interface layer (`controller`)
+- Mock dependencies, database configuration for unit tests managed through `manifest/config`
+- Service addresses or domains for microservice connections managed through configuration files for easy service mocking
 
-## Notes
+## Important Notes
 
-- Always use interfaces for dependencies to make them mockable
-- Properly handle resource cleanup in `Shutdown` methods
-- Use named dependencies when multiple instances of the same type are needed
-- Consider using mock implementations for external services in tests
-
+- Properly clean up resources in the `Shutdown` method when registering dependency injection
+- Use named dependencies when multiple instances of the same type are needed in dependency injection
 

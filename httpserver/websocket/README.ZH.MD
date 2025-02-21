@@ -4,6 +4,7 @@ slug: /examples/httpserver/websocket
 keywords: [websocket, server, client, goframe, https]
 description: 使用GoFrame框架实现的WebSocket服务器和客户端
 hide_title: true
+sidebar_position: 5
 ---
 
 # `WebSocket` 服务器和客户端

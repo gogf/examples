@@ -38,7 +38,7 @@ hide_title: true
 ```text
 injection/
 ├── app/
-│   ├── gateway/         # API网关服务,调用user grpc服务实现外部接口
+│   ├── gateway/         # API网关服务,调用user grpc服务实现HTTP接口
 │   │   ├── api/         # API定义
 │   │   ├── internal/    # 内部实现
 │   │   │   ├── cmd/         # 命令行工具
@@ -46,16 +46,16 @@ injection/
 │   │   │   ├── model/       # 数据模型
 │   │   │   └── service/     # 业务逻辑
 │   │   └── manifest/   # 配置文件
-│   └── user/           # 用户服务
+│   └── user/           # 用户微服务
 │       ├── api/        # API定义
 │       │   ├── entity/ # 实体定义
-│       │   └── user/   # 用户API proto
+│       │   └── user/   # 用户API pb
 │       ├── internal/   # 内部实现
 │       │   ├── cmd/         # 命令行工具
-│       │   ├── controller/  # 使用DI的控制器
+│       │   ├── controller/  # 控制器
 │       │   ├── dao/         # 数据访问对象
 │       │   ├── model/       # 数据模型
-│       │   └── service/     # 使用DI的业务逻辑
+│       │   └── service/     # 业务逻辑
 │       └── manifest/   # 配置文件
 ├── hack/               # 开发工具
 └── utility/            # 通用工具

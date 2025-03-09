@@ -3,7 +3,6 @@ module main
 go 1.22
 
 require (
-	github.com/gogf/gf/contrib/config/consul/v2 v2.8.3
 	github.com/gogf/gf/contrib/registry/consul/v2 v2.8.3
 	github.com/gogf/gf/contrib/rpc/grpcx/v2 v2.8.3
 	github.com/gogf/gf/v2 v2.8.3

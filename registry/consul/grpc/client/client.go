@@ -9,9 +9,7 @@ package main
 import (
 	"context"
 
-	"github.com/gogf/gf/contrib/config/consul/v2"
 	"github.com/gogf/gf/v2/frame/g"
-	"github.com/gogf/gf/v2/os/gctx"
 
 	"github.com/gogf/gf/contrib/registry/consul/v2"
 	"github.com/gogf/gf/contrib/rpc/grpcx/v2"
@@ -27,7 +25,7 @@ func main() {
 	grpcx.Resolver.Register(registry)
 
 	var (
-		ctx    = gctx.New()
+		ctx    = context.Background()
 		conn   = grpcx.Client.MustNewGrpcClientConn("demo")
 		client = protobuf.NewGreeterClient(conn)
 	)

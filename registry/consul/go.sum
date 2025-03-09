@@ -43,8 +43,6 @@ github.com/go-logr/logr v1.4.2/go.mod h1:9T104GzyrTigFIr8wt5mBrctHMim0Nb2HLGrmQ4
 github.com/go-logr/stdr v1.2.2 h1:hSWxHoqTgW2S2qGc0LTAI563KZ5YKYRhT3MFKZMbjag=
 github.com/go-logr/stdr v1.2.2/go.mod h1:mMo/vtBO5dYbehREoey6XUKy/eSumjCCveDpRre4VKE=
 github.com/go-stack/stack v1.8.0/go.mod h1:v0f6uXyyMGvRgIKkXu+yp6POWl0qKG85gN/melR3HDY=
-github.com/gogf/gf/contrib/config/consul/v2 v2.8.3 h1:da0jtf06W7JpJkoSdVcyqpU/zcJWWcoowBmfQha7WSk=
-github.com/gogf/gf/contrib/config/consul/v2 v2.8.3/go.mod h1:waWVoL/48UGRkeNNaGAOYCL0nAslDY46yYnso/nmPIY=
 github.com/gogf/gf/contrib/registry/consul/v2 v2.8.3 h1:Pj1+2T0zOol1AG7QNDpF8eUO6/vVia3+lz/bojLO/4s=
 github.com/gogf/gf/contrib/registry/consul/v2 v2.8.3/go.mod h1:gtfc7OGd1cqYIdvVE5K29HIx556DHYmi7IDKDmY/pq4=
 github.com/gogf/gf/contrib/registry/file/v2 v2.8.3 h1:hTcCDrXZLG7DNFF+3CKufj/GLg7wosoVPPDpZlXlumI=

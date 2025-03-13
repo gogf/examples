@@ -52,6 +52,9 @@ func main() {
 	// This ensures requests are distributed evenly across available servers
 	gsel.SetBuilder(gsel.NewBuilderRoundRobin())
 
+	client := g.Client()
+	client.SetDiscovery(gsvc.GetRegistry())
+
 	// Make 100 HTTP requests to demonstrate load balancing
 	// Each request will be routed to a different server instance in round-robin fashion
 	for i := 0; i < 100; i++ {
@@ -72,7 +75,7 @@ func main() {
 			" code: ", res.StatusCode)
 
 		// Close the response body to prevent resource leaks
-		res.Close()
+		_ = res.Close()
 
 		// Wait for 1 second before next request
 		// This helps to demonstrate the load balancing effect

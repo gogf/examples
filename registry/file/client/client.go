@@ -39,6 +39,7 @@ func main() {
 
 	// Create an HTTP client for making requests
 	client := g.Client()
+	client.SetDiscovery(gsvc.GetRegistry())
 
 	// Make 10 requests to demonstrate service discovery
 	for i := 0; i < 10; i++ {
@@ -57,7 +58,7 @@ func main() {
 
 		// Log the response and clean up
 		g.Log().Debug(ctx, res.ReadAllString())
-		res.Close()
+		_ = res.Close()
 
 		// Wait before next request
 		time.Sleep(time.Second)

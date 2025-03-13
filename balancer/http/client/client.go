@@ -29,6 +29,9 @@ func main() {
 	// This ensures requests are distributed evenly across available servers
 	gsel.SetBuilder(gsel.NewBuilderRoundRobin())
 
+	client := g.Client()
+	client.SetDiscovery(gsvc.GetRegistry())
+
 	// Make 10 HTTP requests to demonstrate load balancing
 	// Each request will be routed to a different server instance in round-robin fashion
 	for i := 0; i < 10; i++ {
@@ -37,7 +40,7 @@ func main() {
 
 		// Make HTTP request to the service using its service name
 		// The client automatically handles service discovery and load balancing
-		res := g.Client().GetContent(ctx, `http://hello.svc/`)
+		res := client.GetContent(ctx, `http://hello.svc/`)
 
 		// Log the response from the server
 		g.Log().Info(ctx, res)

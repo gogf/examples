@@ -58,6 +58,9 @@ func main() {
 	// 3. Manage circuit breaking
 	gsvc.SetRegistry(polaris.NewWithConfig(conf, polaris.WithTTL(10)))
 
+	client := g.Client()
+	client.SetDiscovery(gsvc.GetRegistry())
+
 	// Make 100 requests to demonstrate service discovery
 	// This shows:
 	// 1. Automatic service discovery
@@ -74,14 +77,14 @@ func main() {
 		// 2. Load balance between instances
 		// 3. Handle circuit breaking
 		// 4. Retry on failures
-		res, err := g.Client().Get(ctx, `http://hello-world.svc/`)
+		res, err := client.Get(ctx, `http://hello-world.svc/`)
 		if err != nil {
 			panic(err)
 		}
 
 		// Print the response and clean up
 		fmt.Println(res.ReadAllString())
-		res.Close()
+		_ = res.Close()
 
 		// Wait before next request
 		time.Sleep(time.Second)

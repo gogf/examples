@@ -23,7 +23,11 @@ func main() {
 	}
 	gsvc.SetRegistry(registry)
 
-	ctx := gctx.New()
-	res := g.Client().GetContent(ctx, `http://hello.svc/`)
+	var (
+		ctx    = gctx.New()
+		client = g.Client()
+	)
+	client.SetDiscovery(gsvc.GetRegistry())
+	res := client.GetContent(ctx, `http://hello.svc/`)
 	g.Log().Info(ctx, res)
 }

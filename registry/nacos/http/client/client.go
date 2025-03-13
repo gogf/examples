@@ -34,8 +34,11 @@ func main() {
 	// 3. Handle service changes
 	gsvc.SetRegistry(nacos.New(`127.0.0.1:8848`))
 
-	// Create a new context for the request
-	ctx := gctx.New()
+	var (
+		ctx    = gctx.New()
+		client = g.Client()
+	)
+	client.SetDiscovery(gsvc.GetRegistry())
 
 	// Make an HTTP request to the service using service discovery
 	// The client will:
@@ -43,7 +46,7 @@ func main() {
 	// 2. Load balance between instances
 	// 3. Handle failover automatically
 	// 4. Retry on connection failures
-	res := g.Client().GetContent(ctx, `http://hello.svc/`)
+	res := client.GetContent(ctx, `http://hello.svc/`)
 
 	// Log the response from the service
 	g.Log().Info(ctx, res)

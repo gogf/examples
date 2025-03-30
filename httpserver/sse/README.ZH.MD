@@ -1,5 +1,5 @@
 ---
-title: SSE
+title: Server-Sent Events(SSE)
 slug: /examples/httpserver/sse
 keywords: [http, server, sse, server-sent events, 服务器发送事件, 流式传输, goframe]
 description: 使用GoFrame框架实现的服务器发送事件(SSE)示例

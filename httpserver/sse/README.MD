@@ -1,5 +1,5 @@
 ---
-title: SSE
+title: Server-Sent Events(SSE)
 slug: /examples/httpserver/sse
 keywords: [http, server, sse, server-sent events, streaming, goframe]
 description: A Server-Sent Events implementation using GoFrame framework

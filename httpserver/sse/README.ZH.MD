@@ -6,6 +6,8 @@ description: 使用GoFrame框架实现的服务器发送事件(SSE)示例
 hide_title: true
 ---
 
+# Server-Sent Events(SSE)
+
 ## 描述
 
 本示例演示了如何使用 `GoFrame` 实现服务器发送事件（SSE）。服务器发送事件是一种允许服务器通过`HTTP`连接向客户端推送更新的技术。与`WebSocket`不同，`SSE`是单向的 - 只有服务器可以向客户端发送数据。

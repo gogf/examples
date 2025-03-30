@@ -6,6 +6,7 @@ description: A Server-Sent Events implementation using GoFrame framework
 hide_title: true
 ---
 
+# Server-Sent Events(SSE)
 
 ## Description
 

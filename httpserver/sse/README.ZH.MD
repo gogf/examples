@@ -28,8 +28,8 @@ hide_title: true
 ## 特性
 
 - 服务器发送事件实现
-- 模拟AI聊天逐字符流式响应
-- 适用于SSE的正确HTTP头
+- 模拟`AI`聊天逐字符流式响应
+- 适用于`SSE`的正确`HTTP`头
 
 ## 设置
 
@@ -66,14 +66,14 @@ hide_title: true
 
 `SSE`实现包括：
 
-- 设置正确的SSE HTTP头：
+- 设置正确的`SSE` HTTP头：
   - `Content-Type: text/event-stream`
   - `Cache-Control: no-cache`
   - `Connection: keep-alive`
 
 - 使用适当的刷新进行流式响应
 - 使用`time.Sleep`模拟打字延迟
-- 使用GoFrame的路由器进行简单的HTTP路由
+- 使用`GoFrame`的路由器进行简单的HTTP路由
 
 ## 注意事项
 

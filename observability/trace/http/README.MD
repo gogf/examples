@@ -104,7 +104,7 @@ The example demonstrates:
 ## Troubleshooting
 
 1. Server Issues:
-   - Ensure server is running: `curl http://localhost:8199/hello`
+   - Ensure server is running: `curl http://localhost:8000/hello`
    - Check server logs for detailed error messages
 
 2. Tracing Issues:

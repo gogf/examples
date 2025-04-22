@@ -55,20 +55,20 @@ jwt/
    go run main.go
    ```
 
-2. 服务器将在`8199`端口启动
+2. 服务器将在`8000`端口启动
 
 ## 测试API
 
 1. 登录获取令牌:
    ```bash
-   curl -X POST http://localhost:8199/login \
+   curl -X POST http://localhost:8000/login \
    -H "Content-Type: application/json" \
    -d '{"username":"admin","password":"password"}'
    ```
 
 2. 访问受保护的接口:
    ```bash
-   curl http://localhost:8199/api/protected \
+   curl http://localhost:8000/api/protected \
    -H "Authorization: Bearer your-token-here"
    ```
 

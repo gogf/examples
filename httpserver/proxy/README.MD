@@ -14,7 +14,7 @@ hide_title: true
 This example demonstrates how to create a reverse proxy server using `GoFrame`. The example consists of two servers:
 
 1. A backend server running on port 8198 that provides the actual service
-2. A proxy server running on port 8199 that forwards requests to the backend server
+2. A proxy server running on port 8000 that forwards requests to the backend server
 
 The proxy server implements the following features:
 - Reverse proxy functionality using `httputil.NewSingleHostReverseProxy`
@@ -69,10 +69,10 @@ The proxy server implements the following features:
 
 2. The example will start two servers:
    - Backend server at: http://127.0.0.1:8198
-   - Proxy server at: http://127.0.0.1:8199
+   - Proxy server at: http://127.0.0.1:8000
 
 3. Test the proxy:
-   - Access through proxy: http://127.0.0.1:8199/proxy/user/1
+   - Access through proxy: http://127.0.0.1:8000/proxy/user/1
    - Direct backend access: http://127.0.0.1:8198/user/1
 
 ## Implementation Details

@@ -25,7 +25,7 @@ import (
 
 // Service configuration constants
 const (
-	serviceName = "otlp-http-client"            // Name of the service for tracing
+	serviceName = "otlp-http-client"                    // Name of the service for tracing
 	endpoint    = "tracing-analysis-dc-hz.aliyuncs.com" // Tracing endpoint
 	path        = "adapt_******_******/api/otlp/traces" // Tracing path
 )
@@ -60,7 +60,7 @@ func StartRequests() {
 	ctx = gtrace.SetBaggageValue(ctx, "name", "GoFrame")
 
 	// Make HTTP request with tracing
-	response, err := g.Client().Get(ctx, "http://127.0.0.1:8199/hello")
+	response, err := g.Client().Get(ctx, "http://127.0.0.1:8000/hello")
 	if err != nil {
 		g.Log().Error(ctx, err)
 		return

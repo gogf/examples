@@ -184,7 +184,7 @@ redis:
    defer span.End()
 
    // 发送HTTP请求
-   err = client.PostVar(ctx, "http://127.0.0.1:8199/user/insert", g.Map{
+   err = client.PostVar(ctx, "http://127.0.0.1:8000/user/insert", g.Map{
        "name": "john",
    }).Scan(&insertRes)
    ```

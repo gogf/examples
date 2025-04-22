@@ -27,9 +27,9 @@ import (
 
 // Service configuration constants
 const (
-	serviceName = "otlp-http-client-with-db"                         // Name of the service for tracing
-	endpoint    = "tracing-analysis-dc-hz.aliyuncs.com"             // Tracing endpoint
-	path        = "adapt_******_******/api/otlp/traces"             // Tracing path
+	serviceName = "otlp-http-client-with-db"            // Name of the service for tracing
+	endpoint    = "tracing-analysis-dc-hz.aliyuncs.com" // Tracing endpoint
+	path        = "adapt_******_******/api/otlp/traces" // Tracing path
 )
 
 // main initializes and starts an HTTP client with tracing
@@ -66,7 +66,7 @@ func StartRequests() {
 		ghttp.DefaultHandlerResponse
 		Data struct{ ID int64 } `json:"data"`
 	}{}
-	err = client.PostVar(ctx, "http://127.0.0.1:8199/user/insert", g.Map{
+	err = client.PostVar(ctx, "http://127.0.0.1:8000/user/insert", g.Map{
 		"name": "john",
 	}).Scan(&insertRes)
 	if err != nil {
@@ -84,7 +84,7 @@ func StartRequests() {
 		ghttp.DefaultHandlerResponse
 		Data struct{ User gdb.Record } `json:"data"`
 	}{}
-	err = client.GetVar(ctx, "http://127.0.0.1:8199/user/query", g.Map{
+	err = client.GetVar(ctx, "http://127.0.0.1:8000/user/query", g.Map{
 		"id": insertRes.Data.ID,
 	}).Scan(&queryRes)
 	if err != nil {
@@ -97,7 +97,7 @@ func StartRequests() {
 	var deleteRes = struct {
 		ghttp.DefaultHandlerResponse
 	}{}
-	err = client.PostVar(ctx, "http://127.0.0.1:8199/user/delete", g.Map{
+	err = client.PostVar(ctx, "http://127.0.0.1:8000/user/delete", g.Map{
 		"id": insertRes.Data.ID,
 	}).Scan(&deleteRes)
 	if err != nil {

@@ -24,7 +24,7 @@ const (
 	// PortOfServerBackend defines the port number for the backend server
 	PortOfServerBackend = 8198
 	// PortOfServerProxy defines the port number for the proxy server
-	PortOfServerProxy = 8199
+	PortOfServerProxy = 8000
 	// UpStream defines the backend server URL that the proxy will forward requests to
 	UpStream = "http://127.0.0.1:8198"
 )

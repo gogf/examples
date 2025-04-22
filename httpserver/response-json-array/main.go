@@ -71,6 +71,6 @@ func main() {
 	// Set up API documentation paths
 	s.SetOpenApiPath("/api")
 	s.SetSwaggerPath("/swagger")
-	s.SetPort(8199)
+	s.SetPort(8000)
 	s.Run()
 }

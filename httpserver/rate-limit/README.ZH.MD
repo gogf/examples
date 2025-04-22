@@ -36,8 +36,8 @@ sidebar_position: 2
 2. 测试限流：
    ```bash
    # 正常请求
-   curl http://localhost:8199/hello?name=world
+   curl http://localhost:8000/hello?name=world
    
    # 快速发送多个请求测试限流
-   for i in {1..20}; do curl http://localhost:8199/hello?name=world; done
+   for i in {1..20}; do curl http://localhost:8000/hello?name=world; done
    ```

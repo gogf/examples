@@ -55,20 +55,20 @@ jwt/
    go run main.go
    ```
 
-2. The server will start on port 8199
+2. The server will start on port 8000
 
 ## Testing the API
 
 1. Login to get a token:
    ```bash
-   curl -X POST http://localhost:8199/login \
+   curl -X POST http://localhost:8000/login \
    -H "Content-Type: application/json" \
    -d '{"username":"admin","password":"password"}'
    ```
 
 2. Access protected endpoint:
    ```bash
-   curl http://localhost:8199/api/protected \
+   curl http://localhost:8000/api/protected \
    -H "Authorization: Bearer your-token-here"
    ```
 

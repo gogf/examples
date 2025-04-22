@@ -29,7 +29,7 @@ func StartRequests() {
 	ctx = gtrace.SetBaggageValue(ctx, "name", "john")
 
 	// Make HTTP request with trace context propagation
-	content := g.Client().GetContent(ctx, "http://127.0.0.1:8199/hello")
+	content := g.Client().GetContent(ctx, "http://127.0.0.1:8000/hello")
 
 	// Log response with trace context
 	g.Log().Print(ctx, content)

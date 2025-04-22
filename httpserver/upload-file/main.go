@@ -70,7 +70,7 @@ func main() {
 
 	// Configure server settings
 	s.SetClientMaxBodySize(600 * 1024 * 1024) // 600MB max file size
-	s.SetPort(8199)
+	s.SetPort(8000)
 	s.SetAccessLogEnabled(true)
 
 	// Start the server

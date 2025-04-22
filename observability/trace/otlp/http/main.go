@@ -24,9 +24,9 @@ import (
 
 // Service configuration constants for HTTP-based trace export
 const (
-	serviceName = "otlp-http-client"                     // Name of the service for tracing
-	endpoint    = "tracing-analysis-dc-hz.aliyuncs.com"  // HTTP endpoint for trace collection
-	path        = "adapt_******_******/api/otlp/traces"  // HTTP path for trace data submission
+	serviceName = "otlp-http-client"                    // Name of the service for tracing
+	endpoint    = "tracing-analysis-dc-hz.aliyuncs.com" // HTTP endpoint for trace collection
+	path        = "adapt_******_******/api/otlp/traces" // HTTP path for trace data submission
 )
 
 // main initializes the HTTP trace exporter and starts the application.
@@ -62,6 +62,6 @@ func StartRequests() {
 	ctx = gtrace.SetBaggageValue(ctx, "name", "john")
 
 	// Make HTTP request with tracing
-	content := g.Client().GetContent(ctx, "http://127.0.0.1:8199/hello")
+	content := g.Client().GetContent(ctx, "http://127.0.0.1:8000/hello")
 	g.Log().Print(ctx, content)
 }

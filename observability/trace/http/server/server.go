@@ -26,7 +26,7 @@ import (
 
 // Service configuration constants
 const (
-	serviceName = "otlp-http-server"            // Name of the service for tracing
+	serviceName = "otlp-http-server"                    // Name of the service for tracing
 	endpoint    = "tracing-analysis-dc-hz.aliyuncs.com" // Tracing endpoint
 	path        = "adapt_******_******/api/otlp/traces" // Tracing path
 )
@@ -47,7 +47,7 @@ func main() {
 	s.Group("/", func(group *ghttp.RouterGroup) {
 		group.GET("/hello", HelloHandler)
 	})
-	s.SetPort(8199)
+	s.SetPort(8000)
 	s.Run()
 }
 

@@ -61,17 +61,17 @@ upload-file/
    go run main.go
    ```
 
-2. The server will start at http://127.0.0.1:8199
+2. The server will start at http://127.0.0.1:8000
 
 3. Access the upload interface:
-   - Web Interface: http://127.0.0.1:8199/
-   - API Endpoint: POST http://127.0.0.1:8199/upload
+   - Web Interface: http://127.0.0.1:8000/
+   - API Endpoint: POST http://127.0.0.1:8000/upload
 
 4. Upload files using either:
    - The web interface by selecting a file and clicking "Upload"
    - Using curl:
      ```bash
-     curl -X POST http://127.0.0.1:8199/upload \
+     curl -X POST http://127.0.0.1:8000/upload \
           -F "file=@/path/to/your/file" \
           -F "msg=Optional message"
      ```

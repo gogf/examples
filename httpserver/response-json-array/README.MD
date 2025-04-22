@@ -46,15 +46,15 @@ The example implements a `/user` endpoint that returns a list of users in JSON a
    go run main.go
    ```
 
-2. The server will start at http://127.0.0.1:8199
+2. The server will start at http://127.0.0.1:8000
 
 3. Access the endpoints:
    ```bash
    # Get user list
-   curl "http://127.0.0.1:8199/user"
+   curl "http://127.0.0.1:8000/user"
    
    # View API documentation
-   # Open in browser: http://127.0.0.1:8199/swagger
+   # Open in browser: http://127.0.0.1:8000/swagger
    ```
 
 ## Implementation Details

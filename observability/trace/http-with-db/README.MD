@@ -187,6 +187,6 @@ The example demonstrates:
    - Ensure trace endpoint is correct in configuration
 
 4. HTTP Issues:
-   - Check if server is running: `curl http://localhost:8199/ping`
+   - Check if server is running: `curl http://localhost:8000/ping`
    - Verify request format matches API specification
    - Check server logs for detailed error messages

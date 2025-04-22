@@ -37,6 +37,6 @@ sidebar_position: 99
    go run main.go
    ```
 
-2. 测试接口：http://localhost:8199/user
+2. 测试接口：http://localhost:8000/user
 
-3. 接口文档：http://127.0.0.1:8199/swagger
+3. 接口文档：http://127.0.0.1:8000/swagger

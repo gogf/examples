@@ -115,5 +115,5 @@ sidebar_position: 1
    ctx = gtrace.SetBaggageValue(ctx, "name", "GoFrame")
 
    // 发送HTTP请求
-   response, err := g.Client().Get(ctx, "http://127.0.0.1:8199/hello")
+   response, err := g.Client().Get(ctx, "http://127.0.0.1:8000/hello")
    ```

@@ -24,9 +24,9 @@ import (
 
 // Service configuration constants for gRPC-based trace export
 const (
-	serviceName = "otlp-grpc-client"                        // Name of the service for tracing
+	serviceName = "otlp-grpc-client"                         // Name of the service for tracing
 	endpoint    = "tracing-analysis-dc-bj.aliyuncs.com:8090" // gRPC endpoint for trace collection
-	traceToken  = "******_******"                           // Authentication token for gRPC connection
+	traceToken  = "******_******"                            // Authentication token for gRPC connection
 )
 
 // main initializes the gRPC trace exporter and starts the application.
@@ -62,6 +62,6 @@ func StartRequests() {
 	ctx = gtrace.SetBaggageValue(ctx, "name", "john")
 
 	// Make HTTP request with tracing
-	content := g.Client().GetContent(ctx, "http://127.0.0.1:8199/hello")
+	content := g.Client().GetContent(ctx, "http://127.0.0.1:8000/hello")
 	g.Log().Print(ctx, content)
 }

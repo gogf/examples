@@ -38,7 +38,7 @@ hide_title: true
 - API文档的基础认证保护
 - `RESTful API`端点实现
 - 请求/响应验证
-- API文档注释
+- `API`文档注释
 
 ## 安装设置
 
@@ -65,40 +65,40 @@ hide_title: true
    go run main.go
    ```
 
-2. 访问受保护的Swagger文档：
+2. 访问受保护的`Swagger`文档：
    - 地址：http://localhost:8000/swagger
    - 基础认证凭据：
-     - 用户名：admin
-     - 密码：123456
+     - 用户：`admin`
+     - 密码：`123456`
 
 3. 测试API端点：
    - 访问地址：http://localhost:8000/hello?name=GoFrame
-   - 请求方法：GET
-   - 响应：包含问候消息的JSON
+   - 请求方法：`GET`
+   - 响应：包含问候消息的`JSON`
 
 ## 实现细节
 
 本示例展示了几个关键特性：
 
 1. `Swagger`集成：
-   - OpenAPI JSON地址：`/api.json`
-   - Swagger UI地址：`/swagger`
+   - `OpenAPI JSON`地址：`/api.json`
+   - `Swagger UI`地址：`/swagger`
    - 两者都受基础认证保护
 
 2. 基础认证：
-   - 用户名：`admin`
+   - 用户：`admin`
    - 密码：`123456`
-   - 认证域："Restricted"
+   - 认证域：`Restricted`
 
 3. API端点：
    - 路径：`/hello`
-   - 方法：GET
-   - 必需参数：name
-   - 响应：带有问候消息的JSON
+   - 方法：`GET`
+   - 必需参数：`name`
+   - 响应：带有问候消息的`JSON`
 
 ## 注意事项
 
-- 基础认证使用GoFrame内置的`BasicAuth`方法实现
-- API文档根据代码注释和结构体标签自动生成
-- 服务器默认运行在8000端口
-- 所有API响应都通过中间件自动包装成标准格式
+- 基础认证使用`GoFrame`内置的`BasicAuth`方法实现
+- `API`文档根据代码注释和结构体标签自动生成
+- 服务器默认运行在`8000`端口
+- 所有`API`响应都通过中间件自动包装成标准格式

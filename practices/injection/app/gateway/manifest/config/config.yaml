@@ -11,4 +11,4 @@ logger:
 
 # grpc services.
 services:
-  user: "127.0.0.1:8000"
+  user: "127.0.0.1:8001"

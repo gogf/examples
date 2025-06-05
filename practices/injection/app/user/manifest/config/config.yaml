@@ -1,7 +1,7 @@
 # GRPC Server.
 # https://goframe.org/docs/micro-service/config
 grpc:
-  address: ":8000"
+  address: ":8001"
   logPath: ""
   logStdout: true
   errorStack: true

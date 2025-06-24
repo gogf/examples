@@ -4,12 +4,16 @@ import (
 	"context"
 	"fmt"
 	"reflect"
+	"sync"
 
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/samber/do"
 )
 
-var defaultInjector *do.Injector
+var (
+	defaultInjector     *do.Injector
+	defaultInjectorOnce sync.Once
+)
 
 // MustInvoke invokes the function with the default injector and panics if any error occurs.
 func MustInvoke[T any]() T {
@@ -23,16 +27,15 @@ func Invoke[T any]() (T, error) {
 
 // SetupDefaultInjector initializes the default injector with the given context.
 func SetupDefaultInjector(ctx context.Context) *do.Injector {
-	if defaultInjector != nil {
-		return defaultInjector
-	}
-	injector := do.NewWithOpts(&do.InjectorOpts{})
+	defaultInjectorOnce.Do(func() { // make sure this is only called once
+		injector := do.NewWithOpts(&do.InjectorOpts{})
 
-	injectMongo(ctx, injector)
-	injectRedis(ctx, injector)
-	injectGrpcClients(ctx, injector)
+		injectMongo(ctx, injector)
+		injectRedis(ctx, injector)
+		injectGrpcClients(ctx, injector)
 
-	defaultInjector = injector
+		defaultInjector = injector
+	})
 	return defaultInjector
 }
 

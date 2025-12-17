@@ -1,0 +1,126 @@
+# GoFrame MCP HTTP 示例
+
+本示例展示了如何使用 GoFrame 的 `ghttp` 服务器和 `mark3labs/mcp-go` SDK 实现通过 HTTP 流式传输的 [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) 服务器。
+
+## 先决条件
+
+- Go 1.20 或更高版本
+- MCP 客户端（例如 Claude Desktop 或 IDE 扩展）
+
+## 安装
+
+1. 初始化模块（如果尚未完成）：
+   ```bash
+   go mod tidy
+   ```
+
+2. 运行服务器：
+   ```bash
+   go run main.go
+   ```
+
+## 用法
+
+服务器暴露了一个端点：
+- `POST /mcp`: 用于处理 MCP JSON-RPC 消息的 HTTP 端点。
+
+### 连接 Claude Desktop
+
+要在 Claude Desktop 中使用此 MCP 服务器，请将以下配置添加到您的 `claude_desktop_config.json`：
+
+```json
+{
+  "mcpServers": {
+    "goframe-mcp": {
+      "command": "go",
+      "args": ["run", "path/to/your/project/httpserver/mcp-http/main.go"]
+    }
+  }
+}
+```
+
+*注意：此示例使用 HTTP 流式传输（StreamableHTTP），通过单一 HTTP 端点处理所有 MCP 通信。*
+
+### 直接 HTTP 测试
+
+1. 启动服务器。
+2. 发送 POST 请求到 `http://localhost:8080/mcp`。
+
+示例请求：
+```bash
+curl -X POST http://localhost:8080/mcp \
+  -H "Content-Type: application/json" \
+  -d '{
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "initialize",
+    "params": {
+      "protocolVersion": "2024-11-05",
+      "capabilities": {},
+      "clientInfo": {
+        "name": "client",
+        "version": "1.0.0"
+      }
+    }
+  }'
+```
+
+## MCP 客户端配置
+
+如果你的客户端或 IDE 支持通过配置文件定义 MCP 服务器，可以在项目根目录下创建 `.vscode/mcp.json`，示例内容如下：
+
+```json
+{
+  "servers": {
+    "add": {
+      "url": "http://localhost:8080/mcp",
+      "type": "http"
+    }
+  },
+  "inputs": []
+}
+```
+
+说明：
+- `servers` 下的键名（例如 `add`）为服务器标识名称。
+- `url` 指向示例的 HTTP 端点 `http://localhost:8080/mcp`。
+- `type` 表示连接类型，此处为 `http`（HTTP 流式传输）。
+- `inputs` 可选，用于在客户端中预置输入。
+
+保存后，支持该配置的客户端即可使用该文件连接到本示例 MCP 服务。
+
+## 功能
+
+- **工具**: 暴露一个 `add` 工具，可接收两个数字（`a` 和 `b`），返回它们的和。
+- **示例**: 你可以通过 MCP 客户端发送如下计算请求：
+
+```
+mcp 计算 一加一
+```
+
+或英文：
+```
+mcp add 1 and 1
+```
+
+服务器将返回：
+```
+结果: 1 + 1 = 2
+```
+
+## 代码结构
+
+- `main.go`: 包含服务器设置、工具注册以及使用 `ghttp.WrapH` 进行的路由绑定。
+
+## StreamableHTTP 与 SSE 的区别
+
+| 特性 | StreamableHTTP | SSE |
+|------|----------------|-----|
+| 协议 | HTTP 1.1+ | HTTP (Server-Sent Events) |
+| 连接方式 | 单一 POST 端点 | 分离的 GET (SSE) 和 POST 端点 |
+| 流式传输 | 支持 | 支持 |
+| 客户端实现 | 更简单 | 需要处理事件流 |
+| 浏览器支持 | 标准 HTTP | 需要 EventSource API |
+| 集成方式 | 适合 API 网关 | 适合实时推送场景 |
+
+StreamableHTTP 提供了一种更简洁的方式来实现 MCP 通信，通过单一的 HTTP 端点处理所有请求和响应，更易于集成到现有的 HTTP 服务架构中。

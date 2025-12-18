@@ -1,3 +1,11 @@
+---
+title: GoFrame MCP HTTP 示例
+slug: /examples/httpserver/mcp-http
+keywords: [mcp, http, 流式传输, goframe, 模型上下文协议]
+description: 使用 GoFrame 和 HTTP 流式传输实现 MCP 服务器的示例。
+hide_title: true
+---
+
 # GoFrame MCP HTTP 示例
 
 本示例展示了如何使用 GoFrame 的 `ghttp` 服务器和 `mark3labs/mcp-go` SDK 实现通过 HTTP 流式传输的 [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) 服务器。

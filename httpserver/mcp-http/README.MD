@@ -1,3 +1,11 @@
+---
+title: GoFrame MCP HTTP Example
+slug: /examples/httpserver/mcp-http
+keywords: [mcp, http, streaming, goframe, model context protocol]
+description: An example of implementing MCP server using GoFrame with HTTP streaming.
+hide_title: true
+---
+
 # GoFrame MCP HTTP Example
 
 This example demonstrates how to implement a [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server using GoFrame's `ghttp` server and the `mark3labs/mcp-go` SDK through HTTP streaming.

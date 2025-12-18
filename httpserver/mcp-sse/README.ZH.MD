@@ -1,3 +1,11 @@
+---
+title: GoFrame MCP SSE 示例
+slug: /examples/httpserver/mcp-sse
+keywords: [mcp, 服务器发送事件, sse, goframe, 模型上下文协议]
+description: 使用 GoFrame 和服务器发送事件实现 MCP 服务器的示例。
+hide_title: true
+---
+
 # GoFrame MCP 示例
 
 本示例展示了如何使用 GoFrame 的 `ghttp` 服务器和 `mark3labs/mcp-go` SDK 实现 [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) 服务器。

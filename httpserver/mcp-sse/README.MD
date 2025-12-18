@@ -1,3 +1,11 @@
+---
+title: GoFrame MCP SSE Example
+slug: /examples/httpserver/mcp-sse
+keywords: [mcp, server-sent events, sse, goframe, model context protocol]
+description: An example of implementing MCP server using GoFrame with Server-Sent Events.
+hide_title: true
+---
+
 # GoFrame MCP Example
 
 This example demonstrates how to implement a [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server using GoFrame's `ghttp` server and the `mark3labs/mcp-go` SDK.

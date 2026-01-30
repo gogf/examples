@@ -2,7 +2,7 @@
 title: Nacos
 slug: /examples/registry/nacos
 keywords: [注册中心, nacos, 服务发现, goframe]
-description: GoFrame框架中的Nacos服务注册与发现集成
+description: 演示在GoFrame中全面集成阿里巴巴Nacos服务注册中心实现动态服务管理和配置。本示例展示了使用命名空间和分组隔离向Nacos注册服务、使用实例过滤和选择策略进行服务发现、内置健康监控和心跳机制、服务元数据和基于权重的负载均衡、与Nacos配置中心集成、以及无缝的GoFrame组件集成。主要功能包括:集中式服务注册中心、实时服务状态更新、健康检查自动化、加权负载均衡支持、基于命名空间的服务隔离、生产级模式。适合在阿里云上构建云原生微服务、实现带配置管理的动态服务发现、确保服务健康和可用性、以及实现企业级服务治理。
 hide_title: true
 sidebar_position: 1
 ---

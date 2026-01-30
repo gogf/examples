@@ -2,7 +2,7 @@
 title: Polaris
 slug: /examples/registry/polaris
 keywords: [registry, polaris, service discovery, goframe]
-description: Polaris service registry integration in GoFrame
+description: Demonstrates comprehensive Tencent Cloud Polaris service registry integration with GoFrame for service mesh and traffic management. This example showcases service registration with Polaris using advanced configuration options, service discovery with circuit breaker and rate limiting integration, health check configuration and automatic instance isolation, service routing and traffic management, integration with Polaris mesh for unified governance, and seamless GoFrame component integration. Features include service mesh registry, traffic control policies, circuit breaker patterns, health-based routing, canary deployment support, and production-ready patterns. Ideal for building cloud-native microservices on Tencent Cloud, implementing service mesh architectures, ensuring high availability through traffic management, and enabling advanced service governance with unified control plane.
 hide_title: true
 ---
 

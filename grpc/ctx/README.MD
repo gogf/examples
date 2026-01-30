@@ -2,7 +2,7 @@
 title: Context Usage
 slug: /examples/grpc/ctx
 keywords: [grpc, context, metadata, goframe]
-description: gRPC context usage in GoFrame
+description: Demonstrates advanced context and metadata management in gRPC services using GoFrame for request tracking and data propagation. This example showcases how to pass metadata through gRPC context for cross-cutting concerns, handle context values and deadlines for request cancellation, manage request context across service boundaries, process and extract context metadata, implement distributed tracing integration, and propagate authentication tokens and correlation IDs. Features include metadata injection and extraction, context timeout and cancellation handling, custom metadata keys and values, interceptor-based metadata processing, distributed tracing support, and request correlation patterns. Perfect for implementing observability in microservices, tracking requests across distributed systems, implementing authentication and authorization, managing request timeouts and cancellation, and building production-ready gRPC services with proper context management.
 hide_title: true
 sidebar_position: 1
 ---

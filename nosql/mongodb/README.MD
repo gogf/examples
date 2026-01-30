@@ -2,7 +2,7 @@
 title: MongoDB
 slug: /examples/nosql/mongodb
 keywords: [nosql, mongodb, database, goframe]
-description: An example demonstrating MongoDB integration in GoFrame
+description: Demonstrates comprehensive MongoDB integration with GoFrame for document-based data storage and retrieval. This example showcases MongoDB connection setup and configuration with official Go driver, CRUD operations (Create, Read, Update, Delete) for documents, advanced querying with filters and projections, aggregation pipeline usage for data analysis, index creation and management for performance, transaction support for data consistency, and connection pooling configuration. Features include automatic connection management, error handling patterns, integration with GoFrame's ORM concepts where applicable, document marshaling/unmarshaling, pagination support, and production-ready database operations. Ideal for building applications requiring flexible schema design, document-oriented data models, complex aggregations, horizontal scalability, and NoSQL database integration in microservices architectures.
 hide_title: true
 sidebar_position: 2
 ---

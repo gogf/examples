@@ -2,7 +2,7 @@
 title: MongoDB
 slug: /examples/nosql/mongodb
 keywords: [nosql, mongodb, database, goframe]
-description: 在 GoFrame 中使用 MongoDB 的示例
+description: 演示在GoFrame中全面集成MongoDB用于基于文档的数据存储和检索。本示例展示了使用官方Go驱动的MongoDB连接设置和配置、文档的CRUD操作(创建、读取、更新、删除)、带有过滤器和投影的高级查询、用于数据分析的聚合管道使用、用于性能优化的索引创建和管理、用于数据一致性的事务支持、以及连接池配置。主要功能包括:自动连接管理、错误处理模式、在适用情况下与GoFrame的ORM概念集成、文档序列化/反序列化、分页支持、生产级数据库操作。非常适合构建需要灵活模式设计、面向文档的数据模型、复杂聚合、水平扩展性、以及在微服务架构中集成NoSQL数据库的应用程序。通过本示例可以学习如何在GoFrame中使用MongoDB、NoSQL数据库的最佳实践、以及构建灵活高性能的文档存储系统。
 hide_title: true
 sidebar_position: 2
 ---

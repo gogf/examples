@@ -2,7 +2,7 @@
 title: Swagger Auth
 slug: /examples/httpserver/swagger-auth
 keywords: [http, server, swagger, auth, basic auth, goframe]
-description: A Swagger API documentation with Basic Authentication using GoFrame framework
+description: Demonstrates Swagger API documentation with Basic Authentication integration using GoFrame for secure API documentation access. This example showcases Swagger UI integration with GoFrame HTTP server, Basic Authentication protection for Swagger endpoints, OpenAPI specification generation and serving, authentication middleware for documentation access, custom Swagger UI configuration, and integration with GoFrame's routing system. Features include protected API documentation, automatic OpenAPI spec generation, interactive API testing with authentication, customizable Swagger UI themes, credential-based access control, and development-friendly patterns. Ideal for securing API documentation in production, providing authenticated access to internal APIs, enabling interactive API testing with auth, documenting and protecting REST APIs, and maintaining API specifications with access control.
 hide_title: true
 ---
 

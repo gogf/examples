@@ -2,7 +2,7 @@
 title: Etcd
 slug: /examples/registry/etcd
 keywords: [registry, etcd, service discovery, goframe]
-description: Etcd service registry integration in GoFrame
+description: Demonstrates comprehensive Etcd service registry integration with GoFrame for distributed service discovery and registration. This example showcases service registration with Etcd using automatic heartbeat mechanism, service discovery and watching for real-time updates, TTL-based service health management, service metadata and endpoint configuration, automatic service deregistration on shutdown, and integration with GoFrame's server and client components. Features include distributed service registry, real-time service updates via watch mechanism, health check integration, load balancer integration, automatic failover support, and production-ready patterns. Ideal for building cloud-native microservices requiring dynamic service discovery, implementing service mesh architectures, ensuring high availability through automatic service registration, and enabling zero-downtime deployments with service discovery.
 hide_title: true
 ---
 

@@ -2,7 +2,7 @@
 title: Consul
 slug: /examples/registry/consul
 keywords: [registry, consul, service discovery, goframe]
-description: Consul service registry integration in GoFrame
+description: Demonstrates comprehensive HashiCorp Consul service registry integration with GoFrame for enterprise-grade service discovery and health monitoring. This example showcases service registration with Consul agent including health check configuration, service discovery with filtering and tag-based queries, built-in health monitoring and automatic unhealthy service removal, service metadata and versioning support, multi-datacenter service discovery, and integration with GoFrame's server and client components. Features include enterprise service registry, automatic health check execution, DNS and HTTP service discovery interfaces, load balancer integration, service mesh compatibility, and production-ready patterns. Ideal for building microservices requiring robust service discovery, implementing enterprise service mesh, ensuring service health monitoring, and enabling dynamic service registration across multiple datacenters.
 hide_title: true
 ---
 

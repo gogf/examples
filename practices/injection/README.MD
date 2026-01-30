@@ -2,7 +2,7 @@
 title: Dependency Injection
 slug: /examples/practices/injection
 keywords: [dependency injection, testing, goframe, di]
-description: A dependency injection example using GoFrame framework and do package
+description: Demonstrates dependency injection patterns using GoFrame's do package for testable and maintainable code architecture. This example showcases dependency injection container setup and registration, interface-based dependency management, constructor injection with automatic resolution, singleton and transient lifetime management, testing with mock implementations, and integration with GoFrame's application lifecycle. Features include type-safe dependency injection, automatic dependency resolution, interface-driven design patterns, easy unit testing with mocks, flexible configuration switching, and production-ready architecture. Ideal for building testable microservices architecture, implementing clean architecture principles, managing complex dependencies, enabling easy component replacement, and creating maintainable enterprise applications with proper separation of concerns.
 hide_title: true
 ---
 

@@ -2,7 +2,7 @@
 title: Encoded Password Database Connection
 slug: /examples/database/encoded-pass
 keywords: [database, security, encoded password, encryption, goframe]
-description: A demonstration of using encrypted database passwords with GoFrame
+description: Demonstrates implementation of a custom database driver in GoFrame that handles encrypted database passwords for enhanced security. This example showcases how to create a custom MySQL driver with AES encryption and Base64 encoding, automatic password decryption during connection establishment, secure credential storage in configuration files, transparent database connection handling, and seamless integration with GoFrame's database component. Features include encrypted password storage, custom driver registration, automatic decryption middleware, production-ready security patterns, and zero-impact on existing database operations. Perfect for applications requiring enhanced database security, compliance with security policies, protection of sensitive credentials in version control, and secure configuration management without code changes.
 hide_title: true
 ---
 

@@ -2,7 +2,7 @@
 title: 基础示例
 slug: /examples/grpc/basic
 keywords: [grpc, 基础, goframe]
-description: GoFrame 中的基础 gRPC 用法
+description: 演示GoFrame应用程序中gRPC的基础实现，涵盖协议缓冲区定义、服务创建和客户端-服务器通信。本示例展示了如何使用GoFrame创建gRPC服务器和客户端、定义和编译用于服务契约的协议缓冲区、实现带有业务逻辑的服务处理器、进行同步和异步RPC调用、处理错误和状态码、以及与GoFrame的配置和日志系统集成。主要功能包括:完整的服务器和客户端设置、协议缓冲区集成、服务接口实现、请求-响应模式、错误处理最佳实践、生产级代码结构。非常适合gRPC新手开发者、使用GoFrame构建微服务、学习协议缓冲区使用、实现服务间通信模式的场景。通过本示例可以学习gRPC在GoFrame中的基础用法、微服务通信的最佳实践、以及如何构建高效的RPC服务。
 hide_title: true
 sidebar_position: 0
 ---

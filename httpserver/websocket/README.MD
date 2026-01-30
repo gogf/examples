@@ -2,7 +2,7 @@
 title: WebSocket
 slug: /examples/httpserver/websocket
 keywords: [websocket, server, client, goframe, https]
-description: A WebSocket server and client implementation using GoFrame framework
+description: Demonstrates WebSocket server and client implementation using GoFrame for bidirectional real-time communication. This example showcases WebSocket server setup with connection handling, client connection establishment and management, bidirectional message sending and receiving, connection lifecycle management (connect, disconnect, error), protocol upgrade from HTTP to WebSocket, and integration with GoFrame's server components. Features include full-duplex communication, automatic ping/pong heartbeat, connection pooling and broadcasting, message framing and encoding, TLS/SSL support for secure WebSocket (wss://), and production-ready patterns. Ideal for building real-time chat and messaging applications, implementing live notifications and updates, creating multiplayer game servers, enabling collaborative editing features, and building real-time data streaming applications.
 hide_title: true
 ---
 

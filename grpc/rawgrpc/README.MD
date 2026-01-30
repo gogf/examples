@@ -2,7 +2,7 @@
 title: Raw gRPC Example
 slug: /examples/grpc/rawgrpc
 keywords: [grpc, raw, implementation, goframe]
-description: raw gRPC implementation in GoFrame
+description: Demonstrates raw gRPC implementation in GoFrame without framework abstractions for maximum control and flexibility. This example showcases how to create gRPC servers and clients using raw gRPC libraries directly, use protocol buffers without additional wrappers, implement service handlers with direct gRPC API access, make low-level RPC calls with full control, handle streaming RPCs and advanced patterns, and integrate with GoFrame components selectively. Features include direct gRPC server and client creation, unabstracted protocol buffer usage, manual connection management, custom interceptors and middleware, streaming support (unary, client-streaming, server-streaming, bidirectional), and production-ready error handling. Perfect for advanced users requiring fine-grained control, implementing custom gRPC patterns, optimizing performance-critical applications, and integrating third-party gRPC libraries.
 hide_title: true
 sidebar_position: 9
 ---

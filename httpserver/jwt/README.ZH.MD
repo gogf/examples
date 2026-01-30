@@ -2,7 +2,7 @@
 title: JWT认证
 slug: /examples/httpserver/jwt
 keywords: [http, server, jwt, authentication, goframe]
-description: 使用GoFrame框架实现的JWT认证示例
+description: 演示在GoFrame HTTP服务器中实现全面的JWT(JSON Web Token)认证，用于安全的API访问控制。本示例展示了带有自定义声明和过期时间的JWT令牌生成、令牌验证和校验中间件、使用HS256/RS256算法进行安全令牌签名、用于延长会话的刷新令牌机制、带有认证中间件的受保护路由实现、对无效或过期令牌的错误处理、以及与GoFrame中间件系统的集成。主要功能包括:用户登录和令牌颁发、无状态认证、令牌刷新模式、基于角色的访问控制(RBAC)集成、安全令牌存储建议、生产级安全实践。非常适合构建带有认证的REST API、实现微服务安全、需要无状态认证的移动应用后端、以及需要可扩展认证且无需服务器端会话的应用程序。通过本示例可以学习JWT认证的最佳实践、如何实现安全的无状态认证、以及构建安全可扩展的Web服务。
 hide_title: true
 sidebar_position: 0
 ---

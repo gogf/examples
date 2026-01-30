@@ -2,7 +2,7 @@
 title: Consul
 slug: /examples/config/consul
 keywords: [config, consul, goframe]
-description: Consul configuration center integration with GoFrame
+description: Demonstrates comprehensive integration of HashiCorp Consul configuration center with GoFrame applications for distributed configuration management. This example showcases Consul client setup and initialization, configuration adapter implementation for GoFrame's config component, dynamic configuration loading and parsing, real-time configuration watch and updates, error handling and logging mechanisms, and secure configuration value retrieval. Features include distributed configuration management through Consul KV store, support for multiple data centers and namespaces, automatic configuration synchronization, health checks and service discovery integration, type-safe configuration access, and production-ready error handling. Perfect for building cloud-native microservices requiring distributed configuration management, service mesh integration, and consistent configuration across multiple instances.
 hide_title: true
 ---
 

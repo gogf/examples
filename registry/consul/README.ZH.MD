@@ -2,7 +2,7 @@
 title: Consul
 slug: /examples/registry/consul
 keywords: [注册中心, consul, 服务发现, goframe]
-description: GoFrame框架中的Consul服务注册与发现集成
+description: 演示在GoFrame中全面集成HashiCorp Consul服务注册中心实现企业级服务发现和健康监控。本示例展示了向Consul代理注册服务包括健康检查配置、使用过滤器和基于标签的查询进行服务发现、内置健康监控和自动移除不健康服务、服务元数据和版本管理支持、多数据中心服务发现、以及与GoFrame服务器和客户端组件集成。主要功能包括:企业服务注册中心、自动健康检查执行、DNS和HTTP服务发现接口、负载均衡器集成、服务网格兼容性、生产级模式。适合构建需要强大服务发现的微服务、实现企业服务网格、确保服务健康监控、以及实现跨多数据中心的动态服务注册。
 hide_title: true
 sidebar_position: 1
 ---

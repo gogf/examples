@@ -2,7 +2,7 @@
 title: Polaris
 slug: /examples/config/polaris
 keywords: [配置中心, polaris, goframe]
-description: GoFrame 框架中 Polaris 配置中心的集成示例
+description: 演示如何在GoFrame应用程序中无缝集成腾讯云Polaris配置中心实现服务网格配置管理。本示例展示了Polaris客户端的设置与初始化、GoFrame配置组件适配器的实现、动态配置加载与热更新、实时配置监听与同步、命名空间和文件分组管理、完善的错误处理和日志记录、以及安全的配置值获取。主要功能包括:通过Polaris实现集中式配置管理、支持多命名空间和配置分组、自动配置刷新能力、与Polaris服务网格集成实现统一服务治理、类型安全的配置访问、生产级监控能力。非常适合构建基于腾讯云或使用Polaris网格的云原生微服务应用,特别是需要动态配置、服务发现、流量管理、统一配置治理的场景。通过本示例可以深入学习Polaris在配置管理和服务网格方面的企业级应用实践。
 hide_title: true
 sidebar_position: 1
 ---

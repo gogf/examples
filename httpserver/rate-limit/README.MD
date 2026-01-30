@@ -2,7 +2,7 @@
 title: Rate Limit
 slug: /examples/httpserver/rate-limit
 keywords: [http, server, rate limit, middleware, goframe]
-description: Rate limiting in a HTTP server using GoFrame framework
+description: Demonstrates rate limiting implementation in GoFrame HTTP servers for API protection and traffic control. This example showcases rate limiting middleware configuration with configurable limits, token bucket and sliding window algorithms, per-IP and per-user rate limiting strategies, custom rate limit responses and headers (X-RateLimit-*), Redis-based distributed rate limiting for scalability, and integration with GoFrame's middleware chain. Features include flexible rate limit policies, distributed rate limiting support, custom limit rules per endpoint, graceful rate limit responses, monitoring and metrics integration, and production-ready patterns. Ideal for protecting APIs from abuse and DDoS attacks, implementing fair usage policies, ensuring service stability under load, managing API quota and billing, and enabling multi-tier service levels.
 hide_title: true
 ---
 

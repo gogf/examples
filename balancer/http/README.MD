@@ -2,7 +2,7 @@
 title: HTTP Service
 slug: /examples/balancer/http
 keywords: [load balancer, http, service discovery, goframe]
-description: HTTP service load balancing in GoFrame
+description: Demonstrates HTTP service load balancing implementation using GoFrame with etcd-based service registration and discovery. This example showcases client-side load balancing with round-robin strategy, automatic service discovery, and distributed request routing across multiple HTTP server instances. Features include service registration using etcd, dynamic service discovery, configurable load balancing strategies, and seamless integration with GoFrame's HTTP server and client components for building scalable microservices architectures.
 hide_title: true
 ---
 

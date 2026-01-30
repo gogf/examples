@@ -2,7 +2,7 @@
 title: Response with JSON Array
 slug: /examples/httpserver/response-json-array
 keywords: [http, server, json, array, goframe]
-description: Handle JSON array responses in a HTTP server using GoFrame framework
+description: Demonstrates JSON array response handling in GoFrame HTTP servers for RESTful API development. This example showcases returning JSON arrays as HTTP responses, proper content-type header configuration, array serialization with custom formatting, pagination support for large datasets, efficient memory management for large arrays, and integration with GoFrame's response writing system. Features include automatic JSON marshaling, proper HTTP status codes, empty array handling, streaming support for large datasets, error response formatting, and RESTful API patterns. Ideal for building REST APIs returning collections, implementing list and search endpoints, handling bulk data responses, ensuring consistent API response formats, and optimizing JSON serialization performance.
 hide_title: true
 ---
 

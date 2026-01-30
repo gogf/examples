@@ -2,7 +2,7 @@
 title: Service Resolver
 slug: /examples/grpc/resolver
 keywords: [grpc, resolver, etcd, goframe]
-description: gRPC service resolver with etcd in GoFrame
+description: Demonstrates gRPC service resolver implementation with etcd integration in GoFrame for dynamic service discovery and resolution. This example showcases how to configure service resolver with etcd as the service registry, register gRPC services to etcd with automatic heartbeat, discover and resolve services dynamically using resolver API, handle service instance updates and removals automatically, implement client-side service discovery, and manage service health monitoring. Features include etcd-based service registry, automatic service registration and deregistration, dynamic service resolution, health check integration, automatic failover on service changes, and production-ready connection management. Ideal for building cloud-native microservices with dynamic service discovery, implementing service mesh patterns, scaling services without client reconfiguration, and ensuring high availability through automatic service resolution.
 hide_title: true
 ---
 

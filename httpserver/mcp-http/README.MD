@@ -2,7 +2,7 @@
 title: GoFrame MCP HTTP Example
 slug: /examples/httpserver/mcp-http
 keywords: [mcp, http, streaming, goframe, model context protocol]
-description: An example of implementing MCP server using GoFrame with HTTP streaming.
+description: Demonstrates Model Context Protocol (MCP) server implementation using GoFrame with HTTP streaming for AI model integration. This example showcases MCP server setup using HTTP transport, streaming response handling for real-time model outputs, protocol message encoding and decoding, context management and propagation, integration with AI models and services, and error handling for MCP operations. Features include HTTP-based MCP transport, streaming API support, efficient message serialization, context sharing between requests, extensible protocol handlers, and production-ready patterns. Ideal for building AI agent backends, integrating language models with applications, implementing streaming AI responses, and creating MCP-compliant services for model context sharing.
 hide_title: true
 ---
 

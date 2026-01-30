@@ -2,7 +2,7 @@
 title: Polaris
 slug: /examples/registry/polaris
 keywords: [注册中心, polaris, 服务发现, goframe]
-description: GoFrame框架中的Polaris服务注册与发现集成
+description: 演示在GoFrame中全面集成腾讯云Polaris服务注册中心实现服务网格和流量管理。本示例展示了使用高级配置选项向Polaris注册服务、与熔断器和限流集成的服务发现、健康检查配置和自动实例隔离、服务路由和流量管理、与Polaris网格集成实现统一治理、以及无缝的GoFrame组件集成。主要功能包括:服务网格注册中心、流量控制策略、熔断器模式、基于健康的路由、金丝雀部署支持、生产级模式。适合在腾讯云上构建云原生微服务、实现服务网格架构、通过流量管理确保高可用性、以及实现带统一控制面板的高级服务治理。
 hide_title: true
 sidebar_position: 1
 ---

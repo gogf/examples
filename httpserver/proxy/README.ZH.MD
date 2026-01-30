@@ -2,7 +2,7 @@
 title: 反向代理
 slug: /examples/httpserver/proxy
 keywords: [http, 服务器, 代理, 反向代理, goframe]
-description: 使用 GoFrame 框架实现反向代理服务器
+description: 演示使用GoFrame实现反向代理服务器以进行请求转发和负载分发。本示例展示了带有目标后端服务器的反向代理设置和配置、带有头保留的HTTP请求和响应转发、自定义头操作和转换、连接池和keepalive管理、错误处理和故障转移逻辑、以及与GoFrame中间件系统集成。主要功能包括:灵活的代理配置、透明请求转发、响应流支持、自定义路由规则、负载均衡集成、生产级模式。适合构建API网关和服务代理、实现微服务路由、添加认证和限流层、实现A/B测试和金丝雀部署、以及创建开发代理服务器。
 hide_title: true
 sidebar_position: 1
 ---

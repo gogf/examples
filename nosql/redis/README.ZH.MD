@@ -2,7 +2,7 @@
 title: Redis 
 slug: /examples/nosql/redis
 keywords: [nosql, redis, cache, database, goframe]
-description: 在 GoFrame 中使用 Redis 的示例
+description: 演示在GoFrame中全面集成Redis用于缓存、会话存储和数据持久化。本示例展示了使用GoFrame的redis组件进行Redis连接设置和配置、基本操作包括GET/SET/DEL、数据结构操作(字符串、哈希、列表、集合、有序集合)、TTL和过期管理、管道和事务支持、发布/订阅消息模式、以及连接池配置。主要功能包括:支持单机和集群模式、自动连接管理、错误处理和重试逻辑、与GoFrame缓存组件集成、序列化和反序列化助手、生产级模式。非常适合实现应用缓存、会话管理、限流、分布式锁、实时消息、以及在微服务架构中实现高性能数据存储。通过本示例可以学习如何在GoFrame中使用Redis、Redis数据结构的最佳实践、以及构建高性能缓存系统。
 hide_title: true
 sidebar_position: 1
 ---

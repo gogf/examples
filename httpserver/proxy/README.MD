@@ -2,7 +2,7 @@
 title: Proxy
 slug: /examples/httpserver/proxy
 keywords: [http, server, proxy, reverse, goframe]
-description: A reverse proxy server using GoFrame framework
+description: Demonstrates reverse proxy server implementation using GoFrame for request forwarding and load distribution. This example showcases reverse proxy setup and configuration with target backend servers, HTTP request and response forwarding with header preservation, custom header manipulation and transformation, connection pooling and keepalive management, error handling and failover logic, and integration with GoFrame's middleware system. Features include flexible proxy configuration, transparent request forwarding, response streaming support, custom routing rules, load balancing integration, and production-ready patterns. Ideal for building API gateways and service proxies, implementing microservices routing, adding authentication and rate limiting layers, enabling A/B testing and canary deployments, and creating development proxy servers.
 hide_title: true
 ---
 

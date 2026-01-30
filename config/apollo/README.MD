@@ -2,7 +2,7 @@
 title: Apollo
 slug: /examples/config/apollo
 keywords: [config, apollo, goframe]
-description: Apollo configuration center integration with GoFrame
+description: Demonstrates seamless integration of Apollo configuration center with GoFrame applications for centralized configuration management. This example showcases Apollo client initialization and setup, configuration adapter implementation, dynamic configuration loading and parsing, real-time configuration updates, error handling and logging mechanisms, and configuration value retrieval. Features include centralized configuration management through Apollo, support for multiple environments and namespaces, automatic configuration refresh capabilities, type-safe configuration access using GoFrame's config component, and production-ready error handling. Ideal for building microservices that require centralized configuration management, dynamic configuration updates without service restart, and configuration versioning and rollback capabilities.
 hide_title: true
 ---
 

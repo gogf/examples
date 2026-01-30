@@ -2,7 +2,7 @@
 title: GoFrame MCP SSE Example
 slug: /examples/httpserver/mcp-sse
 keywords: [mcp, server-sent events, sse, goframe, model context protocol]
-description: An example of implementing MCP server using GoFrame with Server-Sent Events.
+description: Demonstrates Model Context Protocol (MCP) server implementation using GoFrame with Server-Sent Events (SSE) for real-time AI model communication. This example showcases MCP server setup using SSE transport for server-to-client streaming, real-time event streaming for model outputs, persistent connections for continuous communication, event formatting and client reconnection handling, integration with AI models and agents, and efficient resource management. Features include SSE-based MCP transport, unidirectional streaming from server to client, automatic reconnection support, event-driven architecture, lightweight protocol implementation, and production-ready patterns. Ideal for building real-time AI agent interfaces, implementing streaming model responses without WebSocket complexity, creating chat and assistant applications, and enabling server-push notifications for model updates.
 hide_title: true
 ---
 

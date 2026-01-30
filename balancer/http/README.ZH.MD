@@ -2,7 +2,7 @@
 title: HTTP负载均衡
 slug: /examples/balancer/http
 keywords: [负载均衡, http, 服务发现, goframe]
-description: GoFrame 中的 HTTP 服务负载均衡示例
+description: 演示如何使用GoFrame框架结合etcd实现HTTP服务的负载均衡功能。本示例展示了基于客户端的负载均衡实现，采用轮询策略进行请求分发，支持自动服务发现和动态路由。主要功能包括：使用etcd进行服务注册与发现、客户端轮询负载均衡策略、多服务实例请求分发、与GoFrame的HTTP服务器和客户端组件无缝集成，适用于构建高可用、可扩展的微服务架构系统。通过本示例可以学习如何在分布式环境中实现服务负载均衡和服务发现机制。
 hide_title: true
 ---
 

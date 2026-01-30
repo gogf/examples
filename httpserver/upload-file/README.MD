@@ -2,7 +2,7 @@
 title: File Upload Example
 slug: /examples/httpserver/upload-file
 keywords: [http, server, file, upload, goframe]
-description: Handle file uploads in a HTTP server using GoFrame framework
+description: Demonstrates file upload handling in GoFrame HTTP servers for multipart form data processing. This example showcases single and multiple file upload support, multipart form data parsing and processing, file size validation and limits, file type validation with MIME type checking, secure file storage with unique naming, and integration with GoFrame's request handling. Features include automatic file parsing, configurable upload limits, file metadata extraction, progress tracking support, error handling for invalid uploads, and production-ready patterns. Ideal for building file upload APIs and forms, implementing image and document upload features, handling bulk file uploads, ensuring secure file processing, and creating content management systems.
 hide_title: true
 ---
 

@@ -2,7 +2,7 @@
 title: Server-Sent Events(SSE)
 slug: /examples/httpserver/sse
 keywords: [http, server, sse, server-sent events, streaming, goframe]
-description: A Server-Sent Events implementation using GoFrame framework
+description: Demonstrates Server-Sent Events (SSE) implementation using GoFrame for real-time server-to-client streaming. This example showcases SSE server setup with persistent connections, event stream formatting with data, event types and IDs, automatic client reconnection handling with Last-Event-ID, sending real-time updates and notifications, proper content-type and headers configuration, and connection lifecycle management. Features include unidirectional streaming from server to client, automatic reconnection support, event-driven architecture, lightweight compared to WebSocket, heartbeat and keepalive support, and production-ready patterns. Ideal for building real-time notifications and updates, implementing live dashboards and monitoring, creating chat and messaging features, enabling server push without WebSocket, and building event-driven applications.
 hide_title: true
 ---
 

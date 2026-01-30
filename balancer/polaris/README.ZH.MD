@@ -2,7 +2,7 @@
 title: 使用Polaris实现负载均衡
 slug: /examples/balancer/polaris
 keywords: [负载均衡, polaris, 服务发现, goframe]
-description: GoFrame 中使用 Polaris 实现负载均衡的示例
+description: 演示如何使用GoFrame框架集成Polaris服务网格平台实现HTTP服务的负载均衡功能。本示例展示了基于Polaris的服务注册与发现机制、客户端轮询负载均衡策略、本地缓存配置优化性能、以及集中式日志管理。主要功能包括:使用Polaris作为服务注册中心、可配置的TTL(存活时间)心跳机制、自动服务发现、动态请求路由、与GoFrame的HTTP服务器和客户端组件无缝集成,适用于构建云原生微服务架构并提供高级流量管理能力。通过本示例可以学习如何在分布式环境中使用Polaris实现服务治理、负载均衡和故障转移等企业级特性。
 hide_title: true
 ---
 

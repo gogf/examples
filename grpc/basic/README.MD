@@ -2,7 +2,7 @@
 title: Basic Usage
 slug: /examples/grpc/basic
 keywords: [grpc, basic, goframe]
-description: basic gRPC usage in GoFrame
+description: Demonstrates fundamental gRPC implementation in GoFrame applications covering protocol buffer definitions, service creation, and client-server communication. This example showcases how to create gRPC servers and clients using GoFrame, define and compile protocol buffers for service contracts, implement service handlers with business logic, make synchronous and asynchronous RPC calls, handle errors and status codes, and integrate with GoFrame's configuration and logging systems. Features include complete server and client setup, protocol buffer integration, service interface implementation, request-response patterns, error handling best practices, and production-ready code structure. Ideal for developers new to gRPC, building microservices with GoFrame, learning protocol buffer usage, and implementing inter-service communication patterns.
 hide_title: true
 sidebar_position: 0
 ---

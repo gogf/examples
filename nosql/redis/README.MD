@@ -2,7 +2,7 @@
 title: Redis
 slug: /examples/nosql/redis
 keywords: [nosql, redis, cache, database, goframe]
-description: An example demonstrating Redis integration in GoFrame
+description: Demonstrates comprehensive Redis integration with GoFrame for caching, session storage, and data persistence. This example showcases Redis connection setup and configuration with GoFrame's redis component, basic operations including GET/SET/DEL, data structure operations (strings, hashes, lists, sets, sorted sets), TTL and expiration management, pipeline and transaction support, pub/sub messaging patterns, and connection pooling configuration. Features include simple and cluster mode support, automatic connection management, error handling and retry logic, integration with GoFrame's cache component, serialization and deserialization helpers, and production-ready patterns. Ideal for implementing application caching, session management, rate limiting, distributed locks, real-time messaging, and high-performance data storage in microservices architectures.
 hide_title: true
 sidebar_position: 1
 ---

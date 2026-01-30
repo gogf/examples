@@ -2,7 +2,7 @@
 title: Polaris
 slug: /examples/config/polaris
 keywords: [config, polaris, goframe]
-description: Polaris configuration center integration with GoFrame
+description: Demonstrates seamless integration of Tencent Cloud Polaris configuration center with GoFrame applications for service mesh configuration management. This example showcases Polaris client setup and initialization, configuration adapter implementation for GoFrame's config component, dynamic configuration loading and hot-reloading, real-time configuration watch and synchronization, namespace and file group management, error handling and logging mechanisms, and secure configuration value retrieval. Features include centralized configuration management through Polaris, support for multiple namespaces and configuration groups, automatic configuration refresh capabilities, integration with Polaris service mesh for unified service governance, type-safe configuration access, and production-ready monitoring. Ideal for building cloud-native microservices on Tencent Cloud or using Polaris mesh requiring dynamic configuration, service discovery, traffic management, and unified configuration governance.
 hide_title: true
 ---
 

@@ -2,7 +2,7 @@
 title: Etcd
 slug: /examples/registry/etcd
 keywords: [注册中心, etcd, 服务发现, goframe]
-description: GoFrame框架中的Etcd服务注册与发现集成
+description: 演示在GoFrame中全面集成Etcd服务注册中心实现分布式服务发现和注册。本示例展示了使用自动心跳机制向Etcd注册服务、服务发现和监听实时更新、基于TTL的服务健康管理、服务元数据和端点配置、关闭时自动服务注销、以及与GoFrame服务器和客户端组件集成。主要功能包括:分布式服务注册中心、通过watch机制实现实时服务更新、健康检查集成、负载均衡器集成、自动故障转移支持、生产级模式。适合构建需要动态服务发现的云原生微服务、实现服务网格架构、通过自动服务注册确保高可用性、以及实现零停机部署。
 hide_title: true
 sidebar_position: 1
 ---

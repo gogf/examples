@@ -2,7 +2,7 @@
 title: Load Balancing
 slug: /examples/grpc/balancer
 keywords: [grpc, load balancing, service discovery, goframe]
-description: gRPC load balancing in GoFrame
+description: Demonstrates comprehensive gRPC load balancing implementation in GoFrame for building resilient distributed systems. This example showcases how to configure gRPC load balancers with multiple strategies, implement client-side load balancing for optimal performance, integrate with service discovery mechanisms like etcd, handle automatic failover and service health checks, distribute requests across multiple server instances, and manage connection pooling. Features include multiple load balancing algorithms (round-robin, weighted, least-connection), automatic service instance discovery, health-based routing, connection state management, retry policies, and production-ready error handling. Perfect for building highly available microservices, implementing fault-tolerant distributed systems, scaling gRPC services horizontally, and ensuring optimal resource utilization across service instances.
 hide_title: true
 ---
 

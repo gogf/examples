@@ -2,7 +2,7 @@
 title: Polaris Integration
 slug: /examples/balancer/polaris
 keywords: [load balancer, polaris, service discovery, goframe]
-description: An example demonstrating HTTP service load balancing using `Polaris` in `GoFrame`
+description: Demonstrates HTTP service load balancing implementation using GoFrame integrated with Polaris service mesh platform. This example showcases service registration and discovery using Polaris, client-side load balancing with round-robin strategy, local cache configuration for improved performance, and centralized logging. Features include Polaris-based service registry, configurable TTL (Time To Live) for service heartbeat, automatic service discovery, dynamic request routing, and seamless integration with GoFrame's HTTP server and client components for building cloud-native microservices architectures with advanced traffic management capabilities.
 hide_title: true
 ---
 

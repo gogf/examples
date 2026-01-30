@@ -2,7 +2,7 @@
 title: Nacos
 slug: /examples/registry/nacos
 keywords: [registry, nacos, service discovery, goframe]
-description: Nacos service registry integration in GoFrame
+description: Demonstrates comprehensive Alibaba Nacos service registry integration with GoFrame for dynamic service management and configuration. This example showcases service registration with Nacos using namespace and group isolation, service discovery with instance filtering and selection strategies, built-in health monitoring and heartbeat mechanism, service metadata and weight-based load balancing, integration with Nacos configuration center, and seamless GoFrame component integration. Features include centralized service registry, real-time service status updates, health check automation, weighted load balancing support, namespace-based service isolation, and production-ready patterns. Ideal for building cloud-native microservices on Alibaba Cloud, implementing dynamic service discovery with configuration management, ensuring service health and availability, and enabling enterprise-grade service governance.
 hide_title: true
 ---
 

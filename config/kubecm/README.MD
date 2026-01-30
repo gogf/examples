@@ -2,7 +2,7 @@
 title: Kubernetes ConfigMap
 slug: /examples/config/kubecm
 keywords: [config, kubernetes, configmap, goframe]
-description: Kubernetes ConfigMap configuration integration with GoFrame
+description: Demonstrates comprehensive integration of Kubernetes ConfigMap with GoFrame applications for cloud-native configuration management. This example showcases both in-pod and out-of-pod configuration setups, Kubernetes client initialization and authentication, ConfigMap access and dynamic loading, real-time configuration watching and updates, namespace and resource management, error handling and logging, and secure configuration value retrieval. Features include native Kubernetes ConfigMap integration, support for multiple deployment scenarios (in-cluster and external), automatic configuration refresh when ConfigMap changes, seamless integration with GoFrame's config component, RBAC-compliant access patterns, and production-ready error handling. Perfect for building cloud-native applications deployed on Kubernetes requiring native configuration management, GitOps workflows, and configuration-as-code practices.
 hide_title: true
 ---
 

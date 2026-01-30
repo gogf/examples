@@ -2,7 +2,7 @@
 title: Basic Authentication
 slug: /examples/httpserver/basic-auth
 keywords: [http, server, basic auth, authentication, goframe]
-description: A Basic Authentication example using GoFrame framework
+description: Demonstrates HTTP Basic Authentication implementation in GoFrame for simple credential-based access control. This example showcases Basic Authentication middleware setup and configuration, username and password validation against configured credentials, Base64 credential encoding and decoding, WWW-Authenticate header handling for browser prompts, protected route implementation, custom authentication failure responses, and integration with GoFrame's middleware system. Features include simple authentication without external dependencies, browser-compatible authentication dialogs, credential validation patterns, secure credential storage recommendations, custom realm configuration, and production-ready error handling. Ideal for internal tools and admin panels, simple API protection, development and testing environments, legacy system integration, and applications requiring lightweight authentication without complex infrastructure.
 hide_title: true
 ---
 

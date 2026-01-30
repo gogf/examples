@@ -2,7 +2,7 @@
 title: 基本认证
 slug: /examples/httpserver/basic-auth
 keywords: [http, 服务器, 基本认证, 身份验证, goframe]
-description: 使用 GoFrame 框架实现 HTTP 基本认证
+description: 演示在GoFrame中实现HTTP基础认证，用于简单的凭据基础访问控制。本示例展示了基础认证中间件的设置和配置、针对配置凭据的用户名和密码验证、Base64凭据编码和解码、用于浏览器提示的WWW-Authenticate头处理、受保护路由实现、自定义认证失败响应、以及与GoFrame中间件系统的集成。主要功能包括:无需外部依赖的简单认证、浏览器兼容的认证对话框、凭据验证模式、安全凭据存储建议、自定义领域配置、生产级错误处理。非常适合内部工具和管理面板、简单API保护、开发和测试环境、遗留系统集成、以及需要轻量级认证且无需复杂基础设施的应用程序。通过本示例可以学习HTTP基础认证的实现方法、如何在GoFrame中实现简单认证保护、以及基础认证的适用场景和注意事项。
 hide_title: true
 ---
 

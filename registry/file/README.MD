@@ -2,7 +2,7 @@
 title: File
 slug: /examples/registry/file
 keywords: [registry, file, service discovery, goframe]
-description: File-based service registry integration in GoFrame
+description: Demonstrates file-based service registry implementation in GoFrame for simple service discovery without external dependencies. This example showcases service registration using file system storage, service discovery by reading configuration files, simple service endpoint management, configuration file watching for dynamic updates, no external service dependency requirement, and integration with GoFrame's server and client components. Features include lightweight service registry, file-based configuration, automatic file watching, development and testing friendly setup, zero infrastructure requirement, and simple deployment patterns. Ideal for development environments and proof-of-concepts, small-scale deployments without complex infrastructure, testing service discovery patterns, and applications requiring simple service registration without external dependencies.
 hide_title: true
 ---
 

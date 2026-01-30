@@ -2,7 +2,7 @@
 title: JWT Authentication
 slug: /examples/httpserver/jwt
 keywords: [http, server, jwt, authentication, goframe]
-description: JWT authentication example using GoFrame framework
+description: Demonstrates comprehensive JWT (JSON Web Token) authentication implementation in GoFrame HTTP servers for secure API access control. This example showcases JWT token generation with custom claims and expiration, token validation and verification middleware, secure token signing using HS256/RS256 algorithms, refresh token mechanism for extended sessions, protected route implementation with authentication middleware, error handling for invalid or expired tokens, and integration with GoFrame's middleware system. Features include user login and token issuance, stateless authentication, token refresh patterns, role-based access control (RBAC) integration, secure token storage recommendations, and production-ready security practices. Ideal for building REST APIs with authentication, implementing microservices security, mobile app backends requiring stateless auth, and applications needing scalable authentication without server-side sessions.
 hide_title: true
 sidebar_position: 0
 ---

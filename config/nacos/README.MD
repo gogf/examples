@@ -2,7 +2,7 @@
 title: Nacos
 slug: /examples/config/nacos
 keywords: [config, nacos, goframe]
-description: Nacos configuration center integration with GoFrame
+description: Demonstrates seamless integration of Alibaba Nacos configuration center with GoFrame applications for dynamic configuration management. This example showcases Nacos client initialization and configuration, configuration adapter implementation for GoFrame, dynamic configuration loading and hot-reloading, real-time configuration listening and updates, namespace and group management, error handling and logging, and secure configuration value retrieval. Features include centralized configuration management through Nacos, support for multiple environments and namespaces, automatic configuration refresh without service restart, configuration versioning and rollback, type-safe configuration access, and production-ready monitoring. Ideal for building cloud-native microservices in Alibaba Cloud or on-premises environments requiring dynamic configuration, service discovery, and configuration sharing across distributed systems.
 hide_title: true
 ---
 

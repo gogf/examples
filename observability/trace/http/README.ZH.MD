@@ -2,7 +2,7 @@
 title: HTTP服务
 slug: /examples/observability/trace/http
 keywords: [链路跟踪, http, goframe]
-description: GoFrame中HTTP服务的分布式跟踪实现
+description: 演示在GoFrame中使用OpenTelemetry集成实现HTTP服务的全面分布式链路跟踪。本示例展示了带有自动埋点的HTTP请求和响应跟踪、跨服务边界的trace上下文传播、span创建和属性管理、向OpenTelemetry收集器导出trace数据、与GoFrame HTTP服务器中间件集成、以及分布式trace的可视化。主要功能包括:自动HTTP trace埋点、上下文传播头、自定义span属性、父子span关系、trace采样配置、生产级可观测性模式。非常适合在微服务中实现分布式跟踪、监控HTTP服务性能、调试请求流程、确保云原生应用的可观测性、以及构建生产监控系统。通过本示例可以学习如何在HTTP服务中实现分布式跟踪、OpenTelemetry的最佳实践、以及构建可观测的微服务架构。
 hide_title: true
 sidebar_position: 1
 ---

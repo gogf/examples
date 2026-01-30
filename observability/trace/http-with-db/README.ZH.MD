@@ -2,7 +2,7 @@
 title: HTTP带数据库
 slug: /examples/observability/trace/http-with-db
 keywords: [链路跟踪, http, 数据库, goframe]
-description: GoFrame中HTTP服务与数据库操作的分布式跟踪实现
+description: 演示在GoFrame中使用OpenTelemetry实现HTTP服务与数据库操作的全面分布式跟踪。本示例展示了从HTTP请求到数据库查询的端到端trace埋点、包括MySQL和Redis操作的自动数据库操作跟踪、贯穿整个请求生命周期的trace上下文传播、HTTP处理器与数据库调用之间的span关系、数据库查询的性能监控、以及与GoFrame的ORM和缓存组件集成。主要功能包括:全栈trace可见性、自动数据库查询埋点、慢查询检测、连接池监控、缓存操作跟踪、生产级可观测性。非常适合监控全栈应用性能、调试数据库相关问题、优化查询性能、确保数据驱动应用的端到端可观测性、以及构建全面的监控解决方案。通过本示例可以学习如何实现全链路跟踪、数据库性能优化、以及构建高性能可观测的数据应用。
 hide_title: true
 sidebar_position: 1
 ---

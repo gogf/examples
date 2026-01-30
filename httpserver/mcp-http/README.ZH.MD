@@ -2,7 +2,7 @@
 title: GoFrame MCP HTTP 示例
 slug: /examples/httpserver/mcp-http
 keywords: [mcp, http, 流式传输, goframe, 模型上下文协议]
-description: 使用 GoFrame 和 HTTP 流式传输实现 MCP 服务器的示例。
+description: 演示使用GoFrame和HTTP流式传输实现模型上下文协议(MCP)服务器用于AI模型集成。本示例展示了使用HTTP传输的MCP服务器设置、实时模型输出的流式响应处理、协议消息编码和解码、上下文管理和传播、与AI模型和服务集成、以及MCP操作的错误处理。主要功能包括:基于HTTP的MCP传输、流式API支持、高效消息序列化、请求间上下文共享、可扩展协议处理器、生产级模式。非常适合构建AI代理后端、集成语言模型与应用、实现流式AI响应、以及创建符合MCP协议的模型上下文共享服务。通过本示例可以学习MCP协议的实现、AI模型集成最佳实践、以及构建智能AI应用。
 hide_title: true
 ---
 

@@ -2,7 +2,7 @@
 title: 进程内服务 (gRPC导出器)
 slug: /examples/observability/trace/inprocess-grpc
 keywords: [链路跟踪, 进程内, grpc, goframe, otlp-grpc]
-description: 使用GoFrame和基于gRPC的OpenTelemetry导出器实现进程内服务的分布式链路跟踪
+description: 演示在单进程应用中使用GoFrame和高性能gRPC基础的OpenTelemetry导出器实现分布式跟踪。本示例展示了使用gRPC OTLP导出器配置的进程内函数调用跟踪、内部操作的span创建和管理、单进程内的trace上下文传播、高效的基于gRPC的trace数据导出到OpenTelemetry收集器、嵌套函数调用的父子span关系、以及高吞吐量trace数据传输。主要功能包括:高性能gRPC导出器设置、自动span埋点、流式trace导出、高效二进制序列化、生产级性能、企业级模式。非常适合大量trace数据生成、性能关键应用、生产监控系统、需要高效trace导出的应用、以及构建可扩展的可观测性解决方案。通过本示例可以学习如何实现高性能链路跟踪、gRPC导出器的最佳实践、以及构建企业级监控系统。
 hide_title: true
 sidebar_position: 1
 ---

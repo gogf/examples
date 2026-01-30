@@ -2,7 +2,7 @@
 title: OpenTelemetry Example
 slug: /examples/observability/trace/otlp
 keywords: [trace, otlp, grpc, http, goframe]
-description: OpenTelemetry trace data export methods in GoFrame
+description: Demonstrates comprehensive OpenTelemetry trace data export methods in GoFrame using OTLP protocol with both gRPC and HTTP exporters. This example showcases OTLP (OpenTelemetry Protocol) configuration for trace export, gRPC and HTTP exporter setup and comparison, trace data serialization and transmission, connection management and retry logic, batch processing and performance optimization, and integration with OpenTelemetry collectors. Features include flexible exporter configuration, efficient trace data transmission, automatic batching and compression, error handling and retry mechanisms, production-ready export patterns, and protocol selection guidance. Ideal for implementing production trace export, choosing appropriate export protocols, optimizing trace data transmission, ensuring reliable trace delivery, and building enterprise observability infrastructure with OpenTelemetry standard compliance.
 hide_title: true
 ---
 

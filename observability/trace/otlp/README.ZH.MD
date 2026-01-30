@@ -2,7 +2,7 @@
 title: OpenTelemetry示例
 slug: /examples/observability/trace/otlp
 keywords: [链路跟踪, otlp, grpc, http, goframe]
-description: GoFrame中OpenTelemetry链路跟踪数据导出方法
+description: 演示在GoFrame中使用OTLP协议通过gRPC和HTTP导出器实现全面的OpenTelemetry链路跟踪数据导出方法。本示例展示了用于trace导出的OTLP（OpenTelemetry协议）配置、gRPC和HTTP导出器的设置与比较、trace数据的序列化和传输、连接管理和重试逻辑、批处理和性能优化、以及与OpenTelemetry收集器的集成。主要功能包括:灵活的导出器配置、高效的trace数据传输、自动批处理和压缩、错误处理和重试机制、生产级导出模式、协议选择指导。非常适合实现生产trace导出、选择合适的导出协议、优化trace数据传输、确保可靠的trace交付、以及构建符合OpenTelemetry标准的企业级可观测性基础设施。通过本示例可以学习OTLP协议的使用、导出器选型、以及构建高效的trace数据导出系统。
 hide_title: true
 sidebar_position: 8
 ---

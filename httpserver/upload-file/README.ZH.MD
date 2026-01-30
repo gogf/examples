@@ -2,7 +2,7 @@
 title: 文件上传
 slug: /examples/httpserver/upload-file
 keywords: [http, 服务器, 文件, 上传, goframe]
-description: 使用 GoFrame 框架处理 HTTP 服务器的文件上传
+description: 演示在GoFrame HTTP服务器中处理文件上传用于多部分表单数据处理。本示例展示了单文件和多文件上传支持、多部分表单数据解析和处理、文件大小验证和限制、带有MIME类型检查的文件类型验证、带有唯一命名的安全文件存储、以及与GoFrame请求处理集成。主要功能包括:自动文件解析、可配置的上传限制、文件元数据提取、进度跟踪支持、无效上传的错误处理、生产级模式。非常适合构建文件上传API和表单、实现图像和文档上传功能、处理批量文件上传、确保安全的文件处理、以及创建内容管理系统。通过本示例可以学习文件上传的最佳实践、安全文件处理、以及构建安全可靠的文件上传功能。
 hide_title: true
 sidebar_position: 3
 ---

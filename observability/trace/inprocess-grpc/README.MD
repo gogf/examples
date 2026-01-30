@@ -2,7 +2,7 @@
 title: In-Process Service (gRPC Exporter)
 slug: /examples/observability/trace/inprocess-grpc
 keywords: [trace, inprocess, grpc, goframe, otlp-grpc]
-description: distributed tracing in in-process services using GoFrame with gRPC-based OpenTelemetry exporter
+description: Demonstrates distributed tracing implementation in single-process applications using GoFrame with high-performance gRPC-based OpenTelemetry exporter. This example showcases in-process function call tracing with gRPC OTLP exporter configuration, span creation and management for internal operations, trace context propagation within a single process, efficient gRPC-based trace data export to OpenTelemetry collectors, parent-child span relationships for nested function calls, and high-throughput trace data transmission. Features include high-performance gRPC exporter setup, automatic span instrumentation, streaming trace export, efficient binary serialization, production-grade performance, and enterprise-ready patterns. Ideal for high-volume trace data generation, performance-critical applications, production monitoring systems, applications requiring efficient trace export, and building scalable observability solutions.
 hide_title: true
 ---
 

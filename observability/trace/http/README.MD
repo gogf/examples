@@ -2,7 +2,7 @@
 title: HTTP Service
 slug: /examples/observability/trace/http
 keywords: [trace, http, goframe]
-description: distributed tracing in HTTP services using GoFrame
+description: Demonstrates comprehensive distributed tracing implementation in HTTP services using GoFrame with OpenTelemetry integration. This example showcases HTTP request and response tracing with automatic instrumentation, trace context propagation across service boundaries, span creation and attribute management, trace data export to OpenTelemetry collectors, integration with GoFrame's HTTP server middleware, and visualization of distributed traces. Features include automatic HTTP trace instrumentation, context propagation headers, custom span attributes, parent-child span relationships, trace sampling configuration, and production-ready observability patterns. Ideal for implementing distributed tracing in microservices, monitoring HTTP service performance, debugging request flows, ensuring observability in cloud-native applications, and building production monitoring systems.
 hide_title: true
 ---
 

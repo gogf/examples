@@ -2,7 +2,7 @@
 title: OpenTelemetry Provider
 slug: /examples/observability/trace/provider
 keywords: [链路跟踪, provider, grpc, http, goframe]
-description: 在GoFrame中使用不同OpenTelemetry链路跟踪Provider配置的示例
+description: 演示在GoFrame中配置包括gRPC和HTTP导出器的全面OpenTelemetry链路跟踪provider配置和不同设置模式。本示例展示了trace provider的初始化和配置、用于服务识别的资源属性管理、采样策略配置和选择、基于gRPC和HTTP的导出器设置与比较、用于批处理和简单处理的span处理器配置、以及provider生命周期管理。主要功能包括:灵活的provider配置模式、资源语义约定、多种采样策略(总是、从不、基于父级、基于比例)、导出器协议选择指导、生产级provider设置、企业部署模式。非常适合理解OpenTelemetry provider架构、配置生产trace管道、选择合适的导出器和采样器、优化trace收集性能、以及构建带有适当provider配置的可扩展可观测性基础设施。通过本示例可以学习OpenTelemetry provider的最佳实践、导出器和采样器选型、以及构建企业级链路跟踪系统。
 hide_title: true
 sidebar_position: 9
 ---

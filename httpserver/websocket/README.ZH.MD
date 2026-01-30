@@ -2,7 +2,7 @@
 title: WebSocket
 slug: /examples/httpserver/websocket
 keywords: [websocket, server, client, goframe, https]
-description: 使用GoFrame框架实现的WebSocket服务器和客户端
+description: 演示使用GoFrame实现WebSocket服务器和客户端用于双向实时通信。本示例展示了带有连接处理的WebSocket服务器设置、客户端连接建立和管理、双向消息发送和接收、连接生命周期管理(连接、断开、错误)、从HTTP到WebSocket的协议升级、以及与GoFrame服务器组件集成。主要功能包括:全双工通信、自动ping/pong心跳、连接池和广播、消息分帧和编码、TLS/SSL支持安全WebSocket(wss://)、生产级模式。非常适合构建实时聊天和消息应用、实现实时通知和更新、创建多玩家游戏服务器、实现协同编辑功能、以及构建实时数据流应用。通过本示例可以学习WebSocket协议、实时双向通信、以及构建高性能实时应用。
 hide_title: true
 sidebar_position: 5
 ---

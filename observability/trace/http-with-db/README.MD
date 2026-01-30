@@ -2,7 +2,7 @@
 title: HTTP with Database
 slug: /examples/observability/trace/http-with-db
 keywords: [trace, http, database, goframe]
-description: distributed tracing in HTTP services with database operations using GoFrame
+description: Demonstrates comprehensive distributed tracing in HTTP services with database operations using GoFrame and OpenTelemetry. This example showcases end-to-end trace instrumentation from HTTP requests through database queries, automatic database operation tracing including MySQL and Redis operations, trace context propagation through the entire request lifecycle, span relationships between HTTP handlers and database calls, performance monitoring for database queries, and integration with GoFrame's ORM and cache components. Features include full-stack trace visibility, automatic database query instrumentation, slow query detection, connection pool monitoring, cache operation tracing, and production-ready observability. Ideal for monitoring full-stack application performance, debugging database-related issues, optimizing query performance, ensuring end-to-end observability in data-driven applications, and building comprehensive monitoring solutions.
 hide_title: true
 ---
 

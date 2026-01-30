@@ -2,7 +2,7 @@
 title: Swagger认证
 slug: /examples/httpserver/swagger-auth
 keywords: [http, server, swagger, auth, basic auth, goframe]
-description: 使用GoFrame框架实现带基础认证的Swagger API文档
+description: 演示使用GoFrame实现带有基础认证集成的Swagger API文档用于安全的API文档访问。本示例展示了Swagger UI与GoFrame HTTP服务器集成、Swagger端点的基础认证保护、OpenAPI规范生成和服务、文档访问的认证中间件、自定义Swagger UI配置、以及与GoFrame路由系统集成。主要功能包括:受保护的API文档、自动OpenAPI规范生成、带认证的交互式API测试、可自定义的Swagger UI主题、基于凭据的访问控制、开发友好的模式。非常适合保护生产环境中的API文档、提供内部API的认证访问、实现带认证的交互式API测试、记录和保护REST API、以及维护带访问控制的API规范。通过本示例可以学习如何保护Swagger文档、集成OpenAPI规范、以及构建安全的API文档系统。
 hide_title: true
 ---
 

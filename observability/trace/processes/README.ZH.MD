@@ -2,7 +2,7 @@
 title: 多进程示例
 slug: /examples/observability/trace/processes
 keywords: [链路跟踪, 多进程, gcmd, gproc, goframe]
-description: 使用GoFrame不同进程管理方式实现的多进程分布式链路跟踪示例
+description: 演示使用GoFrame的进程管理方式（包括gcmd和gproc）实现跨多个进程的全面分布式跟踪。本示例展示了进程间的trace上下文传播、带有跟踪的进程生成和生命周期管理、跨进程边界的分布式span关系、多进程架构中的trace关联、带有跟踪支持的不同进程通信模式、以及与GoFrame命令和进程组件的集成。主要功能包括:多进程trace可见性、进程间自动上下文传播、父子进程span关系、进程隔离下trace连续性、生产级多进程模式、企业架构支持。非常适合构建带有可观测性的多进程应用、实现分布式任务处理、监控守护进程和工作进程、确保复杂进程拓扑中的trace连续性、以及创建带有全面跟踪的可扩展多进程系统。通过本示例可以学习多进程链路跟踪、进程间通信与trace传播、以及构建复杂的分布式系统监控。
 hide_title: true
 sidebar_position: 1
 ---

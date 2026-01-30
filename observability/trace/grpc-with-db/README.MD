@@ -2,7 +2,7 @@
 title: gRPC with Database
 slug: /examples/observability/trace/grpc-with-db
 keywords: [trace, grpc, database, opentelemetry, goframe]
-description: distributed tracing in gRPC services with database operations using GoFrame
+description: Demonstrates comprehensive distributed tracing in gRPC services with database operations using GoFrame and OpenTelemetry. This example showcases end-to-end trace instrumentation from gRPC calls through database queries, automatic gRPC method and database operation tracing, trace context propagation in RPC communication, span relationships between service calls and database operations, service discovery integration with tracing, and performance monitoring for distributed systems. Features include full-stack gRPC trace visibility, automatic database query instrumentation, service mesh observability, distributed transaction tracking, cross-service trace correlation, and production-ready patterns. Ideal for monitoring microservices architecture performance, debugging distributed gRPC systems, optimizing database query performance, ensuring observability in service mesh environments, and building enterprise monitoring solutions.
 hide_title: true
 ---
 

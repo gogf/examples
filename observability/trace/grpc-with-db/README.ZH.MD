@@ -2,7 +2,7 @@
 title: gRPC带数据库
 slug: /examples/observability/trace/grpc-with-db
 keywords: [链路跟踪, grpc, 数据库, opentelemetry, goframe]
-description: GoFrame中gRPC服务与数据库操作的分布式跟踪实现
+description: 演示在GoFrame中使用OpenTelemetry实现gRPC服务与数据库操作的全面分布式跟踪。本示例展示了从gRPC调用到数据库查询的端到端trace埋点、自动gRPC方法和数据库操作跟踪、RPC通信中的trace上下文传播、服务调用与数据库操作之间的span关系、与tracing集成的服务发现、以及分布式系统的性能监控。主要功能包括:全栈gRPC trace可见性、自动数据库查询埋点、服务网格可观测性、分布式事务跟踪、跨服务trace关联、生产级模式。非常适合监控微服务架构性能、调试分布式gRPC系统、优化数据库查询性能、确保服务网格环境的可观测性、以及构建企业级监控解决方案。通过本示例可以学习如何实现gRPC全链路跟踪、分布式系统性能优化、以及构建高可观测的微服务架构。
 hide_title: true
 sidebar_position: 1
 ---

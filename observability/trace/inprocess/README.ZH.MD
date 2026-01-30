@@ -2,7 +2,7 @@
 title: 进程内服务 (HTTP导出器)
 slug: /examples/observability/trace/inprocess
 keywords: [链路跟踪, 进程内, goframe, otlp-http]
-description: 使用GoFrame和基于HTTP的OpenTelemetry导出器实现进程内服务的分布式跟踪
+description: 演示在单进程应用中使用GoFrame和基于HTTP的OpenTelemetry导出器实现分布式跟踪以简化可观测性。本示例展示了使用HTTP OTLP导出器配置的进程内函数调用跟踪、内部操作的span创建和管理、单进程内的trace上下文传播、基于HTTP的trace数据导出到OpenTelemetry收集器、嵌套函数调用的父子span关系、以及无需gRPC依赖的简化部署。主要功能包括:轻量级HTTP导出器设置、自动span埋点、内存trace上下文、防火墙友好的HTTP导出、开发友好的配置、生产级模式。非常适合单体应用可观测性、开发和测试环境、简化trace数据导出、仅支持HTTP基础设施的应用、以及学习分布式跟踪概念。通过本示例可以学习如何实现进程内跟踪、简化的可观测性方案、以及轻量级监控部署。
 hide_title: true
 sidebar_position: 1
 ---

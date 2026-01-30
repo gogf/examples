@@ -2,7 +2,7 @@
 title: In-Process Service (HTTP Exporter)
 slug: /examples/observability/trace/inprocess
 keywords: [trace, inprocess, goframe, otlp-http]
-description: distributed tracing in in-process services using GoFrame with HTTP-based OpenTelemetry exporter
+description: Demonstrates distributed tracing implementation in single-process applications using GoFrame with HTTP-based OpenTelemetry exporter for simplified observability. This example showcases in-process function call tracing with HTTP OTLP exporter configuration, span creation and management for internal operations, trace context propagation within a single process, HTTP-based trace data export to OpenTelemetry collectors, parent-child span relationships for nested function calls, and simplified deployment without gRPC dependencies. Features include lightweight HTTP exporter setup, automatic span instrumentation, in-memory trace context, firewall-friendly HTTP export, development-friendly configuration, and production-ready patterns. Ideal for monolithic application observability, development and testing environments, simplified trace data export, applications with HTTP-only infrastructure, and learning distributed tracing concepts.
 hide_title: true
 ---
 

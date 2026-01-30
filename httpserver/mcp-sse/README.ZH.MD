@@ -2,7 +2,7 @@
 title: GoFrame MCP SSE 示例
 slug: /examples/httpserver/mcp-sse
 keywords: [mcp, 服务器发送事件, sse, goframe, 模型上下文协议]
-description: 使用 GoFrame 和服务器发送事件实现 MCP 服务器的示例。
+description: 演示使用GoFrame和服务器发送事件(SSE)实现模型上下文协议(MCP)服务器用于实时AI模型通信。本示例展示了使用SSE传输的MCP服务器设置实现服务器到客户端流式传输、模型输出的实时事件流、持久连接以实现连续通信、事件格式化和客户端重连处理、与AI模型和代理集成、以及高效资源管理。主要功能包括:基于SSE的MCP传输、从服务器到客户端的单向流式传输、自动重连支持、事件驱动架构、相比WebSocket更轻量级、生产级模式。非常适合构建实时AI代理界面、实现无需WebSocket复杂性的流式模型响应、创建聊天和助手应用、以及实现模型更新的服务器推送通知。通过本示例可以学习SSE在AI应用中的使用、MCP协议实现、以及构建实时智能应用。
 hide_title: true
 ---
 

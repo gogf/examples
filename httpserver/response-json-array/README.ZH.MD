@@ -2,7 +2,7 @@
 title: JSON数组响应
 slug: /examples/httpserver/response-json-array
 keywords: [http, 服务器, json, 数组, goframe]
-description: 使用 GoFrame 框架处理 HTTP 服务器的 JSON 数组响应
+description: 演示在GoFrame HTTP服务器中处理JSON数组响应用于RESTful API开发。本示例展示了返回JSON数组作为HTTP响应、适当的content-type头配置、带有自定义格式的数组序列化、大型数据集的分页支持、大型数组的高效内存管理、以及与GoFrame响应写入系统集成。主要功能包括:自动JSON序列化、适当的HTTP状态码、空数组处理、大型数据集的流式支持、错误响应格式化、RESTful API模式。非常适合构廻返回集合的REST API、实现列表和搜索端点、处理批量数据响应、确保一致的API响应格式、以及优化JSON序列化性能。通过本示例可以学习JSON数组响应的最佳实践、RESTful API设计、以及高效数据序列化。
 hide_title: true
 sidebar_position: 99
 ---

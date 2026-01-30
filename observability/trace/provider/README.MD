@@ -2,7 +2,7 @@
 title: OpenTelemetry Provider Examples
 slug: /examples/observability/trace/provider
 keywords: [trace, provider, grpc, http, goframe]
-description: Examples demonstrating different OpenTelemetry trace provider configurations in GoFrame
+description: Demonstrates comprehensive OpenTelemetry trace provider configurations in GoFrame including gRPC and HTTP exporters with different setup patterns. This example showcases trace provider initialization and configuration, resource attribute management for service identification, sampling strategy configuration and selection, gRPC-based and HTTP-based exporter setup and comparison, span processor configuration for batch and simple processing, and provider lifecycle management. Features include flexible provider configuration patterns, resource semantic conventions, multiple sampling strategies (always, never, parent-based, ratio-based), exporter protocol selection guidance, production-ready provider setup, and enterprise deployment patterns. Ideal for understanding OpenTelemetry provider architecture, configuring production trace pipelines, selecting appropriate exporters and samplers, optimizing trace collection performance, and building scalable observability infrastructure with proper provider configuration.
 hide_title: true
 ---
 

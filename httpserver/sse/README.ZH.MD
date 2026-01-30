@@ -2,7 +2,7 @@
 title: Server-Sent Events(SSE)
 slug: /examples/httpserver/sse
 keywords: [http, server, sse, server-sent events, 服务器发送事件, 流式传输, goframe]
-description: 使用GoFrame框架实现的服务器发送事件(SSE)示例
+description: 演示使用GoFrame实现服务器发送事件(SSE)用于实时服务器到客户端流式传输。本示例展示了带有持久连接的SSE服务器设置、带有数据、事件类型和ID的事件流格式化、带有Last-Event-ID的自动客户端重连处理、发送实时更新和通知、适当的content-type和头配置、以及连接生命周期管理。主要功能包括:从服务器到客户端的单向流式传输、自动重连支持、事件驱动架构、相比WebSocket更轻量级、心跳和keepalive支持、生产级模式。非常适合构建实时通知和更新、实现实时仪表盘和监控、创建聊天和消息功能、无需WebSocket实现服务器推送、以及构建事件驱动应用。通过本示例可以学习SSE的实现原理、与WebSocket的区别、以及构建实时通信应用。
 hide_title: true
 ---
 

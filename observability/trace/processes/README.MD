@@ -2,7 +2,7 @@
 title: Multi-Process Example
 slug: /examples/observability/trace/processes
 keywords: [trace, processes, gcmd, gproc, goframe]
-description: Examples demonstrating distributed tracing across multiple processes using different GoFrame process management approaches
+description: Demonstrates comprehensive distributed tracing across multiple processes using GoFrame's process management approaches including gcmd and gproc. This example showcases inter-process trace context propagation, process spawning and lifecycle management with tracing, distributed span relationships across process boundaries, trace correlation in multi-process architectures, different process communication patterns with tracing support, and integration with GoFrame's command and process components. Features include multi-process trace visibility, automatic context propagation between processes, parent-child process span relationships, process isolation with trace continuity, production-ready multi-process patterns, and enterprise architecture support. Ideal for building multi-process applications with observability, implementing distributed task processing, monitoring daemon and worker processes, ensuring trace continuity in complex process topologies, and creating scalable multi-process systems with comprehensive tracing.
 hide_title: true
 ---
 

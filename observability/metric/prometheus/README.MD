@@ -2,7 +2,7 @@
 title: Prometheus Integration
 slug: /examples/observability/metric/prometheus
 keywords: [metrics, prometheus, direct integration, goframe]
-description: direct Prometheus integration in GoFrame without OpenTelemetry
+description: Demonstrates direct Prometheus metrics integration in GoFrame without OpenTelemetry for lightweight monitoring solutions. This example showcases native Prometheus client library usage, direct metric registration with Prometheus registry, counter, gauge, histogram, and summary metric types, custom metric collectors, HTTP handler for /metrics endpoint exposure, and label management. Features include zero OpenTelemetry dependency, simple metric creation and registration, native Prometheus metric types, flexible metric labeling, built-in HTTP metrics endpoint, and production-ready patterns. Ideal for lightweight monitoring needs, legacy Prometheus setups, simplified metric collection, applications requiring only Prometheus integration, minimal dependency footprint, and environments where OpenTelemetry is not needed or desired.
 hide_title: true
 ---
 

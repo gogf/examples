@@ -2,7 +2,7 @@
 title: Dynamic Attributes
 slug: /examples/observability/metric/dynamic_attributes
 keywords: [metrics, dynamic attributes, prometheus, opentelemetry, goframe]
-description: dynamic metric attributes in GoFrame
+description: Demonstrates dynamic metric attribute management in GoFrame using OpenTelemetry and Prometheus for runtime attribute updates. This example showcases runtime attribute modification, context-based attribute injection, request-scoped metric labeling, dynamic attribute value resolution, per-request metric customization, and flexible labeling patterns. Features include updating attributes during metric recording, extracting attributes from request context, injecting user/tenant/session IDs, dynamic label value computation, attribute value caching, and production-ready patterns. Ideal for implementing per-request metric labeling, tracking user-specific metrics, supporting multi-tenancy, enriching metrics with runtime context, analyzing behavior by dynamic dimensions, and building flexible monitoring systems that adapt to application state.
 hide_title: true
 ---
 

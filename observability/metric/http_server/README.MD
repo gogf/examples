@@ -2,7 +2,7 @@
 title: HTTP Server
 slug: /examples/observability/metric/http_server
 keywords: [metrics, http server, prometheus, opentelemetry, goframe]
-description: HTTP server metrics collection in GoFrame
+description: Demonstrates comprehensive HTTP server metrics collection in GoFrame using OpenTelemetry and Prometheus for monitoring inbound HTTP requests. This example showcases automatic HTTP server instrumentation, request latency histograms, throughput metrics by endpoint and method, HTTP status code distribution, concurrent request tracking, and error rate monitoring. Features include automatic metric collection through middleware, detailed request attributes (path, method, status), integration with GoFrame's HTTP server, customizable metric buckets, Prometheus endpoint exposure, and production-ready monitoring patterns. Ideal for monitoring API performance, tracking service health, analyzing traffic patterns, identifying performance bottlenecks, implementing SLA monitoring, and ensuring high availability of HTTP services in production environments.
 hide_title: true
 ---
 

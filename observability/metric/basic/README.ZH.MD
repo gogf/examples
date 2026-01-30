@@ -2,7 +2,7 @@
 title: 基础用法
 slug: /examples/observability/metric/basic
 keywords: [指标, 基础, prometheus, opentelemetry, goframe]
-description: 在GoFrame中演示各种指标类型及其使用的基础示例
+description: 演示在GoFrame中使用OpenTelemetry和Prometheus集成的全面基础指标类型及其用法。本示例展示了用于跟踪事件发生的计数器指标、用于测量分布的直方图指标、用于当前值的仪表指标、以及用于双向计数的UpDownCounter。主要功能包括:指标创建和注册、属性配置和标签、指标值记录和观察、与Prometheus导出器集成、OpenTelemetry指标管道设置、生产级埋点模式。非常适合学习基本指标类型、实现应用可观测性、监控服务性能、构建自定义指标仪表板、以及为GoFrame应用建立基准监控。通过本示例可以学习指标的基础概念、OpenTelemetry指标API、以及如何构建完整的监控系统。
 hide_title: true
 sidebar_position: 1
 ---

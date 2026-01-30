@@ -2,7 +2,7 @@
 title: Prometheus集成
 slug: /examples/observability/metric/prometheus
 keywords: [指标, prometheus, 直接集成, goframe]
-description: GoFrame中直接集成Prometheus（不使用OpenTelemetry）
+description: 演示在GoFrame中不使用OpenTelemetry直接集成Prometheus指标以实现轻量级监控解决方案。本示例展示了原生Prometheus客户端库的使用、直接向Prometheus注册表注册指标、counter、gauge、histogram和summary指标类型、自定义指标收集器、用于/metrics端点暴露的HTTP处理器、以及标签管理。主要功能包括:零OpenTelemetry依赖、简单的指标创建和注册、原生Prometheus指标类型、灵活的指标标签、内置HTTP指标端点、生产级模式。非常适合轻量级监控需求、传统Prometheus设置、简化的指标收集、仅需要Prometheus集成的应用、最小依赖占用、以及不需要或不希望使用OpenTelemetry的环境。通过本示例可以学习Prometheus原生API、简化的监控方案、以及轻量级指标收集。
 hide_title: true
 sidebar_position: 1
 ---

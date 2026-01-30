@@ -2,7 +2,7 @@
 title: 回调处理
 slug: /examples/observability/metric/callback
 keywords: [指标, 回调, prometheus, opentelemetry, goframe]
-description: GoFrame 中基于回调的指标收集实现
+description: 演示在GoFrame中使用OpenTelemetry和Prometheus实现基于回调的指标收集以进行异步指标更新。本示例展示了指标的回调函数注册、通过回调自动更新指标值、异步指标观察、可观察的计数器和仪表模式、系统资源指标收集、以及定时指标更新。主要功能包括:非阻塞指标收集、周期性回调执行、系统指标集成(CPU、内存、goroutines)、延迟指标评估、自动值刷新、生产级模式。非常适合收集系统指标、监控资源使用、实现异步指标更新、减少指标收集开销、观察计算成本高的值、以及构建对性能影响最小的高效监控系统。通过本示例可以学习异步指标收集、回调模式、以及高效的系统监控实现。
 hide_title: true
 sidebar_position: 1
 ---

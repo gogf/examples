@@ -2,7 +2,7 @@
 title: 动态属性
 slug: /examples/observability/metric/dynamic_attributes
 keywords: [指标, 动态属性, prometheus, opentelemetry, goframe]
-description: GoFrame中动态指标属性的实现
+description: 演示在GoFrame中使用OpenTelemetry和Prometheus管理动态指标属性以实现运行时属性更新。本示例展示了运行时属性修改、基于上下文的属性注入、请求作用域的指标标签、动态属性值解析、每请求指标自定义、以及灵活的标签模式。主要功能包括:在指标记录时更新属性、从请求上下文提取属性、注入用户/租户/会话ID、动态标签值计算、属性值缓存、生产级模式。非常适合实现每请求指标标签、跟踪用户特定指标、支持多租户、使用运行时上下文丰富指标、按动态维度分析行为、以及构建适应应用状态的灵活监控系统。通过本示例可以学习动态属性管理、上下文注入、以及灵活的指标标签实践。
 hide_title: true
 sidebar_position: 1
 ---

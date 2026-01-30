@@ -2,7 +2,7 @@
 title: 注册发现
 slug: /examples/registry
 keywords: [注册中心, 服务发现, goframe]
-description: GoFrame 框架中的注册中心功能示例
+description: GoFrame框架中的服务注册与发现功能全面示例集合，展示如何集成多种注册中心解决方案。包含Etcd分布式键值存储、Consul服务网格、Nacos服务注册与配置、北极星Polaris服务治理、以及基于文件的本地注册等多种方案。演示了服务自动注册、服务发现与订阅、健康检查机制、服务元数据管理、动态服务路由、服务版本管理、多数据中心支持等核心功能。适合微服务架构的服务治理、分布式系统的服务发现、服务实例动态管理、云原生应用部署、以及需要自动化服务管理的企业级应用。
 hide_title: true
 sidebar_position: 4
 ---

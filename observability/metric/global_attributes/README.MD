@@ -2,7 +2,7 @@
 title: Global Attributes
 slug: /examples/observability/metric/global_attributes
 keywords: [metrics, global attributes, prometheus, opentelemetry, goframe]
-description: global metric attributes in GoFrame
+description: Demonstrates global metric attributes management in GoFrame using OpenTelemetry and Prometheus for consistent metric labeling. This example showcases global attribute configuration and management, automatic attribute application across all metrics, service-level metadata (service.name, service.version), environment identification attributes, consistent metric labeling, and attribute inheritance patterns. Features include centralized attribute management, automatic attribute propagation, semantic convention support, multi-tenancy labeling, deployment environment tags, and production-ready patterns. Ideal for implementing consistent metric labeling, managing service metadata, enabling metric aggregation across services, supporting multi-environment deployments, facilitating metric filtering and grouping, and establishing enterprise monitoring standards.
 hide_title: true
 ---
 

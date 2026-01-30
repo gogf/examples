@@ -2,7 +2,7 @@
 title: HTTP客户端
 slug: /examples/observability/metric/http_client
 keywords: [指标, http客户端, prometheus, opentelemetry, goframe]
-description: GoFrame中HTTP客户端指标收集的实现
+description: 演示在GoFrame中使用OpenTelemetry和Prometheus收集全面的HTTP客户端指标以监控出站HTTP请求。本示例展示了自动HTTP客户端埋点、请求持续时间直方图、按状态码和方法分类的请求计数指标、错误率跟踪、连接池指标、以及重试尝试监控。主要功能包括:无需代码更改的自动指标收集、详细的请求/响应属性、与GoFrame HTTP客户端集成、可自定义的指标标签、Prometheus导出器配置、生产级可观测性模式。非常适合监控外部API调用、跟踪HTTP客户端性能、调试连接问题、分析请求模式、以及确保微服务架构中出站HTTP通信的可靠性。通过本示例可以学习如何监控HTTP客户端、分析外部依赖、以及优化API调用性能。
 hide_title: true
 sidebar_position: 1
 ---

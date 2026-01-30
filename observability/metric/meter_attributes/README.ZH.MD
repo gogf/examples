@@ -2,7 +2,7 @@
 title: 指标计量器属性
 slug: /examples/observability/metric/meter_attributes
 keywords: [指标, 计量器属性, prometheus, opentelemetry, goframe]
-description: GoFrame中指标计量器级别属性的实现
+description: 演示在GoFrame中使用OpenTelemetry和Prometheus管理仪表级属性以实现作用域指标标签。本示例展示了仪表特定的属性配置、仪表内的属性作用域、隔离的指标标签、仪表级元数据管理、从仪表到指标的属性继承、以及精细的属性控制。主要功能包括:创建带有自定义属性的仪表、将属性作用域限制在特定指标组、隔离的属性命名空间、自动将属性应用于仪表指标、基于仪表的多租户、生产级模式。非常适合按模块或组件组织指标、实现作用域指标标签、管理多个指标命名空间、隔离指标组之间的属性、构建模块化监控系统、以及为复杂应用建立层次化指标组织。通过本示例可以学习仪表级属性管理、作用域标签、以及层次化指标组织。
 hide_title: true
 sidebar_position: 1
 ---

@@ -2,7 +2,7 @@
 title: HTTP Client
 slug: /examples/observability/metric/http_client
 keywords: [metrics, http client, prometheus, opentelemetry, goframe]
-description: HTTP client metrics collection in GoFrame
+description: Demonstrates comprehensive HTTP client metrics collection in GoFrame using OpenTelemetry and Prometheus for monitoring outbound HTTP requests. This example showcases automatic HTTP client instrumentation, request duration histograms, request count metrics by status code and method, error rate tracking, connection pool metrics, and retry attempt monitoring. Features include automatic metric collection without code changes, detailed request/response attributes, integration with GoFrame's HTTP client, customizable metric labels, Prometheus exporter configuration, and production-ready observability patterns. Ideal for monitoring external API calls, tracking HTTP client performance, debugging connectivity issues, analyzing request patterns, and ensuring reliability of outbound HTTP communications in microservices architectures.
 hide_title: true
 ---
 

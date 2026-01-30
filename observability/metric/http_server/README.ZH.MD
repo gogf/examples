@@ -2,7 +2,7 @@
 title: HTTP服务器
 slug: /examples/observability/metric/http_server
 keywords: [指标, http服务器, prometheus, opentelemetry, goframe]
-description: GoFrame中HTTP服务器指标收集的实现
+description: 演示在GoFrame中使用OpenTelemetry和Prometheus收集全面的HTTP服务器指标以监控入站HTTP请求。本示例展示了自动HTTP服务器埋点、请求延迟直方图、按端点和方法分类的吞吐量指标、HTTP状态码分布、并发请求跟踪、以及错误率监控。主要功能包括:通过中间件自动收集指标、详细的请求属性(路径、方法、状态)、与GoFrame HTTP服务器集成、可自定义的指标桶、Prometheus端点暴露、生产级监控模式。非常适合监控API性能、跟踪服务健康、分析流量模式、识别性能瓶颈、实现SLA监控、以及确保生产环境中HTTP服务的高可用性。通过本示例可以学习如何监控HTTP服务器、分析请求性能、以及构建完整的服务监控体系。
 hide_title: true
 sidebar_position: 1
 ---

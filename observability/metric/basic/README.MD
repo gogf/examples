@@ -2,7 +2,7 @@
 title: Basic
 slug: /examples/observability/metric/basic
 keywords: [metrics, basic, prometheus, opentelemetry, goframe]
-description: A basic example demonstrating various metric types and their usage in GoFrame
+description: Demonstrates comprehensive basic metric types and their usage in GoFrame with OpenTelemetry and Prometheus integration. This example showcases counter metrics for tracking event occurrences, histogram metrics for measuring distributions, gauge metrics for current values, and UpDownCounter for bidirectional counting. Features include metric creation and registration, attribute configuration and labeling, metric value recording and observation, integration with Prometheus exporter, OpenTelemetry metric pipeline setup, and production-ready instrumentation patterns. Ideal for learning fundamental metric types, implementing application observability, monitoring service performance, building custom metrics dashboards, and establishing baseline monitoring for GoFrame applications.
 hide_title: true
 ---
 

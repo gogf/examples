@@ -2,7 +2,7 @@
 title: Meter Attributes
 slug: /examples/observability/metric/meter_attributes
 keywords: [metrics, meter attributes, prometheus, opentelemetry, goframe]
-description: meter-level attributes in GoFrame metrics
+description: Demonstrates meter-level attribute management in GoFrame using OpenTelemetry and Prometheus for scoped metric labeling. This example showcases meter-specific attribute configuration, attribute scoping within meters, isolated metric labeling, meter-level metadata management, attribute inheritance from meters to metrics, and fine-grained attribute control. Features include creating meters with custom attributes, scoping attributes to specific metric groups, isolated attribute namespaces, automatic attribute application to meter metrics, meter-based multi-tenancy, and production-ready patterns. Ideal for organizing metrics by module or component, implementing scoped metric labeling, managing multiple metric namespaces, isolating attributes between metric groups, building modular monitoring systems, and establishing hierarchical metric organization for complex applications.
 hide_title: true
 ---
 

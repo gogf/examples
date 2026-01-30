@@ -2,7 +2,7 @@
 title: Callback
 slug: /examples/observability/metric/callback
 keywords: [metrics, callback, prometheus, opentelemetry, goframe]
-description: callback-based metric collection in GoFrame
+description: Demonstrates callback-based metric collection in GoFrame using OpenTelemetry and Prometheus for asynchronous metric updates. This example showcases callback function registration for metrics, automatic metric value updates through callbacks, asynchronous metric observation, observable counter and gauge patterns, system resource metrics collection, and scheduled metric updates. Features include non-blocking metric collection, periodic callback execution, system metrics integration (CPU, memory, goroutines), lazy metric evaluation, automatic value refresh, and production-ready patterns. Ideal for collecting system metrics, monitoring resource usage, implementing asynchronous metric updates, reducing metric collection overhead, observing expensive-to-compute values, and building efficient monitoring systems with minimal performance impact.
 hide_title: true
 ---
 

@@ -2,7 +2,7 @@
 title: 全局属性
 slug: /examples/observability/metric/global_attributes
 keywords: [指标, 全局属性, prometheus, opentelemetry, goframe]
-description: GoFrame中全局指标属性的实现
+description: 演示在GoFrame中使用OpenTelemetry和Prometheus管理全局指标属性以实现一致的指标标签。本示例展示了全局属性配置和管理、跨所有指标自动应用属性、服务级元数据(service.name、service.version)、环境识别属性、一致的指标标签、以及属性继承模式。主要功能包括:集中式属性管理、自动属性传播、语义约定支持、多租户标签、部署环境标签、生产级模式。非常适合实现一致的指标标签、管理服务元数据、实现跨服务的指标聚合、支持多环境部署、便于指标过滤和分组、以及建立企业监控标准。通过本示例可以学习全局属性管理、一致性标签实践、以及企业级监控规范。
 hide_title: true
 sidebar_position: 1
 ---

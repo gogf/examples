@@ -2,7 +2,7 @@
 title: 链路跟踪
 slug: /examples/observability/trace
 keywords: [链路跟踪, 监控, opentelemetry, goframe]
-description: GoFrame 框架中的链路跟踪功能示例
+description: GoFrame框架中的分布式链路追踪功能全面示例集合，基于OpenTelemetry标准实现。涵盖HTTP服务追踪、HTTP请求与数据库联动追踪、gRPC服务链路追踪、进程内跨组件追踪、进程内gRPC调用追踪、OTLP导出器配置、多进程分布式追踪、自定义Tracing Provider实现等多种场景。展示了自动埋点、Span创建与传播、属性标记、异常捕捉、上下文传递、Jaeger/Zipkin集成等核心功能。适合微服务调用链可视化、性能瓶颈分析、分布式事务跟踪、错误根因分析、以及复杂系统的调用链路监控。
 hide_title: true
 ---
 

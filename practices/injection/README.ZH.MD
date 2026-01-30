@@ -2,7 +2,7 @@
 title: 依赖注入
 slug: /examples/practices/injection
 keywords: [依赖注入, 测试, goframe, di]
-description: 使用GoFrame框架和do包实现的依赖注入示例
+description: 演示在GoFrame框架中使用do包实现依赖注入模式的全面示例。展示了如何通过接口抽象实现松耦合架构、使用do包管理依赖关系、注册和解析服务实例、单例模式管理、接口注入与实现替换、以及单元测试Mock实现。包含User服务、Gateway网关等实际应用场景，演示了服务分层、接口定义、实现注册、依赖解析等完整流程。非常适合微服务架构开发、可测试代码编写、模块化系统设计、接口驱动开发、以及需要灵活依赖管理的企业级应用。通过本示例可以学习如何构建高可维护、易测试的Go应用程序。
 hide_title: true
 ---
 

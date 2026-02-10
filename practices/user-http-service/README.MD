@@ -2,7 +2,7 @@
 title: User HTTP Service
 slug: /examples/practices/user-http-service
 keywords: [http, user, service, crud, mysql, dao, goframe, rest api, authentication, session, middleware, swagger, openapi, web service, backend, registration, login, authorization, jwt, user management, api documentation]
-description: 演示基于HTTP RESTful API的用户管理服务，包含用户注册、登录、登出等功能。展示Session会话管理、中间件认证授权、OpenAPI文档生成、MySQL数据库集成、DAO模式数据访问等特性。适合学习GoFrame框架构建Web API服务和用户认证系统的开发者。
+description: Demonstrates an HTTP RESTful API-based user management service with registration, login, and logout functionality. Features Session management, middleware authentication, OpenAPI documentation, MySQL integration, and DAO pattern. Ideal for learning GoFrame web API development and authentication systems.
 hide_title: true
 ---
 
@@ -10,7 +10,7 @@ hide_title: true
 
 ## Description
 
-This example demonstrates a complete user management service using `HTTP` `RESTful` `API` and `GoFrame`. It showcases:
+This example demonstrates a complete user management service using `HTTP RESTful API` and `GoFrame`. It showcases:
 - User registration, sign-in, and sign-out functionality
 - Session-based authentication and authorization
 - `HTTP` middleware for context injection and authentication
@@ -34,11 +34,11 @@ This example demonstrates a complete user management service using `HTTP` `RESTf
 │   │   └── cmd.go         # Main command with server setup
 │   ├── consts/            # Constants
 │   ├── controller/        # HTTP controllers
-│   │   └── user/          # User controller
-│   ├── dao/               # Data access objects
+│   │   └── user/          # User controller(auto-generated + implementation)
+│   ├── dao/               # Data access objects(auto-generated)
 │   ├── model/             # Data models
-│   │   ├── do/            # Domain objects
-│   │   └── entity/        # Database entities
+│   │   ├── do/            # Domain objects(auto-generated)
+│   │   └── entity/        # Database entities(auto-generated)
 │   └── service/           # Business logic
 │       ├── bizctx/        # Business context service
 │       ├── middleware/    # Middleware service
@@ -97,9 +97,7 @@ The example showcases the following features:
 
 ## Requirements
 
-- [Go](https://golang.org/dl/) `1.15` or higher
-- [Git](https://git-scm.com/downloads)
-- [GoFrame CLI](https://goframe.org/pages/viewpage.action?pageId=1114119)
+- [Go](https://golang.org/dl/) `1.23` or higher
 - [MySQL](https://www.mysql.com/) `5.7` or higher
 
 ## Prerequisites

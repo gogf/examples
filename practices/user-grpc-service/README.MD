@@ -2,7 +2,7 @@
 title: gRPC Service
 slug: /examples/practices/user-grpc-service
 keywords: [grpc, user, service, crud, mysql, dao, goframe, microservice, protobuf, database, user management, authentication, rest api, backend service, web service, dependency injection, business logic, data access, model, entity]
-description: 演示基于gRPC的用户管理微服务，包含用户增删改查操作。展示Protocol Buffers协议定义、MySQL数据库集成、DAO模式数据访问、Service层业务逻辑封装等特性。适合学习GoFrame框架构建gRPC微服务和掌握微服务架构的开发者。
+description: Demonstrates a gRPC-based user management microservice with CRUD operations. Features Protocol Buffers definitions, MySQL integration, DAO pattern data access, and service layer business logic. Ideal for learning GoFrame gRPC microservices and microservice architecture.
 hide_title: true
 ---
 
@@ -32,11 +32,11 @@ This example demonstrates a complete user management microservice using `gRPC` a
 │   ├── cmd/               # Command definitions
 │   ├── consts/            # Constants
 │   ├── controller/        # gRPC controllers
-│   │   └── user/          # User controller
-│   ├── dao/               # Data access objects
+│   │   └── user/          # User controller(auto-generated + implementation)
+│   ├── dao/               # Data access objects(auto-generated)
 │   ├── model/             # Data models
-│   │   ├── do/            # Domain objects
-│   │   └── entity/        # Database entities
+│   │   ├── do/            # Domain objects(auto-generated)
+│   │   └── entity/        # Database entities(auto-generated)
 │   └── service/           # Business logic
 │       └── user/          # User service
 ├── manifest/              # Deployment manifests

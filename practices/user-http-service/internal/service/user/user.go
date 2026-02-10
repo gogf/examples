@@ -3,14 +3,14 @@ package user
 import (
 	"context"
 
-	`github.com/gogf/gf-demo-user/v2/internal/service/bizctx`
-	`github.com/gogf/gf-demo-user/v2/internal/service/session`
+	`main/internal/service/bizctx`
+	`main/internal/service/session`
 	"github.com/gogf/gf/v2/database/gdb"
 	"github.com/gogf/gf/v2/errors/gerror"
 
-	"github.com/gogf/gf-demo-user/v2/internal/dao"
-	"github.com/gogf/gf-demo-user/v2/internal/model/do"
-	"github.com/gogf/gf-demo-user/v2/internal/model/entity"
+	"practices/user-http-service/internal/dao"
+	"practices/user-http-service/internal/model/do"
+	"practices/user-http-service/internal/model/entity"
 )
 
 // Service provides user-related business logic.

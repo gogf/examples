@@ -4,12 +4,12 @@ package user
 import (
 	"context"
 
-	"main/app/user/internal/service/user"
+	"practices/injection/app/user/internal/service/user"
 
 	"github.com/gogf/gf/contrib/rpc/grpcx/v2"
 	"github.com/gogf/gf/v2/errors/gerror"
 
-	v1 "main/app/user/api/user/v1"
+	v1 "practices/injection/app/user/api/user/v1"
 )
 
 // ControllerV1 implements the gRPC user service interface.

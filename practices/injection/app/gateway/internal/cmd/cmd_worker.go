@@ -3,7 +3,7 @@ package cmd
 import (
 	"context"
 
-	"main/utility/injection"
+	"practices/injection/utility/injection"
 
 	"github.com/gogf/gf/v2/frame/g"
 )

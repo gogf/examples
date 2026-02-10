@@ -7,7 +7,7 @@ import (
 	"github.com/gogf/gf/v2/os/gcmd"
 	"google.golang.org/grpc"
 
-	"github.com/gogf/gf-demo-grpc/internal/controller/user"
+	"practices/user-grpc-service/internal/controller/user"
 )
 
 var (

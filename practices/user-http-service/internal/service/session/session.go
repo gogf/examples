@@ -3,9 +3,9 @@ package session
 import (
 	"context"
 
-	"github.com/gogf/gf-demo-user/v2/internal/consts"
-	"github.com/gogf/gf-demo-user/v2/internal/model/entity"
-	`github.com/gogf/gf-demo-user/v2/internal/service/bizctx`
+	"practices/user-http-service/internal/consts"
+	"practices/user-http-service/internal/model/entity"
+	`main/internal/service/bizctx`
 )
 
 // Service provides session management logic.

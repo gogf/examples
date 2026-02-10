@@ -4,7 +4,7 @@ import (
 	"github.com/gogf/gf/v2/os/gcmd"
 	"github.com/gogf/gf/v2/os/gctx"
 
-	"main/app/gateway/internal/cmd"
+	"practices/injection/app/gateway/internal/cmd"
 )
 
 func main() {

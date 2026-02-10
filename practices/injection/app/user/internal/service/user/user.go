@@ -4,10 +4,10 @@ package user
 import (
 	"context"
 
-	"main/app/user/api/entity"
-	"main/app/user/internal/dao/user"
-	"main/utility/injection"
-	"main/utility/mongohelper"
+	"practices/injection/app/user/api/entity"
+	"practices/injection/app/user/internal/dao/user"
+	"practices/injection/utility/injection"
+	"practices/injection/utility/mongohelper"
 
 	"github.com/gogf/gf/v2/errors/gerror"
 	"github.com/gogf/gf/v2/util/gconv"

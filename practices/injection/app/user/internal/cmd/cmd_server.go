@@ -3,13 +3,13 @@ package cmd
 import (
 	"context"
 
-	"main/utility/injection"
+	"practices/injection/utility/injection"
 
 	"github.com/gogf/gf/contrib/rpc/grpcx/v2"
 	"github.com/gogf/gf/v2/frame/g"
 	"google.golang.org/grpc"
 
-	"main/app/user/internal/controller/user"
+	"practices/injection/app/user/internal/controller/user"
 )
 
 type ServerInput struct {

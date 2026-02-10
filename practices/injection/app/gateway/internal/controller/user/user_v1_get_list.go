@@ -3,9 +3,9 @@ package user
 import (
 	"context"
 
-	userSvcV1 "main/app/user/api/user/v1"
+	userSvcV1 "practices/injection/app/user/api/user/v1"
 
-	"main/app/gateway/api/user/v1"
+	"practices/injection/app/gateway/api/user/v1"
 )
 
 func (c *ControllerV1) GetList(ctx context.Context, req *v1.GetListReq) (res *v1.GetListRes, err error) {

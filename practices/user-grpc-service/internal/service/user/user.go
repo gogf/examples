@@ -3,9 +3,9 @@ package user
 import (
 	"context"
 
-	"github.com/gogf/gf-demo-grpc/api/pbentity"
-	"github.com/gogf/gf-demo-grpc/internal/dao"
-	"github.com/gogf/gf-demo-grpc/internal/model/do"
+	"practices/user-grpc-service/api/pbentity"
+	"practices/user-grpc-service/internal/dao"
+	"practices/user-grpc-service/internal/model/do"
 )
 
 type (

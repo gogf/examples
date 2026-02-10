@@ -5,7 +5,7 @@
 package dao
 
 import (
-	"github.com/gogf/gf-demo-user/v2/internal/dao/internal"
+	"practices/user-http-service/internal/dao/internal"
 )
 
 // internalUserDao is internal type for wrapping internal DAO implements.

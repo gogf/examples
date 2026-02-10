@@ -3,12 +3,12 @@ package user
 import (
 	"context"
 
-	`github.com/gogf/gf-demo-grpc/internal/service/user`
-	"github.com/gogf/gf/contrib/rpc/grpcx/v2"
+	v1 "practices/user-grpc-service/api/user/v1"
+	"practices/user-grpc-service/internal/dao"
+	"practices/user-grpc-service/internal/model/do"
+	"practices/user-grpc-service/internal/service/user"
 
-	v1 "github.com/gogf/gf-demo-grpc/api/user/v1"
-	"github.com/gogf/gf-demo-grpc/internal/dao"
-	"github.com/gogf/gf-demo-grpc/internal/model/do"
+	"github.com/gogf/gf/contrib/rpc/grpcx/v2"
 )
 
 // Controller implements the gRPC server for user-related operations,

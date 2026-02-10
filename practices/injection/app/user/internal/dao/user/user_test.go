@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"main/utility/injection"
-	"main/utility/mongohelper"
+	"practices/injection/utility/injection"
+	"practices/injection/utility/mongohelper"
 
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/os/gtime"

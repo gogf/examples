@@ -5,7 +5,7 @@ import (
 
 	"github.com/gogf/gf/v2/os/gctx"
 
-	"github.com/gogf/gf-demo-grpc/internal/cmd"
+	"practices/user-grpc-service/internal/cmd"
 )
 
 func main() {

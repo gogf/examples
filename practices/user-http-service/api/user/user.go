@@ -6,8 +6,8 @@ package user
 
 import (
 	"context"
-	
-	"github.com/gogf/gf-demo-user/v2/api/user/v1"
+
+	"practices/user-http-service/api/user/v1"
 )
 
 type IUserV1 interface {
@@ -19,5 +19,3 @@ type IUserV1 interface {
 	SignOut(ctx context.Context, req *v1.SignOutReq) (res *v1.SignOutRes, err error)
 	SignUp(ctx context.Context, req *v1.SignUpReq) (res *v1.SignUpRes, err error)
 }
-
-

@@ -3,13 +3,13 @@ package cmd
 import (
 	"context"
 
-	"main/app/gateway/internal/controller/user"
-	"main/utility/injection"
+	"practices/injection/app/gateway/internal/controller/user"
+	"practices/injection/utility/injection"
 
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/net/ghttp"
 
-	"main/app/gateway/internal/controller/hello"
+	"practices/injection/app/gateway/internal/controller/hello"
 )
 
 type ServerInput struct {

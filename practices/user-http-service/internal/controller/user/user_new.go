@@ -5,8 +5,8 @@
 package user
 
 import (
-	userapi "github.com/gogf/gf-demo-user/v2/api/user"
-	usersvc `github.com/gogf/gf-demo-user/v2/internal/service/user`
+	userapi "practices/user-http-service/api/user"
+	usersvc `main/internal/service/user`
 )
 
 // ControllerV1 is the controller for user API version 1.

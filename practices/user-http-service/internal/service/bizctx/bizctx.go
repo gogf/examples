@@ -5,7 +5,7 @@ import (
 
 	"github.com/gogf/gf/v2/net/ghttp"
 
-	"github.com/gogf/gf-demo-user/v2/internal/consts"
+	"practices/user-http-service/internal/consts"
 )
 
 type (

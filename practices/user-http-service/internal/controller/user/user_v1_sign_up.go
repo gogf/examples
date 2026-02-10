@@ -3,8 +3,8 @@ package user
 import (
 	"context"
 
-	"github.com/gogf/gf-demo-user/v2/api/user/v1"
-	usersvc `github.com/gogf/gf-demo-user/v2/internal/service/user`
+	"practices/user-http-service/api/user/v1"
+	usersvc `main/internal/service/user`
 )
 
 // SignUp signs up the user.

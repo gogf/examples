@@ -7,7 +7,7 @@ package user
 import (
 	"context"
 
-	"main/app/gateway/api/user/v1"
+	"practices/injection/app/gateway/api/user/v1"
 )
 
 type IUserV1 interface {

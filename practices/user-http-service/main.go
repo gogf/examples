@@ -5,7 +5,7 @@ import (
 
 	"github.com/gogf/gf/v2/os/gctx"
 
-	"github.com/gogf/gf-demo-user/v2/internal/cmd"
+	"practices/user-http-service/internal/cmd"
 )
 
 func main() {

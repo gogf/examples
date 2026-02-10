@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	v1 "main/app/user/api/user/v1"
-	"main/utility/injection"
+	v1 "practices/injection/app/user/api/user/v1"
+	"practices/injection/utility/injection"
 
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/test/gtest"

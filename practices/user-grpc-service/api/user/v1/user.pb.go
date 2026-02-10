@@ -12,7 +12,7 @@ import (
 	reflect "reflect"
 	sync "sync"
 
-	pbentity "github.com/gogf/gf-demo-grpc/api/pbentity"
+	pbentity "practices/user-grpc-service/api/pbentity"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )

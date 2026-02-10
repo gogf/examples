@@ -5,7 +5,7 @@
 package hello
 
 import (
-	"main/app/gateway/api/hello"
+	"practices/injection/app/gateway/api/hello"
 )
 
 type ControllerV1 struct{}

@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"main/app/user/internal/model/entity"
+	"practices/injection/app/user/internal/model/entity"
 
 	"github.com/gogf/gf/v2/util/gconv"
 	"github.com/pkg/errors"

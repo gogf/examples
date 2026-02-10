@@ -3,14 +3,14 @@ package cmd
 import (
 	"context"
 
-	`github.com/gogf/gf-demo-user/v2/internal/service/middleware`
+	`main/internal/service/middleware`
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/net/ghttp"
 	"github.com/gogf/gf/v2/net/goai"
 	"github.com/gogf/gf/v2/os/gcmd"
 
-	"github.com/gogf/gf-demo-user/v2/internal/consts"
-	"github.com/gogf/gf-demo-user/v2/internal/controller/user"
+	"practices/user-http-service/internal/consts"
+	"practices/user-http-service/internal/controller/user"
 )
 
 var (

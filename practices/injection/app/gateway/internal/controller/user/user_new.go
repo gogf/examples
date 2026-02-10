@@ -5,9 +5,9 @@
 package user
 
 import (
-	"main/app/gateway/api/user"
-	v1 "main/app/user/api/user/v1"
-	"main/utility/injection"
+	"practices/injection/app/gateway/api/user"
+	v1 "practices/injection/app/user/api/user/v1"
+	"practices/injection/utility/injection"
 )
 
 type ControllerV1 struct {

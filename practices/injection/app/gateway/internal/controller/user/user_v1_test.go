@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"testing"
 
-	"main/app/gateway/api/user"
-	v1 "main/app/gateway/api/user/v1"
-	"main/utility/injection"
+	"practices/injection/app/gateway/api/user"
+	v1 "practices/injection/app/gateway/api/user/v1"
+	"practices/injection/utility/injection"
 
 	"github.com/gogf/gf/v2/test/gtest"
 )

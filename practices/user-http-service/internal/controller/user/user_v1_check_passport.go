@@ -5,7 +5,7 @@ import (
 
 	"github.com/gogf/gf/v2/errors/gerror"
 
-	"github.com/gogf/gf-demo-user/v2/api/user/v1"
+	"practices/user-http-service/api/user/v1"
 )
 
 // CheckPassport checks if the given passport is available for registration.

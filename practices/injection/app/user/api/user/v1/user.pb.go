@@ -5,7 +5,7 @@ package v1
 
 import (
 	fmt "fmt"
-	entity "main/app/user/api/entity"
+	entity "practices/injection/app/user/api/entity"
 	math "math"
 
 	proto "github.com/golang/protobuf/proto"

@@ -3,7 +3,7 @@ package user
 import (
 	"context"
 
-	"github.com/gogf/gf-demo-user/v2/api/user/v1"
+	"practices/user-http-service/api/user/v1"
 )
 
 // Profile retrieves and returns the profile of the currently signed-in user.

@@ -3,9 +3,9 @@ package middleware
 import (
 	"net/http"
 
-	`github.com/gogf/gf-demo-user/v2/internal/service/bizctx`
-	`github.com/gogf/gf-demo-user/v2/internal/service/session`
-	`github.com/gogf/gf-demo-user/v2/internal/service/user`
+	`main/internal/service/bizctx`
+	`main/internal/service/session`
+	`main/internal/service/user`
 	"github.com/gogf/gf/v2/net/ghttp"
 )
 

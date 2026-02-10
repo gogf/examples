@@ -7,7 +7,7 @@ package hello
 import (
 	"context"
 
-	"main/app/gateway/api/hello/v1"
+	"practices/injection/app/gateway/api/hello/v1"
 )
 
 type IHelloV1 interface {

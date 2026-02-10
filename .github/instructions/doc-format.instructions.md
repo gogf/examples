@@ -1,0 +1,17 @@
+---
+name: "规范化编写Markdown文档格式"
+description: "规范化所有编写Markdown文档的格式，确保文档结构清晰，内容易读，提升文档质量。"
+applyTo: "{blog,docs}/**/*.md"
+---
+
+# 文档主要格式要求
+
+- 编写文档时，文档的内容结构需要参考给定示例项目目录下的相同markdown文件，确保结构一致性。
+- 文档内容中的关键字需要使用代码块格式展示，例如RuntimeClass、containerd、GPU、AI等，需要修改为`RuntimeClass`、`containerd`、`GPU`、`AI`格式。
+- 高亮代码块左右两边不要加空格。例如"使用`RuntimeClass`组件"而不是"使用 `RuntimeClass` 组件"。
+- 顶部的frontmatter内容应该包含这些字段：title、slug、keywords、description、hide_title。其中的description字段需要简要概括文章内容，字数介于100~150之间；keywords字段不能少于15个词。
+
+# 文档内容细节要求
+
+- 在中文段落中的符号使用中文全角符号而不是半角覆盖，例如使用`，`而不是`,`、使用`；`而不是`;`等。
+- 由于文章在页面渲染时会自动加上栏目编号，因此栏目名称中不需要再添加编号，例如“1. 什么是离线批量推理”需要修改为“什么是离线批量推理”。

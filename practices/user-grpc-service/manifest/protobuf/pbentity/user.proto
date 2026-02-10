@@ -6,7 +6,7 @@ syntax = "proto3";
 
 package pbentity;
 
-option go_package = "github.com/gogf/gf-demo-grpc/api/pbentity";
+option go_package = "practices/user-grpc-service/api/pbentity";
 
 import "google/protobuf/timestamp.proto";
 

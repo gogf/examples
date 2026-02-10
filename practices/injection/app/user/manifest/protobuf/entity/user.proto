@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package entity;
 
-option go_package = "main/app/user/api/entity";
+option go_package = "practices/injection/app/user/api/entity";
 
 message User {
     string id         = 1   ; // User ID

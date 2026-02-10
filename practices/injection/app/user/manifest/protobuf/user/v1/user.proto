@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package user;
 
-option go_package = "main/app/user/api/user/v1";
+option go_package = "practices/injection/app/user/api/user/v1";
 
 import "entity/user.proto";
 

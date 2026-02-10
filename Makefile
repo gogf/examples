@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-# execute "go mod tidy" on all folders that have go.mod file
-.PHONY: tidy
-tidy:
-	./.make_tidy.sh
+# Update all goframe module dependencies to their latest versions.
+.PHONY: update
+update:
+	./.make_update.sh

@@ -37,8 +37,12 @@ for file in `find ${workdir} -name go.mod`; do
     fi
 
     cd $goModPath
+
+    # Replace all github.com/gogf/gf/* dependencies version to latest
+    sed_replace 's|^\(github\.com/gogf/gf/[^ ]*\) .*|\1 latest|' go.mod
+
     go mod tidy
     # Remove toolchain line if exists
-    sed_replace '/^toolchain\n/d' go.mod
+    sed_replace '/^toolchain/d' go.mod
     cd - > /dev/null
 done

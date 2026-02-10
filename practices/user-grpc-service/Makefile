@@ -7,10 +7,9 @@ DOCKER_NAME = "gf-demo-grpc"
 .PHONY: cli
 cli:
 	@set -e; \
-	wget -O gf https://github.com/gogf/gf/releases/latest/download/gf_$(shell go env GOOS)_$(shell go env GOARCH) && \
-	chmod +x gf && \
-	./gf install -y && \
-	rm ./gf
+    echo "go install github.com/gogf/gf/cmd/gf/v2@latest"; \
+	go install github.com/gogf/gf/cmd/gf/v2@latest; \
+	echo "GoFame CLI installed successfully!"
 
 
 # Check and install CLI tool.

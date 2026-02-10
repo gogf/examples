@@ -9,7 +9,8 @@ applyTo: "{blog,docs}/**/*.md"
 - 编写文档时，文档的内容结构需要参考给定示例项目目录下的相同markdown文件，确保结构一致性。
 - 不要生成一级标题（# 标题），一级标题通常用于文档的主标题，已经由文档文件名提供。
 - 文档内容中的关键字需要使用代码块格式展示，例如RuntimeClass、containerd、GPU、AI等，需要修改为`RuntimeClass`、`containerd`、`GPU`、`AI`格式。
-- 顶部的frontmatter内容中的description字段需要简要概括文章内容，不能少于100字；keywords字段不能少于15个词。
+- 高亮代码块左右两边不要加空格。例如"使用`RuntimeClass`组件"而不是"使用 `RuntimeClass` 组件"。
+- 顶部的frontmatter内容中的description字段需要简要概括文章内容，字数介于100~150之间；keywords字段不能少于15个词。
 
 # 文档内容细节要求
 

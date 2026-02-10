@@ -33,7 +33,6 @@ sidebar_position: 3
 ## 环境要求
 
 - [Go](https://golang.org/dl/) `1.22` 或更高版本
-- [Git](https://git-scm.com/downloads)
 - [GoFrame](https://goframe.org)
 - [Protocol Buffers](https://developers.google.com/protocol-buffers)
 

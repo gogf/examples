@@ -15,8 +15,8 @@ import (
 
 // Service provides user-related business logic.
 type Service struct {
-	bizCtxSvc  *bizctx.Service
-	sessionSvc *session.Service
+	bizCtxSvc  *bizctx.Service  // Business context service.
+	sessionSvc *session.Service // Session service.
 }
 
 // New creates and returns a new Service instance.

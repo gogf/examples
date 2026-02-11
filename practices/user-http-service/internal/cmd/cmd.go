@@ -3,7 +3,6 @@ package cmd
 import (
 	"context"
 
-	"practices/user-http-service/internal/consts"
 	"practices/user-http-service/internal/controller/user"
 	"practices/user-http-service/internal/service/middleware"
 
@@ -11,6 +10,11 @@ import (
 	"github.com/gogf/gf/v2/net/ghttp"
 	"github.com/gogf/gf/v2/net/goai"
 	"github.com/gogf/gf/v2/os/gcmd"
+)
+
+const (
+	OpenAPITitle       = `GoFrame Demos`
+	OpenAPIDescription = `This is a simple demos HTTP server project that is using GoFrame. Enjoy 💖 `
 )
 
 var (
@@ -60,6 +64,7 @@ func mainFunc(ctx context.Context, parser *gcmd.Parser) (err error) {
 }
 
 // enhanceOpenAPIDoc customizes the OpenAPI document for API specification and testing.
+// It is optional, and you can customize it as you need, or even remove it if you don't need it.
 func enhanceOpenAPIDoc(s *ghttp.Server) {
 	openapi := s.GetOpenApi()
 	openapi.Config.CommonResponse = ghttp.DefaultHandlerResponse{}
@@ -67,8 +72,8 @@ func enhanceOpenAPIDoc(s *ghttp.Server) {
 
 	// API description.
 	openapi.Info = goai.Info{
-		Title:       consts.OpenAPITitle,
-		Description: consts.OpenAPIDescription,
+		Title:       OpenAPITitle,
+		Description: OpenAPIDescription,
 		Contact: &goai.Contact{
 			Name: "GoFrame",
 			URL:  "https://goframe.org",

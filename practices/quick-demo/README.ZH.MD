@@ -17,12 +17,9 @@ hide_title: true
 ```text
 quick-demo/
 ├── api/                  # API接口定义
-│   ├── hello/            # Hello模块API
-│   │   └── v1/
-│   │       └── hello.go  # Hello API定义
-│   └── user/             # 用户模块API
-│       └── v1/
-│           └── user.go   # 用户CRUD API定义
+│   └── user/             # 用户服务 API
+│       ├── user.go       # 用于API完整性实现的检测接口(自动生成)
+│       └── v1/           # API定义，v1版本
 ├── internal/             # 内部实现
 │   ├── cmd/              # 命令层
 │   │   └── cmd.go        # 服务器初始化

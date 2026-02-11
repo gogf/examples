@@ -16,32 +16,32 @@ hide_title: true
 
 ```text
 mvc-demo-chat/
-├── api/                           # API interface definitions
+├── api/                          # API interface definitions
 │   └── v1/
 │       └── chat.go               # Chat API definitions
 ├── internal/                     # Internal implementation
 │   ├── cmd/
-│   │   └── cmd.go               # Server initialization and routing
+│   │   └── cmd.go                # Server initialization and routing
 │   ├── consts/
-│   │   ├── consts.go            # General constants
-│   │   └── consts_chat.go       # Chat-specific constants
+│   │   ├── consts.go             # General constants
+│   │   └── consts_chat.go        # Chat-specific constants
 │   ├── controller/
-│   │   └── chat.go              # Chat controller with WebSocket logic
+│   │   └── chat.go               # Chat controller with WebSocket logic
 │   └── model/
-│       └── chat.go              # Chat message model
+│       └── chat.go               # Chat message model
 ├── manifest/                     # Application manifest
 │   ├── config/
-│   │   └── config.yaml          # Server and logging configuration
-│   ├── deploy/                  # Deployment configurations
-│   └── docker/                  # Docker configurations
+│   │   └── config.yaml           # Server and logging configuration
+│   ├── deploy/                   # Deployment configurations
+│   └── docker/                   # Docker configurations
 ├── resource/                     # Static resources and templates
-│   ├── public/                  # Static files (CSS, JavaScript, images)
-│   │   ├── plugin/              # Frontend plugins
-│   │   └── resource/            # Static resources
-│   └── template/                # HTML templates
+│   ├── public/                   # Static files (CSS, JavaScript, images)
+│   │   ├── plugin/               # Frontend plugins
+│   │   └── resource/             # Static resources
+│   └── template/                 # HTML templates
 │       └── chat/
-│           ├── include/         # Partial templates
-│           └── index.html       # Main page template
+│           ├── include/          # Partial templates
+│           └── index.html        # Main page template
 ├── main.go                       # Application entry point
 └── go.mod                        # Go module definition
 ```
@@ -256,14 +256,14 @@ User input is sanitized to prevent XSS attacks:
 
 The application uses GoFrame's template engine:
 
-- **Main Template**: [resource/template/chat/index.html](resource/template/chat/index.html)
+- **Main Template**: `resource/template/chat/index.html`
 - **Includes**: Conditional rendering based on session state
-  - [resource/template/chat/include/main.html](resource/template/chat/include/main.html): Nickname input form
-  - [resource/template/chat/include/chat.html](resource/template/chat/include/chat.html): Chat interface
+  - `resource/template/chat/include/main.html`: Nickname input form
+  - `resource/template/chat/include/chat.html`: Chat interface
 
 ## Configuration
 
-Configuration is managed through [manifest/config/config.yaml](manifest/config/config.yaml):
+Configuration is managed through `manifest/config/config.yaml`:
 
 ```yaml
 server:

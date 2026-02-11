@@ -8,8 +8,6 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/net/ghttp"
 	"github.com/gogf/gf/v2/os/gcmd"
-
-	"practices/quick-demo/internal/controller/hello"
 )
 
 var (
@@ -21,12 +19,12 @@ var (
 	}
 )
 
+// mainFunc implements the "main" command.
 func mainFunc(ctx context.Context, parser *gcmd.Parser) (err error) {
 	s := g.Server()
 	s.Group("/", func(group *ghttp.RouterGroup) {
 		group.Middleware(ghttp.MiddlewareHandlerResponse)
 		group.Bind(
-			hello.NewV1(),
 			user.NewV1(),
 		)
 	})

@@ -12,9 +12,9 @@ import (
 
 // Service provides middleware for HTTP request.
 type Service struct {
-	bixCtxSvc  *bizctx.Service
-	sessionSvc *session.Service
-	userSvc    *user.Service
+	bixCtxSvc  *bizctx.Service  // Business context service.
+	sessionSvc *session.Service // Session service.
+	userSvc    *user.Service    // User service.
 }
 
 // New creates and returns a new Service instance.

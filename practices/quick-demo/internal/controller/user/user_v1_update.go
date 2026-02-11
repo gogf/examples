@@ -8,6 +8,7 @@ import (
 	"practices/quick-demo/internal/model/do"
 )
 
+// Update updates the user by Id.
 func (c *ControllerV1) Update(ctx context.Context, req *v1.UpdateReq) (res *v1.UpdateRes, err error) {
 	_, err = dao.User.Ctx(ctx).Data(do.User{
 		Name:   req.Name,

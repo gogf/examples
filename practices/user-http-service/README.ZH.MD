@@ -25,8 +25,8 @@ hide_title: true
 .
 ├── api/                   # API 定义
 │   └── user/              # 用户服务 API
-│       ├── user.go        # 接口定义
-│       └── v1/            # API 版本 v1
+│       ├── user.go        # 用于API完整性实现的检测接口(自动生成)
+│       └── v1/            # API定义，v1版本
 ├── hack/                  # 开发工具
 │   └── config.yaml        # CLI 工具配置
 ├── internal/              # 内部包

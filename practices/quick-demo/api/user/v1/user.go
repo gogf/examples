@@ -14,6 +14,7 @@ const (
 	StatusDisabled Status = 1 // User is disabled.
 )
 
+// CreateReq is the request for creating user.
 type CreateReq struct {
 	g.Meta `path:"/user" method:"post" tags:"User" summary:"Create user"`
 	Name   string `v:"required|length:3,10" dc:"user name"`
@@ -23,6 +24,7 @@ type CreateRes struct {
 	Id int64 `json:"id" dc:"user id"`
 }
 
+// UpdateReq is the request for updating user.
 type UpdateReq struct {
 	g.Meta `path:"/user/{id}" method:"put" tags:"User" summary:"Update user"`
 	Id     int64   `v:"required" dc:"user id"`
@@ -32,12 +34,14 @@ type UpdateReq struct {
 }
 type UpdateRes struct{}
 
+// DeleteReq is the request for deleting user.
 type DeleteReq struct {
 	g.Meta `path:"/user/{id}" method:"delete" tags:"User" summary:"Delete user"`
 	Id     int64 `v:"required" dc:"user id"`
 }
 type DeleteRes struct{}
 
+// GetOneReq is the request for getting one user.
 type GetOneReq struct {
 	g.Meta `path:"/user/{id}" method:"get" tags:"User" summary:"Get one user"`
 	Id     int64 `v:"required" dc:"user id"`
@@ -46,6 +50,7 @@ type GetOneRes struct {
 	*entity.User `dc:"user"`
 }
 
+// GetListReq is the request for getting user list.
 type GetListReq struct {
 	g.Meta `path:"/user" method:"get" tags:"User" summary:"Get users"`
 	Age    *uint   `v:"between:18,200" dc:"user age"`

@@ -3,15 +3,19 @@ package session
 import (
 	"context"
 
-	"practices/user-http-service/internal/consts"
 	"practices/user-http-service/internal/model/entity"
 	"practices/user-http-service/internal/service/bizctx"
 )
 
 // Service provides session management logic.
 type Service struct {
-	bizCtxSvc *bizctx.Service
+	bizCtxSvc *bizctx.Service // Business context service.
 }
+
+const (
+	// UserSessionKey is the key used to store user information in session.
+	UserSessionKey = "UserSessionKey"
+)
 
 // New creates and returns a new Service instance.
 func New() *Service {
@@ -22,7 +26,7 @@ func New() *Service {
 
 // SetUser sets user into the session.
 func (s *Service) SetUser(ctx context.Context, user *entity.User) error {
-	return s.bizCtxSvc.Get(ctx).Session.Set(consts.UserSessionKey, user)
+	return s.bizCtxSvc.Get(ctx).Session.Set(UserSessionKey, user)
 }
 
 // GetUser retrieves and returns the user from session.
@@ -30,7 +34,7 @@ func (s *Service) SetUser(ctx context.Context, user *entity.User) error {
 func (s *Service) GetUser(ctx context.Context) *entity.User {
 	customCtx := s.bizCtxSvc.Get(ctx)
 	if customCtx != nil {
-		if v := customCtx.Session.MustGet(consts.UserSessionKey); !v.IsNil() {
+		if v := customCtx.Session.MustGet(UserSessionKey); !v.IsNil() {
 			var user *entity.User
 			_ = v.Struct(&user)
 			return user
@@ -43,7 +47,7 @@ func (s *Service) GetUser(ctx context.Context) *entity.User {
 func (s *Service) RemoveUser(ctx context.Context) error {
 	customCtx := s.bizCtxSvc.Get(ctx)
 	if customCtx != nil {
-		return customCtx.Session.Remove(consts.UserSessionKey)
+		return customCtx.Session.Remove(UserSessionKey)
 	}
 	return nil
 }
